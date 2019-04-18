@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PrizeItemSkin" width="500" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="nameLb" text="奖品1" x="123" y="26"/>
+	<e:Image id="iconImg" width="80" height="80" left="6" verticalCenter="0" source="avt_png"/>
+	<e:Button id="detailBtn" label="Button" x="379" y="25"/>
+</e:Skin>

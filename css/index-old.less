@@ -1,0 +1,252 @@
+@ver:'?222';
+
+// div设置背景图片，自适应图片尺寸
+.divimg(@url) {
+    @wid: image-width(@url);
+    @hei: image-height(@url);
+    background-image: url("@{url}@{ver}");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    width: 1rem * @wid / 100;
+    height: 1rem * @hei / 100;
+}
+
+html, body {
+    -ms-touch-action: none;
+    background: #ffffff!important;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+
+    // @bgurl:"../resource/assets/bg_1.jpg";
+    // background-image: url("@{bgurl}@{ver}");
+
+    background-repeat:  no-repeat;
+    background-size: 100% 100%; 
+
+    font-family: "Microsoft YaHei" ! important;
+    font-style: normal;
+}
+
+/*自定义滚动条*/
+::-webkit-scrollbar { 
+    width: 0.2rem;
+    height: 8px;
+    &-track { //滚动条底框
+        border-radius: 0.1rem;  
+        background:rgba(0,0,0,0.2);
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+    &-thumb { //滚动条滑块
+        // width:0.5rem;  //这样写无效的
+        border-radius: 0.1rem;
+        background: #30B7AF;        
+    }
+    &-thumb:window-inactive {
+        // background: rgba(13,13,13,0.2);
+    }
+}
+
+
+#marqueeDiv { /* “当前是测试链接” 那串东西*/
+    z-index:100;
+}
+@z-spinner:50;
+@z-weakhint:40; //  因为Dom 类的z-index : 250
+@z-auto: 30;  // jinx.Dom 对象创建的
+@z-egret: 20; // @z-egret > @z-loading :解决微信端loading页面可拖动回弹的恶心问题
+@z-loading: 10;
+
+// 隐藏
+.cont-hide {
+    display: none!important;
+}
+
+
+// loading场景
+.scene-loading {
+    position: fixed;
+    z-index: @z-loading;
+    width: 100%;
+    height:100%;
+
+    background-image: url("../resource/assets/bg_l.png@{ver}");
+    background-size: cover;
+    .bar {
+        width: 3rem;
+        height: 0.26rem;
+        line-height: 0.26rem;
+        background: rgba(13, 13, 13, 0.4);
+        border-radius: 0.13rem;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 5rem;
+        .pro {
+            width: 0;
+            height: inherit;
+            background: #f57d03;
+            border-radius: inherit;
+        }
+        .txt-pro {
+            height: inherit;
+            line-height: inherit;
+            color:#2c3baf;
+            font-size: 0.26rem;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+            top: 0;
+            right: -0.9rem;
+            text-align: left;
+            font {
+                font-size: 0.32rem;
+            }
+        }
+    }
+
+    .avt {
+        position: absolute;
+        margin: auto;
+        left:0;
+        right:0;
+        top: 2.8rem;
+        .divimg('../resource/assets/avt_1.png');
+    }
+    .desc {
+        position: absolute;
+        font-size: 0.4rem;
+        color: #c52020;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 5.6rem;
+        text-align: center;
+    }
+    .logo {
+        position: absolute;
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:1rem;
+        .divimg('../resource/assets/logo.png');
+    }
+}
+
+// egret canvas
+#egretCont {
+    margin: auto;
+    width: 100%;
+    height: 100%; 
+    position: fixed;
+    z-index: @z-egret;
+}
+
+// 菊花  屏幕宽: 7.5em
+.cont-spinner {
+    position: absolute;
+    z-index: @z-spinner;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, 0);
+    border-radius: 0.1em;
+    .spinner-dk {
+        width: 2em;
+        height: 2em;
+        background: rgba(13,13,13,0.6);
+        position: absolute;
+        border-radius: 0.2em;
+
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .piece {
+        animation: opacityRun 1.3s linear infinite;
+    }
+    .piece-cell {
+        position: absolute;
+        width: 0.3em;
+        height: 0.03em;
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px;
+        transform-origin: left center 0px;
+        border-radius: 0.015em;
+    }
+    @keyframes opacityRun {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        75% {
+            opacity: 0.25;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+// 弱提示  屏幕宽: 7.5em
+.cont-weakhint {
+    position: fixed;
+    z-index: @z-weakhint;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    height:0.8em;
+    max-width: 97%;
+    animation: ani-fadein 0.5s linear forwards;
+    span {
+        background: #000000;
+        opacity: 0.6;
+        border-radius: 0.2em;
+        font-size: 0.36em;
+        color: white;
+        text-align: center;
+        display: table;
+        padding: 0.4em;
+        margin: auto;
+        height: 1.2em;
+        line-height: 1.2em;
+        min-width: 2em;
+
+        // 加上下面样式，数字字符串才会自动换行
+        white-space:normal; 
+        word-break:break-all;
+    }
+    @-webkit-keyframes ani-fadein {
+        0% {
+            transform: translate(0, 1em);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+}
+
+.cont-auto {
+    z-index: @z-auto;
+    position:absolute;
+}

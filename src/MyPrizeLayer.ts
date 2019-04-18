@@ -1,0 +1,70 @@
+
+namespace pgame {
+
+export function goPrize(pinfo:as.PrizeInfo) {
+    var resinfo = as.getPrizeResInfo(pinfo)
+    switch(resinfo.prizeType) {
+        case as.PrizeType.sw:
+            uiMgr.open(DlgId.swprize, pinfo)
+            break
+        case as.PrizeType.coupon:
+            break
+        default:
+            carry.weakHint('奖品类型错误：' + resinfo.prizeType)
+            break
+    }
+}
+
+// 
+export class PrizeItem extends eui.Component {
+    private iconImg:eui.Image
+    private nameLb:eui.Label
+    private detailBtn:eui.Button
+    constructor() {
+        super()
+        this.skinName = PrizeItemSkin
+    }
+
+    public init(pInfo:as.PrizeInfo) {
+        var resinfo = as.getPrizeResInfo(pInfo)
+        this.iconImg.texture =  RES.getRes(resinfo.resName) 
+        this.nameLb.text = pInfo.prizeName + ''
+
+        jinx.addTapEvent(this.detailBtn, function() {
+            goPrize(pInfo)
+        }, this)
+    }
+}   //end of class
+
+
+
+export class MyPrizeLayer extends Dlg {
+    private okBtn:eui.Button
+    private scroll:eui.Scroller
+    private scrollGp:eui.Group
+    constructor() {
+        super(MyPrizeLayerSkin)
+        
+        jinx.addTapEvent(this.okBtn, this.ontapClose, this)
+
+        // 
+        var curY = 0
+        this.scroll.scrollPolicyH = eui.ScrollPolicy.OFF //水平方向不给滑动
+        var item:PrizeItem
+        var len = as.myPrizes.length
+        for(var idx = 0; idx < len; idx++) {
+            item = new PrizeItem()
+            item.horizontalCenter = 0
+            item.y = curY
+            item.init(as.myPrizes[idx])
+            this.scrollGp.addChild(item)
+            curY += item.height + 10 
+        }
+
+        // 如果只有一个奖品，垂直居中显示
+        if(len == 1) {
+            item.verticalCenter = 0
+        }
+    }
+}   //end of class
+}   //end of module

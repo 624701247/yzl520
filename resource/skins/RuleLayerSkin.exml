@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RuleLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="648" height="1046" anchorOffsetX="0" anchorOffsetY="0" source="cont_rule_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Button id="closeBtn" label="Button" width="60" height="60" alpha="0.33" horizontalCenter="267" verticalCenter="-477"/>
+	<e:Button id="knowBtn" label="Button" width="278" height="86" alpha="0.33" verticalCenter="438" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+</e:Skin>

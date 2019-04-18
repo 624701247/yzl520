@@ -1,0 +1,41 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Dlg.js",
+		"bin-debug/BaseUiMgr.js",
+		"bin-debug/jinx/Dom.js",
+		"bin-debug/Scene.js",
+		"bin-debug/SoundEff.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/LoginLayer.js",
+		"bin-debug/Main.js",
+		"bin-debug/MyPrizeLayer.js",
+		"bin-debug/PosterLayer.js",
+		"bin-debug/QrCodeLayer.js",
+		"bin-debug/RuleLayer.js",
+		"bin-debug/as-dec.js",
+		"bin-debug/ShareLayer.js",
+		"bin-debug/jinx/video.js",
+		"bin-debug/SwPrizeLayer.js",
+		"bin-debug/UiMgr.js",
+		"bin-debug/WheelLayer.js",
+		"bin-debug/jinx/BgmBtn.js",
+		"bin-debug/jinx/bone.js",
+		"bin-debug/jinx/btnEvMgr.js",
+		"bin-debug/jinx/carry-dec.js",
+		"bin-debug/HomeLayer.js",
+		"bin-debug/jinx/jmain.js",
+		"bin-debug/jinx/jutils.js",
+		"bin-debug/jinx/SlideBanner.js",
+		"bin-debug/jinx/TelCode.js",
+		"bin-debug/GameLayer.js"
+	]
+}

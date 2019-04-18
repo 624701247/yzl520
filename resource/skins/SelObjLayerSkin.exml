@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelObjLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="objGp" height="642.42" y="488" anchorOffsetY="0" left="0" right="0">
+		<e:Button label="Button" x="64" y="65" scaleX="1" scaleY="1"/>
+		<e:Button label="Button" x="64" y="213" scaleX="1" scaleY="1"/>
+		<e:Button label="Button" x="164" y="483.61" scaleX="1" scaleY="1"/>
+		<e:Button label="Button" x="442.79" y="381.48" scaleX="1" scaleY="1"/>
+		<e:Button label="Button" x="275" y="90" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

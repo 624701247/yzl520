@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MyPrizeLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="okBtn" label="Button" y="1006" horizontalCenter="0"/>
+	<e:Scroller id="scroll" width="670" height="738" y="96" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group id="scrollGp" anchorOffsetX="0" width="594"/>
+	</e:Scroller>
+</e:Skin>

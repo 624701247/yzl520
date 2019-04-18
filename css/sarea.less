@@ -1,0 +1,118 @@
+@charset "utf-8";
+@listHei : 4em;  //滚动视图部分高度
+@headHei : 0.8em; //头部（有确认、取消按钮那块）高度
+@contHel : @listHei + @headHei; //总高度
+@itemHei : @listHei / 5; //划分为5块，每块的高度
+
+/*滚动条样式*/
+// 定义了滚动条整体的样式
+.block::-webkit-scrollbar { 
+    width:0em;
+    height:0em;
+}
+
+//
+.cont-sarea {
+	position: fixed;
+	z-index:1000;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(13,13,13,0.2);
+	display: none;
+}
+.cont-sarea-show {
+	display: block;
+}
+.sarea {
+	width:100%;
+	height:@contHel;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+}
+.btn-area {
+	font-size: 0.3em;
+	color: blue;
+    width: 4em;
+    text-align: center;
+}
+.sarea-hd {		
+	position: relative;
+
+	width:100%;
+	height: @headHei;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&:after {
+	    content: '';
+	    position: absolute;
+	    height: 1px;
+	    width: 100%;
+	    display: block;
+	    background-color: #96979b;
+	    z-index: 15;
+	    transform: scaleY(0.33);
+	    bottom: 0;
+	}
+}
+.sarea-bd {
+	position: relative;
+	width:100%;
+	height:@listHei;
+	display: flex;
+
+	background: #d5d8df;
+	-webkit-mask: -webkit-linear-gradient(bottom, #debb47 50%, rgba(36, 142, 36, 0));
+
+	.selmask {
+	    position: absolute;
+	    top: @itemHei * 2;
+	    width: 100%;
+	    height: @itemHei;
+	    margin: 0;
+	    box-sizing: border-box;
+	    z-index: 0;
+	    border-top: 1px solid #abaeb5;
+	    border-bottom: 1px solid #abaeb5;
+    }
+
+	.block  {
+		height:@listHei;
+		width:100%;
+	    overflow: scroll;
+	    -webkit-mask: -webkit-linear-gradient(top, #debb47 50%, rgba(36, 142, 36, 0));
+	}
+	.block-stop {
+		overflow: hidden;	
+	}
+	&:after {
+	    content: '';
+	    position: absolute;
+	    height: 1px;
+	    width: 100%;
+	    display: block;
+	    background-color: #96979b;
+	    z-index: 15;
+	    transform: scaleY(0.33);
+	    bottom: 0;
+	}
+}
+
+ul.sarea-list {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+li.sarea-item {
+    list-style-type: none;
+    font-size: 0.3em; //设置了font-size 为根节点 cont-sarea 的 0.3 ，所以下面的 em 值要 / 0.3
+    text-align: center;
+    height: @itemHei / 0.3;
+    line-height: @itemHei / 0.3;
+
+    overflow: hidden;
+}

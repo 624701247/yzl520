@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HomeLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
+	<e:Image id="bgImg" source="bg_l_jpg" width="750" x="0" height="1206" bottom="0"/>
+	<e:Button id="loveBtn" label="" y="775.12" anchorOffsetX="0" width="275" anchorOffsetY="0" height="119" horizontalCenter="-203.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="find520Btn" label="" y="775.12" anchorOffsetX="0" width="275" anchorOffsetY="0" height="119" horizontalCenter="125.5">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="myPrizeBtn" label="myPrizeBtn" y="1046" anchorOffsetX="0" anchorOffsetY="0" left="112"/>
+	<e:Button id="ruleBtn" label="ruleBtn" y="1046" anchorOffsetX="0" anchorOffsetY="0" right="112"/>
+
+
+
+
+</e:Skin>

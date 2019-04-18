@@ -1,0 +1,7 @@
+/bin-debug
+/bin-release
+/node/node_modules
+/ktest.html
+/test.py
+/index-app.html
+/__pycache__

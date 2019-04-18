@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>520</title>
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="full-screen" content="true" />
+<meta name="screen-orientation" content="portrait" />
+<meta name="x5-fullscreen" content="true" />
+<meta name="360-fullscreen" content="true" />
+<link rel="stylesheet" type="text/css" href="css/sarea.css">
+<link rel="stylesheet" type="text/css" href="css/index.css?1550121738" />
+<!--kone todo :以后不默认加派加统计了-->
+</head>
+<body>
+<div id="inpMask" class="mask cont-hide"></div>
+
+<!--loading page -->
+<div id="loadingScene" class="scene-loading cont-hide">
+    <div class="avt"></div>
+    <div class="bar" id="loadingBar">
+        <div id="loadingPro" class="pro">
+            <div class="pointer"></div>
+        </div>
+        <div class="protxt"><font id="loadingPerc1">0</font>%</div>
+    </div>
+    <span class="desc">loading <font id="loadingPerc2">0</font>%</span>
+    <div class="logo"></div>
+</div> 
+
+<!--egret canvas fixedWidth fixedHeight -->
+<div id="egretCont" class="egret-player" data-entry-class="pgame.Main"
+        data-orientation="portrait"
+        data-scale-mode="fixedHeight" 
+        data-frame-rate="60"
+        data-content-width="750" data-content-height="1206"
+        data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+
+<!---->
+<script>
+    var BIN_VER = 1550121738
+    var carry;
+    !function(carry) {
+        carry.loadImgByAry = function(imgAry, func) {
+            var count = 0
+            var onLoad = function(ev) {
+                count++
+                func(count, imgAry.length)
+            }
+            var onerror = function(ev) {
+                console.error("加载图片失败： " + ev.path[0].currentSrc)
+            }
+            for(var idx = 0; idx < imgAry.length; idx++) {
+                var img = new Image();
+                img.onload = onLoad
+                img.onerror = onerror
+                img.src = "resource/" + imgAry[idx] + '?' + BIN_VER;
+            }
+        }
+
+        var el_eg = document.querySelector('.egret-player')
+        var cw_rem = parseInt(el_eg.getAttribute('data-content-width')) / 100
+        var ch_rem = parseInt(el_eg.getAttribute('data-content-height')) / 100
+        carry.setRem = function(isFixHei) {
+            var ch = document.documentElement.clientHeight || document.body.clientHeight
+            var cw = document.documentElement.clientWidth  || document.body.clientWidth
+            if(isFixHei) {
+                document.documentElement.style.fontSize = (ch / ch_rem) + 'px'; //高适配    
+            }
+            else {
+                document.documentElement.style.fontSize = (cw / cw_rem) + 'px'; //宽适配
+            }
+        }
+        carry.isDemo = (window.location.host == "demo.h5.aiwanpai.com")
+        carry.isLocal = (window.location.hostname == "127.0.0.1" || window.location.hostname == "10.0.0.72")
+
+        var loadSingleScript = function (src, callback) {
+            var s = document.createElement('script');
+            s.async = false, s.src = src;
+            s.addEventListener('load', function () {
+                s.parentNode.removeChild(s);
+                s.removeEventListener('load', arguments.callee, false);
+                callback && callback();
+            }, false);
+            document.body.appendChild(s);
+        }
+        carry.loadScript = function (list, callback) {
+            var loaded = 0;
+            for(var idx = 0; idx < list.length; idx++) {
+                loadSingleScript(list[idx], function () {
+                    loaded++;
+                    if (loaded >= list.length) {
+                        callback && callback();
+                    }
+                })
+            }
+        }
+    }(carry || (carry =  {}))
+        
+    !function() {
+        // init  rem & loading scene
+        carry.setRem()
+        carry.loadImgByAry(['bg_l.jpg', 'avt.png', 'logo.png', 'point.png'], function(count, total) {
+            if(count == total) {
+                var el = document.getElementById('loadingScene')
+                el.className = el.className.replace('cont-hide', '')
+            }
+        })
+
+        //init carry & HDP平台        
+        var cryjs = 'public/carry.min.js?' + BIN_VER
+        var asUrl = 'interface/as-online.js?1550121738'
+        if(carry.isLocal) {
+            cryjs = 'public/carry.js'
+            asUrl = 'interface/asLocal-tmp.js'
+        }
+        carry.loadScript([cryjs], function() {
+            carry.bgm.init()
+            carry.loadScript([  
+                '//res.wx.qq.com/open/js/jweixin-1.1.0.js',
+                '//cdn.aiwanpai.com/s/hdp-4.3.0.min.js',
+                'public/sarea.js',
+                'public/areaData.js',
+                'public/qrcode.min.js',
+                asUrl
+            ], function() {
+                as.init()
+            })
+        })
+
+        // init egret
+        var xhr = new XMLHttpRequest()
+        xhr.open('GET', './manifest.json?' + BIN_VER, true)
+        xhr.addEventListener("load", function () {
+            var manifest = JSON.parse(xhr.response)
+            var list = manifest.initial.concat(manifest.game)
+            carry.loadScript(list, function () {
+                egret.runEgret({ 
+                    renderMode: "canvas", // webgl | canvas  kone todo 有合成图片的必须用canvas模式
+                    audioType: 0, 
+                    calculateCanvasScaleFactor: function (context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }
+                });
+            });
+        });
+        xhr.send(null);
+    }()
+</script>
+</body>
+</html>
