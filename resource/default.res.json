@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,btn_start_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,btn_start_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png",
 			"name": "preload"
 		},
 		{
@@ -219,6 +219,46 @@
 			"name": "needle_png",
 			"type": "image",
 			"url": "assets/needle.png?1548148579"
+		},
+		{
+			"name": "cont_succ2_png",
+			"type": "image",
+			"url": "assets/cont_succ.png"
+		},
+		{
+			"name": "btn_pok2_png",
+			"type": "image",
+			"url": "assets/btn_pok.png"
+		},
+		{
+			"name": "btn_commit2_png",
+			"type": "image",
+			"url": "assets/btn_commit.png"
+		},
+		{
+			"name": "btn_pc2_png",
+			"type": "image",
+			"url": "assets/btn_pc.png"
+		},
+		{
+			"name": "cont_mp2_png",
+			"type": "image",
+			"url": "assets/cont_mp.png"
+		},
+		{
+			"name": "cont_inp2_png",
+			"type": "image",
+			"url": "assets/cont_inp.png"
+		},
+		{
+			"name": "cont_qrcode2_png",
+			"type": "image",
+			"url": "assets/cont_qrcode.png"
+		},
+		{
+			"name": "qr2_png",
+			"type": "image",
+			"url": "qr.png"
 		}
 	]
 }

@@ -1,37 +1,41 @@
 
 namespace pgame {
 export class GameLayer extends Scene {
-    private playBtn:eui.Button
-
-    private boneGp:eui.Group
-
-    private testBtn:eui.Button
-    
+  
     constructor() {
         super(GameLayerSkin)
 
-        jinx.addTapEvent(this.playBtn, function() {
-            console.log('on tap play')
-            // uiMgr.go(SceneId.home, null, UiAni.slide_left)
-            uiMgr.back(UiAni.slide_left)
-        }, this)
+        this.minX = jinx.scwid -this.bgame.width
+        
+        jinx.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onBegin, this)
+        jinx.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMove, this)
+    }
 
-        // 
-        jinx.addTapEvent(this.testBtn, function() {
-            console.log('on tap test')
-            return true
-        }, this, -1)
+    private curX:number
+    private minX
+    private bgame:eui.Group
+
+    private onBegin(ev:egret.TouchEvent) {
+        this.curX = ev.stageX
+    }
+    private onMove(ev:egret.TouchEvent) {
+        let nx = this.bgame.x + (ev.stageX - this.curX)
+        // console.log('nx', nx)
+        if(nx > 0) {
+            nx = 0
+        }
+        else if(nx < this.minX) {
+            nx = this.minX
+        }
+        this.bgame.x = nx
+        this.curX = ev.stageX
+        // this.guideImg.visible = false
     }
 
     public onCome() {
-        carry.addListener('test', function() {
-            jinx.recoverTapEvent(this.testBtn)
-        }, this)
-        super.onCome()
     }
 
     public onBack() {
-        carry.removeListener('test')
     }
 
 }   //end of class

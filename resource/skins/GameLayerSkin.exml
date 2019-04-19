@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="GameLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect left="0" right="0" top="0" bottom="0" anchorOffsetY="0" fillColor="0xf4e1e1"/>
-	<e:Rect left="0" right="0" top="208" bottom="104" fillColor="0xC12E2E" anchorOffsetY="0"/>
-	<e:Group id="boneGp" width="200" height="200" x="220" y="358">
-		<e:Rect anchorOffsetX="0" anchorOffsetY="0" top="0" scaleX="1" scaleY="1" left="0" right="0" bottom="0"/>
+	<e:Group id="bgame" width="2250" height="1206" verticalCenter="0" x="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bg_l_jpg"/>
 	</e:Group>
-	<e:Button id="playBtn" label="home" horizontalCenter="44" top="733" anchorOffsetX="0" width="188" anchorOffsetY="0" height="160"/>
-	<e:Button id="testBtn" label="TEST" x="298" y="96" anchorOffsetX="0" width="171.13" anchorOffsetY="0" height="183.2" rotation="358.75"/>
+
+
+
+
+
 </e:Skin>
