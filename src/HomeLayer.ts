@@ -21,7 +21,14 @@ export class HomeLayer extends Scene {
 
     // 
     private ontapLove(ev:egret.Event) {
-        uiMgr.go(SceneId.selobj)
+        if(as.myShare.posterUrl) { //自己的海报
+            uiMgr.go(SceneId.poster, {
+                isMe:true,
+                oldUrl: as.myShare.posterUrl
+            })
+        } else {
+            uiMgr.go(SceneId.selobj)
+        }
 
     }
     private ontapFind520() {

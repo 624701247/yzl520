@@ -11,6 +11,7 @@ export class BoxLayer extends Scene {
     }
     private onTimeout(ev) {
         carry.weakHint('网络超时！')
+        jinx.recoverTapEvent(this.openBtn)
     }
 
     public onBack() {
@@ -20,10 +21,11 @@ export class BoxLayer extends Scene {
 
     private ontapOpen() {
         as.gameLottery()
-        return
+        return true
     }
 
     private onLottery(ev) {
+        jinx.recoverTapEvent(this.openBtn)
         var mpid = ev.data
         if(mpid == -1) {
             uiMgr.open(DlgId.lose)

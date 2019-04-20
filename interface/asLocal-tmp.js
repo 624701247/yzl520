@@ -27,8 +27,8 @@ var as;
     /* 分享协作 ****************************************************************************/
     as.myShare = {
         share_id:'sid11111',
-        // posterUrl: ''
-        posterUrl: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1795102168,472009350&fm=27&gp=0.jpg'
+        posterUrl: ''
+        // posterUrl: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1795102168,472009350&fm=27&gp=0.jpg'
     }
     as.otherShare = {
         share_id:'sid222222',

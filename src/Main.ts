@@ -147,12 +147,6 @@ export class Main extends eui.UILayer {
                 oldUrl: as.otherShare.posterUrl
             })
         }
-        else if(as.myShare.posterUrl) { //自己的海报
-            uiMgr.go(SceneId.poster, {
-                isMe:true,
-                oldUrl: as.myShare.posterUrl
-            })
-        }   
         else {
             uiMgr.go(SceneId.home)
         }

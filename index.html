@@ -10,7 +10,7 @@
 <meta name="x5-fullscreen" content="true" />
 <meta name="360-fullscreen" content="true" />
 <link rel="stylesheet" type="text/css" href="css/sarea.css">
-<link rel="stylesheet" type="text/css" href="css/index.css?1550121738" />
+<link rel="stylesheet" type="text/css" href="css/index.css?1555751047" />
 <!--kone todo :以后不默认加派加统计了-->
 </head>
 <body>
@@ -40,7 +40,7 @@
 
 <!---->
 <script>
-    var BIN_VER = 1550121738
+    var BIN_VER = 1555751047
     var carry;
     !function(carry) {
         carry.loadImgByAry = function(imgAry, func) {
@@ -111,7 +111,7 @@
 
         //init carry & HDP平台        
         var cryjs = 'public/carry.min.js?' + BIN_VER
-        var asUrl = 'interface/as-520.js?1550121738'
+        var asUrl = 'interface/as-520.js?1555751047'
         if(carry.isLocal) {
             cryjs = 'public/carry.js'
             asUrl = 'interface/asLocal-tmp.js'
@@ -138,7 +138,7 @@
             var list = manifest.initial.concat(manifest.game)
             carry.loadScript(list, function () {
                 egret.runEgret({ 
-                    renderMode: "canvas", // webgl | canvas  kone todo 有合成图片的必须用canvas模式
+                    renderMode: "canvas", // webgl | canvas  有合成图片的必须用canvas模式
                     audioType: 0, 
                     calculateCanvasScaleFactor: function (context) {
                         var backingStore = context.backingStorePixelRatio ||

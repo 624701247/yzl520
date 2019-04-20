@@ -143,7 +143,7 @@
 		{
 			"name": "logo_png",
 			"type": "image",
-			"url": "logo.png?1550121738"
+			"url": "logo.png?1555751047"
 		},
 		{
 			"name": "share_png",
@@ -158,17 +158,17 @@
 		{
 			"name": "bg_l_jpg",
 			"type": "image",
-			"url": "bg_l.jpg?1550121738"
+			"url": "bg_l.jpg?1555751047"
 		},
 		{
 			"name": "point_png",
 			"type": "image",
-			"url": "point.png?1550121738"
+			"url": "point.png?1555751047"
 		},
 		{
 			"name": "avt_png",
 			"type": "image",
-			"url": "avt.png?1550121738"
+			"url": "avt.png?1555751047"
 		},
 		{
 			"name": "cont_succ_png",
@@ -208,7 +208,7 @@
 		{
 			"name": "qr_png",
 			"type": "image",
-			"url": "qr.png?1550121738"
+			"url": "qr.png?1555751047"
 		},
 		{
 			"name": "wheel_png",
@@ -223,47 +223,47 @@
 		{
 			"name": "cont_succ2_png",
 			"type": "image",
-			"url": "assets/cont_succ.png"
+			"url": "assets/cont_succ.png?1543633911"
 		},
 		{
 			"name": "btn_pok2_png",
 			"type": "image",
-			"url": "assets/btn_pok.png"
+			"url": "assets/btn_pok.png?1543633911"
 		},
 		{
 			"name": "btn_commit2_png",
 			"type": "image",
-			"url": "assets/btn_commit.png"
+			"url": "assets/btn_commit.png?1543633911"
 		},
 		{
 			"name": "btn_pc2_png",
 			"type": "image",
-			"url": "assets/btn_pc.png"
+			"url": "assets/btn_pc.png?1543633911"
 		},
 		{
 			"name": "cont_mp2_png",
 			"type": "image",
-			"url": "assets/cont_mp.png"
+			"url": "assets/cont_mp.png?1548148579"
 		},
 		{
 			"name": "cont_inp2_png",
 			"type": "image",
-			"url": "assets/cont_inp.png"
+			"url": "assets/cont_inp.png?1548148579"
 		},
 		{
 			"name": "cont_qrcode2_png",
 			"type": "image",
-			"url": "assets/cont_qrcode.png"
+			"url": "assets/cont_qrcode.png?1543633911"
 		},
 		{
 			"name": "qr2_png",
 			"type": "image",
-			"url": "qr.png"
+			"url": "qr.png?1555751047"
 		},
 		{
 			"name": "guide_png",
 			"type": "image",
-			"url": "assets/guide.png"
+			"url": "assets/guide.png?1555578575"
 		}
 	]
 }

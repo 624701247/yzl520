@@ -10,9 +10,9 @@
 	],
 	"game": [
 		"bin-debug/Dlg.js",
+		"bin-debug/jinx/Dom.js",
 		"bin-debug/Scene.js",
 		"bin-debug/BaseUiMgr.js",
-		"bin-debug/jinx/Dom.js",
 		"bin-debug/SelObjLayer.js",
 		"bin-debug/GameLayer.js",
 		"bin-debug/GameMap.js",

@@ -90,8 +90,9 @@ shutil.copy(filePath, base.mkdir(dirPath + '\css'))
 
 
 # step : 拷贝其他引入的文件 ##########################################################
-# shutil.copy(prjPath + '\public\sarea.js', dirPath + '\public')  #拷贝其他js
-# shutil.copy(prjPath + '\css\sarea.css', dirPath + '\css')   #拷贝其他css
+shutil.copy(prjPath + '//public//sarea.js', dirPath + '//public')  #拷贝其他js
+shutil.copy(prjPath + '//public//areaData.js', dirPath + '//public') 
+shutil.copy(prjPath + '//css//sarea.css', dirPath + '//css')   #拷贝其他css
 shutil.copy(prjPath + '//public//qrcode.min.js', dirPath + '//public') 
 
 
