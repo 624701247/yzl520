@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CouponPrizeLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui">
+	<e:Button id="findBtn" label="findBtn" x="325" y="1024"/>
+</e:Skin>

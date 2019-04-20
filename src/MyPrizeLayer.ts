@@ -5,9 +5,10 @@ export function goPrize(pinfo:as.PrizeInfo) {
     var resinfo = as.getPrizeResInfo(pinfo)
     switch(resinfo.prizeType) {
         case as.PrizeType.sw:
-            // kone todo uiMgr.open(DlgId.swprize, pinfo)
+            uiMgr.open(DlgId.swprize, pinfo)
             break
         case as.PrizeType.coupon:
+            uiMgr.open(DlgId.couponprize, pinfo)
             break
         default:
             carry.weakHint('奖品类型错误：' + resinfo.prizeType)

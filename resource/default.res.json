@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,btn_start_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,btn_start_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png",
 			"name": "preload"
 		},
 		{
@@ -259,6 +259,11 @@
 			"name": "qr2_png",
 			"type": "image",
 			"url": "qr.png"
+		},
+		{
+			"name": "guide_png",
+			"type": "image",
+			"url": "assets/guide.png"
 		}
 	]
 }

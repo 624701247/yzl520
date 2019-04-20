@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="GameLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Group id="bgame" width="2250" height="1206" verticalCenter="0" x="0">
-		<e:Image left="0" right="0" top="0" bottom="0" source="bg_l_jpg"/>
-	</e:Group>
+<e:Skin class="GameLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
+	<pgame:GameMap id="gameMap" width="2250" height="1206" x="0" y="0" skinName="GameMapSkin"/>
+	<e:Image id="guideImg" x="164" y="676" source="guide_png"/>
+
 
 
 

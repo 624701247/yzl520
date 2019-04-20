@@ -50,9 +50,17 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
+declare class BoxLayerSkin extends eui.Skin{
+}
+declare class CouponPrizeLayerSkin extends eui.Skin{
+}
 declare class GameLayerSkin extends eui.Skin{
 }
+declare class GameMapSkin extends eui.Skin{
+}
 declare class HomeLayerSkin extends eui.Skin{
+}
+declare class LoseLayerSkin extends eui.Skin{
 }
 declare class MyPrizeLayerSkin extends eui.Skin{
 }
@@ -60,9 +68,13 @@ declare class PosterLayerSkin extends eui.Skin{
 }
 declare class PrizeItemSkin extends eui.Skin{
 }
+declare class ProdLayerSkin extends eui.Skin{
+}
 declare class RuleLayerSkin extends eui.Skin{
 }
 declare class SelObjLayerSkin extends eui.Skin{
+}
+declare class SwPrizeLayerSkin extends eui.Skin{
 }
 declare class WheelLayerSkin extends eui.Skin{
 }

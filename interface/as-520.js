@@ -7,10 +7,9 @@ var carry;
 
 var as;
 !function(as) {
-    // kone todo 填写上正确的
-    var appId = '111111111111111111';
-    var addKey = '22222222222222222';
-    var appShortCode = 'aaaa';
+    var appId = '5621d90d5a9a11e9b603702084e1f368';
+    var addKey = '4cdce191f7b64f32a48fe018a728ab2c';
+    var appShortCode = 'cIe1';
     // 
     var asReady = false
     var wxInfoReady = false
@@ -133,46 +132,46 @@ var as;
     };
 
     /*自定义HDP接口*/
-    var toolsRequest = function() {
-        var bizhttp;
-        var addr = '/gialengameehvi/'
-        if(carry.isLocal || carry.isDemo) {
-            bizhttp = "http://demo.biz.aiwanpai.com" + addr;
-        }
-        else {
-            bizhttp = "//biz.aiwanpai.com" + addr;
-        }
+    // var toolsRequest = function() {
+    //     var bizhttp;
+    //     var addr = '/gialengameehvi/'
+    //     if(carry.isLocal || carry.isDemo) {
+    //         bizhttp = "http://demo.biz.aiwanpai.com" + addr;
+    //     }
+    //     else {
+    //         bizhttp = "//biz.aiwanpai.com" + addr;
+    //     }
 
-        // 
-        var BizInterface = Backbone.Model.extend({});
-        var bizInterface = new BizInterface();
-        var query = HDP.Query(bizInterface);
-        var encoder = HDP.getEncoder();
+    //     // 
+    //     var BizInterface = Backbone.Model.extend({});
+    //     var bizInterface = new BizInterface();
+    //     var query = HDP.Query(bizInterface);
+    //     var encoder = HDP.getEncoder();
 
-        return function(name, param, func) {
-            param = param || {}
-            query.findQuery(bizhttp + name + "?wxu_session=" + getCookieNoDecodeURIComponent("hdp_wxu_s_" + appId), {
-                requestbody: true,
-                data: encoder.encode(JSON.stringify(param)),
-                success: function(res) {
-                    if(res) {
-                        func(res)
-                    }       
-                    else {
-                        alert('请求' + name + '成功。但返回数据为null')
-                        func({})
-                    }
-                },
-                error: function(res) {
-                    var msg = res && res.msg
-                    msg = msg || (res && res.code)
-                    carry.weakHint('请求' + name + '失败：' + msg)
-                    // alert('请求' + name + '错误：' + JSON.stringify(res))
-                    func({})
-                }
-            });
-        }
-    }();
+    //     return function(name, param, func) {
+    //         param = param || {}
+    //         query.findQuery(bizhttp + name + "?wxu_session=" + getCookieNoDecodeURIComponent("hdp_wxu_s_" + appId), {
+    //             requestbody: true,
+    //             data: encoder.encode(JSON.stringify(param)),
+    //             success: function(res) {
+    //                 if(res) {
+    //                     func(res)
+    //                 }       
+    //                 else {
+    //                     alert('请求' + name + '成功。但返回数据为null')
+    //                     func({})
+    //                 }
+    //             },
+    //             error: function(res) {
+    //                 var msg = res && res.msg
+    //                 msg = msg || (res && res.code)
+    //                 carry.weakHint('请求' + name + '失败：' + msg)
+    //                 // alert('请求' + name + '错误：' + JSON.stringify(res))
+    //                 func({})
+    //             }
+    //         });
+    //     }
+    // }();
     //
     var saveTable = function(tableName, value, callback) {
         var table = HDP.getTable(tableName);

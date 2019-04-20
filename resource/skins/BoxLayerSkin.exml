@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BoxLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="openBtn" label="openBtn" x="300" y="678"/>
+</e:Skin>

@@ -2,6 +2,8 @@
 //  尽量不要手动修改此文件
 namespace pgame {
 export const enum SceneId { 
+    box,
+    prod,
     poster,
     selobj,
     wheel,
@@ -9,6 +11,9 @@ export const enum SceneId {
     game
 } 
 export const enum DlgId {
+    couponprize,
+    lose,
+    swprize,
     myprize, //我的奖品
     share, //分享
     rule //规则
@@ -21,6 +26,12 @@ class UiMgr extends BaseUiMgr {
     public createScene(sceneId:SceneId, parm):Scene {
         let ui;
         switch(sceneId) {
+            case SceneId.box:
+                ui = new BoxLayer()
+                break
+            case SceneId.prod:
+                ui = new ProdLayer(parm)
+                break
             case SceneId.poster:
                 ui = new PosterLayer(parm)
                 break
@@ -47,6 +58,15 @@ class UiMgr extends BaseUiMgr {
         parm = parm || {}
         let ui:Dlg;
         switch(dlgId) {
+            case DlgId.couponprize:
+                ui = new CouponPrizeLayer(parm)
+                break
+            case DlgId.lose:
+                ui = new LoseLayer()
+                break
+            case DlgId.swprize:
+                ui = new SwPrizeLayer(parm)
+                break
             case DlgId.rule:
                 ui = new RuleLayer()
                 break

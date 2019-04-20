@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ProdLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="findBtn" label="findBtn" x="112.24" y="1033.03"/>
+	<e:Button id="loveBtn" label="shareBtn" x="570.72" y="1008.03"/>
+</e:Skin>

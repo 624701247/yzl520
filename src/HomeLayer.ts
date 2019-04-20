@@ -33,7 +33,7 @@ export class HomeLayer extends Scene {
     }
     // 
     private ontapRule(ev:egret.Event) {
-        // uiMgr.open(DlgId.rule)
+        uiMgr.open(DlgId.rule)
     }
 }
 

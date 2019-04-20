@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoseLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="findBtn" label="findBtn" x="325" y="1024"/>
+</e:Skin>

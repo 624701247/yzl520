@@ -141,7 +141,21 @@ export class Main extends eui.UILayer {
         }
 
         // 
-        uiMgr.go(SceneId.home)
+        if(as.otherShare.posterUrl && as.myShare.shareId != as.otherShare.shareId) { //别人海报
+            uiMgr.go(SceneId.poster, {
+                isMe:false,
+                oldUrl: as.otherShare.posterUrl
+            })
+        }
+        else if(as.myShare.posterUrl) { //自己的海报
+            uiMgr.go(SceneId.poster, {
+                isMe:true,
+                oldUrl: as.myShare.posterUrl
+            })
+        }   
+        else {
+            uiMgr.go(SceneId.home)
+        }
         this.loadingUi.close()        
         jinx.resetRem()
     }

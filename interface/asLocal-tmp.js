@@ -32,8 +32,8 @@ var as;
     }
     as.otherShare = {
         share_id:'sid222222',
-        // posterUrl: ''
-        posterUrl: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1795102168,472009350&fm=27&gp=0.jpg'
+        posterUrl: ''
+        // posterUrl: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1795102168,472009350&fm=27&gp=0.jpg'
     }
     /* end of */
 
