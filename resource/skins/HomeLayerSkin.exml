@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="HomeLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
-	<e:Image id="bgImg" source="bg_l_jpg" width="750" x="0" height="1206" bottom="0"/>
-	<e:Button id="loveBtn" label="" y="775.12" anchorOffsetX="0" width="275" anchorOffsetY="0" height="119" horizontalCenter="-203.5">
+<e:Skin class="HomeLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
+	<e:Group id="bgImg" width="750" height="1336" x="0" y="0">
+		<e:Image width="750" x="0" height="1336" bottom="0" source="bg_h_jpg" y="0" scaleX="1" scaleY="1"/>
+		<e:Image id="titleImg" source="title_hone_png" horizontalCenter="0" top="62" x="0" y="62" scaleX="1" scaleY="1"/>
+		<e:Image horizontalCenter="0" source="people_png" top="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image horizontalCenter="0" x="0" source="gy_png" bottom="0" y="904" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+	<e:Button id="loveBtn" label="" anchorOffsetX="0" anchorOffsetY="0" y="867" left="132">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start_png"/>
+			<e:Image width="100%" height="100%" source="btn_love_png" source.down="btn_love_png"/>
 			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
 			</e:Skin>
 		</e:skinName>
+
 	</e:Button>
-	<e:Button id="find520Btn" label="" y="775.12" anchorOffsetX="0" width="275" anchorOffsetY="0" height="119" horizontalCenter="125.5">
+	<e:Button id="find520Btn" label="" anchorOffsetX="0" anchorOffsetY="0" y="872" right="132">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start_png"/>
+			<e:Image width="100%" height="100%" source="btn_find_png" source.down="btn_find_png"/>
 			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
 		</e:Skin>
 		</e:skinName>
 	</e:Button>
-	<e:Button id="myPrizeBtn" label="myPrizeBtn" y="1046" anchorOffsetX="0" anchorOffsetY="0" left="112"/>
-	<e:Button id="ruleBtn" label="ruleBtn" y="1046" anchorOffsetX="0" anchorOffsetY="0" right="112"/>
+
+	<e:Button id="myPrizeBtn" label="" anchorOffsetX="0" anchorOffsetY="0" bottom="100" right="144" width="157">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_mp_png" source.down="btn_mp_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="ruleBtn" label="" anchorOffsetX="0" anchorOffsetY="0" bottom="100" left="144">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_rule_png" source.down="btn_rule_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="handImg" x="590" y="998" source="hand_png" visible="false"/>
 
 
 

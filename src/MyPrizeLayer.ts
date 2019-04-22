@@ -43,10 +43,17 @@ export class MyPrizeLayer extends Dlg {
     private okBtn:eui.Button
     private scroll:eui.Scroller
     private scrollGp:eui.Group
+
+    private shopBtn:eui.Button
+
+    private ontapShop() {
+        uiMgr.open(DlgId.shopdesc)
+    }
     constructor() {
         super(MyPrizeLayerSkin)
         
         jinx.addTapEvent(this.okBtn, this.ontapClose, this)
+        jinx.addTapEvent(this.shopBtn, this.ontapShop, this)
 
         // 
         var curY = 0

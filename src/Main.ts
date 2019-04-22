@@ -112,28 +112,6 @@ export class Main extends eui.UILayer {
                 return
             }
             
-            //控制台打开
-            // pgame.uiMgr.open(3) 
-            // pgame.uiMgr.go(0)
-
-            // 
-            // uiMgr.open(DlgId.qrcode)
-            // uiMgr.open(DlgId.rule, null, UiAni.pop)
-            // uiMgr.open(DlgId.login)
-            // uiMgr.open(DlgId.share)
-            // uiMgr.open(DlgId.myprize)
-            // uiMgr.open(DlgId.swprize)
-
-            // 
-            // uiMgr.go(SceneId.wheel)
-
-            //情况1：自己的，已经生成过海报
-            // goPoster({isMe:true, oldUrl:'http://172.18.11.118:1131/resource/assets/cont_qrcode.png'}) 
-            //情况2：自己的，首次生成海报
-            // goPoster({isMe:true, oldUrl:''}) 
-            //情况3：打开好友分享的海报
-            // goPoster({isMe:false, oldUrl:'http://172.18.11.118:1131/resource/assets/cont_qrcode.png'}) 
-            
             // 
             this.loadingUi.close()
             jinx.resetRem()

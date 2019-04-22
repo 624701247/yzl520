@@ -2,8 +2,8 @@ class LoadingUI extends egret.Sprite {
     private el_page:HTMLElement  
     private el_proTxt1:HTMLElement  //百分比
     private el_proTxt2:HTMLElement
-    private el_proBar:HTMLElement  //进度条
-    private fullProWid:number   //进度条走满宽度
+    // private el_proBar:HTMLElement  //进度条
+    // private fullProWid:number   //进度条走满宽度
 
     // private otherCount:number = 0   //egret机制外加载资源计数
     // private otherTotalCount:number  //egret机制外加载资源总数
@@ -18,10 +18,10 @@ class LoadingUI extends egret.Sprite {
         this.loadEgretRes()
         
         this.el_page = document.getElementById('loadingScene')  
-        this.el_proBar = document.getElementById('loadingPro')
+        // this.el_proBar = document.getElementById('loadingPro')
         this.el_proTxt1 = document.getElementById('loadingPerc1')  
         this.el_proTxt2 = document.getElementById('loadingPerc2')  
-        this.fullProWid = document.getElementById('loadingBar').offsetWidth
+        // this.fullProWid = document.getElementById('loadingBar').offsetWidth
     }
 
     //初始化Resource资源加载库
@@ -110,7 +110,7 @@ class LoadingUI extends egret.Sprite {
         }
         per = Math.floor(per * 100) // n%
         
-        this.el_proBar.style.width = per / 100 * this.fullProWid + 'px'   
+        // this.el_proBar.style.width = per / 100 * this.fullProWid + 'px'   
         
         if(this.el_proTxt1) {
             this.el_proTxt1.innerHTML = per + ''; //舍弃小数部分

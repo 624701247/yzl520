@@ -47,6 +47,7 @@
 		"resource/skins/ProdLayerSkin.exml",
 		"resource/skins/RuleLayerSkin.exml",
 		"resource/skins/SelObjLayerSkin.exml",
+		"resource/skins/ShopDescLayerSkin.exml",
 		"resource/skins/SwPrizeLayerSkin.exml",
 		"resource/skins/WheelLayerSkin.exml"
 	],

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,btn_start_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg",
 			"name": "preload"
 		},
 		{
@@ -151,11 +151,6 @@
 			"url": "assets/share.png?1538355220"
 		},
 		{
-			"name": "btn_start_png",
-			"type": "image",
-			"url": "assets/btn_start.png?1543633911"
-		},
-		{
 			"name": "bg_l_jpg",
 			"type": "image",
 			"url": "bg_l.jpg?1555751047"
@@ -264,6 +259,101 @@
 			"name": "guide_png",
 			"type": "image",
 			"url": "assets/guide.png?1555578575"
+		},
+		{
+			"name": "by_png",
+			"type": "image",
+			"url": "by.png"
+		},
+		{
+			"name": "yh_png",
+			"type": "image",
+			"url": "yh.png"
+		},
+		{
+			"name": "btn_love_png",
+			"type": "image",
+			"url": "assets/btn_love.png"
+		},
+		{
+			"name": "btn_find_png",
+			"type": "image",
+			"url": "assets/btn_find.png"
+		},
+		{
+			"name": "btn_mp_png",
+			"type": "image",
+			"url": "assets/btn_mp.png"
+		},
+		{
+			"name": "btn_rule_png",
+			"type": "image",
+			"url": "assets/btn_rule.png"
+		},
+		{
+			"name": "hand_png",
+			"type": "image",
+			"url": "assets/hand.png"
+		},
+		{
+			"name": "title_hone_png",
+			"type": "image",
+			"url": "assets/title_hone.png"
+		},
+		{
+			"name": "bg_h_jpg",
+			"type": "image",
+			"url": "assets/bg_h.jpg"
+		},
+		{
+			"name": "people_png",
+			"type": "image",
+			"url": "assets/people.png"
+		},
+		{
+			"name": "gy_png",
+			"type": "image",
+			"url": "assets/gy.png"
+		},
+		{
+			"name": "cont_shop_png",
+			"type": "image",
+			"url": "assets/cont_shop.png"
+		},
+		{
+			"name": "btn_ar_png",
+			"type": "image",
+			"url": "assets/btn_ar.png"
+		},
+		{
+			"name": "btn_zj_png",
+			"type": "image",
+			"url": "assets/btn_zj.png"
+		},
+		{
+			"name": "btn_hz_png",
+			"type": "image",
+			"url": "assets/btn_hz.png"
+		},
+		{
+			"name": "btn_py_png",
+			"type": "image",
+			"url": "assets/btn_py.png"
+		},
+		{
+			"name": "btn_zb_png",
+			"type": "image",
+			"url": "assets/btn_zb.png"
+		},
+		{
+			"name": "cont_so_png",
+			"type": "image",
+			"url": "assets/cont_so.png"
+		},
+		{
+			"name": "bg_so_jpg",
+			"type": "image",
+			"url": "assets/bg_so.jpg"
 		}
 	]
 }

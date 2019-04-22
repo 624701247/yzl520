@@ -10,7 +10,7 @@ export class Scene  extends eui.Component {
     }
 
     // 适配ui
-    protected bgImg:eui.Image
+    protected bgImg:any
     public fitUi() {
         // console.log('scene fit ui', jinx.rr)
         if(this.bgImg) {

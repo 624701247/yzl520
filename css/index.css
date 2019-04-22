@@ -66,75 +66,59 @@ body {
   background-size: cover;
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
   flex-direction:  column;
-}
-.scene-loading .avt {
-  margin-top: 2.8rem;
-  background: url('../resource/avt.png?1555751047') no-repeat;
-  background-size: 100% 100%;
-  width: 1.54rem;
-  height: 1.54rem;
-}
-.scene-loading .bar {
-  position: relative;
-  margin-top: 0.6rem;
-  width: 3rem;
-  height: 0.26rem;
-  line-height: 0.26rem;
-  background: rgba(13, 13, 13, 0.4);
-  border-radius: 0.13rem;
-}
-.scene-loading .pro {
-  position: relative;
-  width: 0;
-  height: inherit;
-  background: #f57d03;
-  border-radius: inherit;
-}
-.scene-loading .protxt {
-  height: inherit;
-  line-height: inherit;
-  color: #2c3baf;
-  font-size: 0.26rem;
-  position: absolute;
-  margin: auto;
-  bottom: 0;
-  top: 0;
-  right: -0.9rem;
-  text-align: left;
-}
-.scene-loading .protxt font {
-  font-size: 130%;
-}
-.scene-loading .pointer {
-  background: url('../resource/point.png?1555751047') no-repeat;
-  background-size: 100% 100%;
-  width: 0.32rem;
-  height: 0.51rem;
-  position: absolute;
-  right:-0.16rem;
-  bottom: 0.22rem;
+  text-align: center;
 }
 .scene-loading .desc {
   margin-top: 0.4rem;
-  font-size: 0.3rem;
-  color: #c52020;
+  font-size: 0.4rem;
   text-align: center;
+  color: #ffffff;
 }
 .scene-loading .desc font {
-  font-size: 120%;
+  font-size: 160%;
 }
-.scene-loading .logo {
+.scene-loading .yh {
+  width: 4.42rem;
+  height: 4.42rem;
+  background: url('../resource/yh.png?1555751047') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: 20%;
+}
+.scene-loading .by {
+  width: 4.42rem;
+  height: 4.42rem;
+  background: url('../resource/by.png?1555751047') no-repeat;
+  background-size: 100% 100%;
   position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 1rem;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  -webkit-animation: ani-run 1.3s linear infinite;
+          animation: ani-run 1.3s linear infinite;
+}
+@-webkit-keyframes ani-run {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.scene-loading .logo {
+  margin: auto;
   background: url('../resource/logo.png?1555751047') no-repeat;
   background-size: 100% 100%;
-  width: 4.13rem;
-  height: 0.41rem;
+  width: 3.01rem;
+  height: 0.42rem;
+  margin-top: 1.2rem;
+}
+.scene-loading .txt {
+  color: #ffffff;
+  font-size: 0.22rem;
 }
 
 /*@z-egret > @z-loading :解决微信端loading页面可拖动回弹的恶心问题*/
