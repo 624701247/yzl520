@@ -20,7 +20,7 @@ export class PosterLayer extends Scene {
     private dkImg:eui.Image
     private headGp:eui.Group
     private headImg:eui.Image
-    private qrImg:eui.Image
+    // private qrImg:eui.Image
     private nameLb:eui.Label
     private oldPosterImg:eui.Image
 
@@ -84,7 +84,8 @@ export class PosterLayer extends Scene {
             }.bind(this), 200);
 
             this.oldPosterImg.visible = false
-            jinx.dataurl2texture(as.getMyQrDataurl(), this.oncreateQrEnd, this)
+            // jinx.dataurl2texture(as.getMyQrDataurl(), this.oncreateQrEnd, this)
+            this.isQrReady = true
             jinx.url2Texture_cvs(as.wxUserInfo.avatar, this.oncreateHeadEnd, this)
         }
     }
@@ -112,7 +113,7 @@ export class PosterLayer extends Scene {
 
     private oncreateQrEnd(texture) {
         console.log('二维码渲染成功')
-        this.qrImg.texture = texture
+        // this.qrImg.texture = texture
         this.isQrReady = true
         this.showAni()
     }

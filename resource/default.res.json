@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg,btn_bbfs_png,btn_wyxb_png,btn_ggwz_png,btn_zdywz_png,poster_png",
 			"name": "preload"
 		},
 		{
@@ -354,6 +354,31 @@
 			"name": "bg_so_jpg",
 			"type": "image",
 			"url": "assets/bg_so.jpg"
+		},
+		{
+			"name": "btn_bbfs_png",
+			"type": "image",
+			"url": "assets/btn_bbfs.png"
+		},
+		{
+			"name": "btn_wyxb_png",
+			"type": "image",
+			"url": "assets/btn_wyxb.png"
+		},
+		{
+			"name": "btn_ggwz_png",
+			"type": "image",
+			"url": "assets/btn_ggwz.png"
+		},
+		{
+			"name": "btn_zdywz_png",
+			"type": "image",
+			"url": "assets/btn_zdywz.png"
+		},
+		{
+			"name": "poster_png",
+			"type": "image",
+			"url": "assets/poster.png"
 		}
 	]
 }
