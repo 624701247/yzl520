@@ -4,6 +4,8 @@ namespace pgame {
 interface PosterParm {
     isMe:boolean;  //是自己的海报，还是查看好友分享的海报
     oldUrl:string; //自己或好友分享的海报链接
+    obj: string; //想对谁说的话
+    txt: string; //说话内容
 }
 export function goPoster(parm:PosterParm) {
     uiMgr.go(SceneId.poster, parm)
@@ -47,10 +49,39 @@ export class PosterLayer extends Scene {
     // 
     private isMe:boolean
     private oldUrl:string
+
+
+    private txtLb:eui.Label
+    private titleLb:eui.Label
+
+    private ghwzBtn:eui.Button
+    private zdyBtn:eui.Button
+
+    private ontapGHWZ() {
+        uiMgr.open(DlgId.ghwz)
+    }
+    private ontapZDY() {
+        uiMgr.open(DlgId.zdy)
+    }
+
     constructor(parm:PosterParm) {
         super(PosterLayerSkin)
         this.isMe = parm.isMe
         this.oldUrl = parm.oldUrl
+        if(parm.obj) {
+            // var size = this.titleLb.size
+            this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
+                { text: "想对", style:{'bold': false} },
+                { text: parm.obj, style:{'bold': true} },
+                { text:"说的话", style:{'bold': false} }
+            ];
+
+            jinx.addTapEvent(this.ghwzBtn, this.ontapGHWZ, this)
+            jinx.addTapEvent(this.zdyBtn, this.ontapZDY, this)
+        }
+        if(parm.txt) {
+            this.txtLb.text = parm.txt
+        }
 
 
         this.myGp.visible = this.isMe

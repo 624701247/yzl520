@@ -75,6 +75,11 @@ var as;
     /* end of */ 
 
 
+    as.getCoupon = function() {
+        window.location.href = 'http://www.baidu.com'
+    }
+
+
     /* 上传照片 ****************************************************************************/
     as.uploadBase64 = 'uploadBase64',
     as.uploadBase64 = function(base64) {

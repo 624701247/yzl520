@@ -141,28 +141,3 @@ export class Main extends eui.UILayer {
     }
 }
 }
-
-/*  kone readme
-// 
-其他设备新clone项目要初始化一些东西
-1、 cd node   npm install
-2、 如果有，引进相应的第三方库
-
-// 
-default.res.json 被我去掉了一些基本没用的eui资源加载，如下：
-    checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,
-    radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,
-    selected_png,
-    button_down_png,button_up_png,
-    border_png,header_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,thumb_pb_png,track_pb_png,
-    track_sb_png,
-    description_json,
-    roundthumb_png //滚动视图滚动条用到的
-
-    {
-        "url": "config/description.json?3322",
-        "type": "json",
-        "name": "description_json"
-    },
-
-*/ 

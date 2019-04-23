@@ -116,4 +116,7 @@ declare namespace as {
     }
     export function uploadBase64(dataurl:string):void;// 提交海报base64字符串
     /* end of */
+
+
+    export function getCoupon():void;
 }

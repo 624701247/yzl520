@@ -1,50 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SwPrizeLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="contImg" width="744" height="1084" horizontalCenter="0" verticalCenter="-24" source="cont_mp_png"/>
+<e:Skin class="SwPrizeLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+
 	<e:Group id="contGp" left="0" right="0" top="0" bottom="0">
-		<e:Image id="prizeImg" y="264" source="avt_png" horizontalCenter="0"/>
-		<e:Group id="formGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1">
-			<e:Button id="submitBtn" label="" horizontalCenter="0" bottom="0">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" source="btn_commit_png" source.down="btn_commit_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-				</e:Skin>
-			</e:skinName>
-			</e:Button>
-			<e:Group id="inpGp" width="626.56" height="464" horizontalCenter="5.5" verticalCenter="161" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image left="0" right="0" top="0" bottom="0" source="cont_inp_png"/>
-			<e:EditableText id="nameInp" width="580" height="70" y="105.96" verticalAlign="middle" anchorOffsetX="0" prompt="请输入姓名" fontFamily="Microsoft YaHei" size="30" left="16" textColor="0x000000"/>
-			<e:EditableText id="telInp" width="580" height="70" y="201.67" verticalAlign="middle" anchorOffsetX="0" prompt="请输入手机号码" fontFamily="Microsoft YaHei" size="30" left="16" textColor="0x000000"/>
-			<e:EditableText id="shenInp" width="67.33" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="省" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" left="16"/>
-			<e:EditableText id="shiInp" width="86.66" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="市" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" x="146"/>
-			<e:EditableText id="quInp" width="194.66" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="区" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" x="315"/>
-			<e:Button id="areaBtn" label="" y="296.1" anchorOffsetX="0" anchorOffsetY="0" height="68" left="0" right="-0.44000000000005457" alpha="0"/>
-			<e:EditableText id="addrInp" width="552" height="141.33" y="401.28" verticalAlign="top" anchorOffsetX="0" prompt="请输入详细地址（包含省市区及详细地址）" fontFamily="Microsoft YaHei" size="29" anchorOffsetY="0" textAlign="left" left="16" textColor="0x000000" multiline="true"/>
+
+		<e:Group id="formGp" x="0" y="0" scaleX="1" scaleY="1" width="750" height="1336" visible="false">
+			<e:Image source="cont_lr_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="prizeImg" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
+
+			<e:Group id="inpGp" width="448.56" height="292.24" verticalCenter="111" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5">
+
+			<e:EditableText id="nameInp" height="47" verticalAlign="middle" anchorOffsetX="0" prompt="请输入姓名" fontFamily="Microsoft YaHei" size="26" left="0" textColor="0x000000" promptColor="0xc6c6c6" top="19" anchorOffsetY="0" right="-0.4399999999999977"/>
+			<e:EditableText id="telInp" height="47" y="91.05" verticalAlign="middle" anchorOffsetX="0" prompt="请输入手机" fontFamily="Microsoft YaHei" size="26" left="0" textColor="0x000000" promptColor="0xc6c6c6" right="-0.4399999999999977"/>
+			<e:EditableText id="shenInp" width="67.33" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="省" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" left="16" visible="false" locked="true"/>
+			<e:EditableText id="shiInp" width="86.66" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="市" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" x="146" visible="false" locked="true"/>
+			<e:EditableText id="quInp" width="194.66" height="70" y="296" verticalAlign="middle" anchorOffsetX="0" prompt="区" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" text="" x="315" visible="false" locked="true"/>
+			<e:Button id="areaBtn" label="" y="296.1" anchorOffsetX="0" anchorOffsetY="0" height="68" left="0" right="-0.44000000000005457" alpha="0" visible="false" locked="true"/>
+			<e:EditableText id="addrInp" height="114.06" y="178.6" verticalAlign="top" anchorOffsetX="0" prompt="请输入详细地址（包含省市区及详细地址）" fontFamily="Microsoft YaHei" size="26" anchorOffsetY="0" textAlign="left" left="0" textColor="0x000000" multiline="true" promptColor="0xc6c6c6" right="-0.4399999999999977"/>
 			</e:Group>
+			<e:Button id="submitBtn" label="" bottom="271" anchorOffsetX="0" width="295.45" anchorOffsetY="0" height="74.24" horizontalCenter="0" alpha="0.33"/>
 		</e:Group>
-		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1" visible="false">
-			<e:Group width="584" height="390" horizontalCenter="0" verticalCenter="216">
-			<e:Image left="0" right="0" top="0" bottom="0" source="cont_succ_png"/>
-			<e:Label id="nameLb" text="姓名：jinx" y="141" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="50"/>
-			<e:Label id="telLb" text="手机：13123132" y="192" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="50"/>
-			<e:Label id="addrLb" text="地址：撒旦发生大师傅·" x="50" y="243" anchorOffsetY="0" height="123" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" anchorOffsetX="0" width="480" lineSpacing="12"/>
+		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image horizontalCenter="0" verticalCenter="0" x="86" y="211.00000000000003" scaleX="1" scaleY="1" source="cont_info_png"/>
+			<e:Image id="prizeImg2" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
+			<e:Group width="511.28" height="312.06" horizontalCenter="11.5" verticalCenter="125" anchorOffsetY="0" anchorOffsetX="0">
+
+			<e:Label id="nameLb" text="jinx" y="25.85" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="13.64"/>
+			<e:Label id="telLb" text="13123132" y="76.85" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="13.64"/>
+			<e:Label id="addrLb" text="撒旦发生大师傅·" x="13.64" y="127.85" anchorOffsetY="0" height="123" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" anchorOffsetX="0" width="480" lineSpacing="12"/>
 			</e:Group>
-			<e:Button id="okBtn" label="" bottom="0" right="22">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" source="btn_pok_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-				</e:Skin>
-			</e:skinName>
+			<e:Button id="okBtn" label="" width="226" height="90" alpha="0.33" verticalCenter="346" horizontalCenter="124">
+
 			</e:Button>
-			<e:Button id="changeBtn" label="" left="22" bottom="0">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" source="btn_pc_png" source.down="btn_pc_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-				</e:Skin>
-			</e:skinName>
+			<e:Button id="changeBtn" label="" anchorOffsetX="0" width="226" anchorOffsetY="0" height="90" alpha="0.33" horizontalCenter="-124" verticalCenter="346">
+
 			</e:Button>
 		</e:Group>
 	</e:Group>

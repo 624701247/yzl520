@@ -1,5 +1,8 @@
 
 namespace pgame {
+
+const objArr = ['长辈', '朋友', '孩子', '自己', '爱人']
+
 export class SelObjLayer extends Scene {
     private objGp:eui.Group
 
@@ -19,7 +22,9 @@ export class SelObjLayer extends Scene {
 
         goPoster({
             isMe: true,
-            oldUrl: ''
+            oldUrl: '',
+            obj: objArr[id],
+            txt: '11111111111111\n2222222222222\n333333333333\n4444444444444444\n55555' //ktest
         })
     }
 }   //end of class

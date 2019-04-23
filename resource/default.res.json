@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_inp_png,cont_qrcode_png,qr_png,wheel_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg,btn_bbfs_png,btn_wyxb_png,btn_ggwz_png,btn_zdywz_png,poster_png",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_qrcode_png,qr_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg,btn_bbfs_png,btn_wyxb_png,btn_ggwz_png,btn_zdywz_png,poster_png,cont_lose_png,txt_gxn_png,btn_get_png,prize_mm20_png,btn_jxxz_png,huang_png,prize_xx88_png,prize_jj200_png,prize_jj500_png,prize_jj1000_png,prize_xh1_png,prize_mm1_png,prize_cj1_png,prize_hf1_png,cont_lr_png,cont_info_png,bg_g_jpg,star_png",
 			"name": "preload"
 		},
 		{
@@ -191,11 +191,6 @@
 			"url": "assets/btn_pok.png?1543633911"
 		},
 		{
-			"name": "cont_inp_png",
-			"type": "image",
-			"url": "assets/cont_inp.png?1548148579"
-		},
-		{
 			"name": "cont_qrcode_png",
 			"type": "image",
 			"url": "assets/cont_qrcode.png?1543633911"
@@ -204,11 +199,6 @@
 			"name": "qr_png",
 			"type": "image",
 			"url": "qr.png?1555751047"
-		},
-		{
-			"name": "wheel_png",
-			"type": "image",
-			"url": "assets/wheel.png?1548148579"
 		},
 		{
 			"name": "needle_png",
@@ -379,6 +369,96 @@
 			"name": "poster_png",
 			"type": "image",
 			"url": "assets/poster.png"
+		},
+		{
+			"name": "cont_lose_png",
+			"type": "image",
+			"url": "assets/cont_lose.png"
+		},
+		{
+			"name": "txt_gxn_png",
+			"type": "image",
+			"url": "assets/txt_gxn.png"
+		},
+		{
+			"name": "btn_get_png",
+			"type": "image",
+			"url": "assets/btn_get.png"
+		},
+		{
+			"name": "prize_mm20_png",
+			"type": "image",
+			"url": "assets/prizes/prize_mm20.png"
+		},
+		{
+			"name": "btn_jxxz_png",
+			"type": "image",
+			"url": "assets/btn_jxxz.png"
+		},
+		{
+			"name": "huang_png",
+			"type": "image",
+			"url": "assets/huang.png"
+		},
+		{
+			"name": "prize_xx88_png",
+			"type": "image",
+			"url": "assets/prizes/prize_xx88.png"
+		},
+		{
+			"name": "prize_jj200_png",
+			"type": "image",
+			"url": "assets/prizes/prize_jj200.png"
+		},
+		{
+			"name": "prize_jj500_png",
+			"type": "image",
+			"url": "assets/prizes/prize_jj500.png"
+		},
+		{
+			"name": "prize_jj1000_png",
+			"type": "image",
+			"url": "assets/prizes/prize_jj1000.png"
+		},
+		{
+			"name": "prize_xh1_png",
+			"type": "image",
+			"url": "assets/prizes/prize_xh1.png"
+		},
+		{
+			"name": "prize_mm1_png",
+			"type": "image",
+			"url": "assets/prizes/prize_mm1.png"
+		},
+		{
+			"name": "prize_cj1_png",
+			"type": "image",
+			"url": "assets/prizes/prize_cj1.png"
+		},
+		{
+			"name": "prize_hf1_png",
+			"type": "image",
+			"url": "assets/prizes/prize_hf1.png"
+		},
+		{
+			"name": "cont_lr_png",
+			"type": "image",
+			"url": "assets/cont_lr.png"
+		},
+		{
+			"name": "cont_info_png",
+			"type": "image",
+			"url": "assets/cont_info.png"
+		},
+		{
+			"name": "bg_g_jpg",
+			"type": "image",
+			"url": "assets/bg_g.jpg"
+		},
+		{
+			"name": "star_png",
+			"type": "image",
+			"url": "assets/star.png"
 		}
 	]
 }

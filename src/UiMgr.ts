@@ -11,6 +11,8 @@ export const enum SceneId {
     game
 } 
 export const enum DlgId {
+    zdy,
+    ghwz,
     shopdesc,
     couponprize,
     lose,
@@ -59,6 +61,12 @@ class UiMgr extends BaseUiMgr {
         parm = parm || {}
         let ui:Dlg;
         switch(dlgId) {
+            case DlgId.zdy:
+                ui = new ZdyLayer()
+                break
+            case DlgId.ghwz:
+                ui = new GhwzLayer()
+                break
             case DlgId.shopdesc:
                 ui = new ShopDescLayer()
                 break

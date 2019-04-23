@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="GameLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
 	<pgame:GameMap id="gameMap" width="2250" height="1206" x="0" y="0" skinName="GameMapSkin"/>
-	<e:Image id="guideImg" x="164" y="676" source="guide_png"/>
+	<e:Image id="guideImg" source="guide_png" left="21" bottom="0"/>
 
 
 

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="LoseLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Button id="findBtn" label="findBtn" x="325" y="1024"/>
+	<e:Image source="cont_lose_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Button id="findBtn" label="findBtn" alpha="0.33" anchorOffsetX="0" width="333.33" anchorOffsetY="0" height="89.39" horizontalCenter="0" verticalCenter="120.5"/>
 </e:Skin>

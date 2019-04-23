@@ -39,6 +39,7 @@
 		"resource/skins/CouponPrizeLayerSkin.exml",
 		"resource/skins/GameMapSkin.exml",
 		"resource/skins/GameLayerSkin.exml",
+		"resource/skins/GhwzLayerSkin.exml",
 		"resource/skins/HomeLayerSkin.exml",
 		"resource/skins/LoseLayerSkin.exml",
 		"resource/skins/MyPrizeLayerSkin.exml",
@@ -49,7 +50,8 @@
 		"resource/skins/SelObjLayerSkin.exml",
 		"resource/skins/ShopDescLayerSkin.exml",
 		"resource/skins/SwPrizeLayerSkin.exml",
-		"resource/skins/WheelLayerSkin.exml"
+		"resource/skins/WheelLayerSkin.exml",
+		"resource/skins/ZdyLayerSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }
