@@ -51,6 +51,7 @@
 		"resource/skins/ShopDescLayerSkin.exml",
 		"resource/skins/SwPrizeLayerSkin.exml",
 		"resource/skins/WheelLayerSkin.exml",
+		"resource/skins/WinPrizeSkin.exml",
 		"resource/skins/ZdyLayerSkin.exml"
 	],
 	"path": "resource/default.thm.json"

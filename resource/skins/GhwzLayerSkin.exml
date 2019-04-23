@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="GhwzLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui">
+<e:Skin class="GhwzLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cont_mb_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="titleLb" text="想和自己说的话" textColor="0x000000" size="50" horizontalCenter="0" verticalCenter="-216"/>
+	<e:Label id="txtLb" text="112是对方公司的风格是对方噶啥东风公司的风格的" textColor="0x000000" size="40" lineSpacing="17" anchorOffsetX="0" width="514" anchorOffsetY="0" height="224" multiline="true" verticalCenter="8" horizontalCenter="0"/>
+	<e:Button id="lastBtn" label="" horizontalCenter="-206" verticalCenter="179" anchorOffsetX="0" width="128" anchorOffsetY="0" height="66" alpha="0.33"/>
+	<e:Button id="nextBtn" label="" horizontalCenter="206" verticalCenter="179" alpha="0.33" width="128" height="66"/>
+	<e:Button id="okBtn" label="" verticalCenter="267" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_bg_png" source.down="btn_bg_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
 </e:Skin>

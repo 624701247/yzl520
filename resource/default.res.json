@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_qrcode_png,qr_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_inp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg,btn_bbfs_png,btn_wyxb_png,btn_ggwz_png,btn_zdywz_png,poster_png,cont_lose_png,txt_gxn_png,btn_get_png,prize_mm20_png,btn_jxxz_png,huang_png,prize_xx88_png,prize_jj200_png,prize_jj500_png,prize_jj1000_png,prize_xh1_png,prize_mm1_png,prize_cj1_png,prize_hf1_png,cont_lr_png,cont_info_png,bg_g_jpg,star_png",
+			"keys": "btn_bgm_open_png,cont_rule_png,logo_png,share_png,bg_l_jpg,point_png,avt_png,cont_succ_png,cont_mp_png,btn_commit_png,btn_pc_png,btn_pok_png,cont_qrcode_png,qr_png,needle_png,cont_succ2_png,btn_pok2_png,btn_commit2_png,btn_pc2_png,cont_mp2_png,cont_qrcode2_png,qr2_png,guide_png,by_png,yh_png,btn_love_png,btn_find_png,btn_mp_png,btn_rule_png,hand_png,title_hone_png,bg_h_jpg,people_png,gy_png,cont_shop_png,btn_ar_png,btn_zj_png,btn_hz_png,btn_py_png,btn_zb_png,cont_so_png,bg_so_jpg,btn_bbfs_png,btn_wyxb_png,btn_ggwz_png,btn_zdywz_png,poster_png,cont_lose_png,txt_gxn_png,btn_get_png,prize_mm20_png,btn_jxxz_png,huang_png,prize_xx88_png,prize_jj200_png,prize_jj500_png,prize_jj1000_png,prize_xh1_png,prize_mm1_png,prize_cj1_png,prize_hf1_png,cont_lr_png,cont_info_png,bg_g_jpg,star_png,btn_x_png,btn_createme_png,cont_zdy_png,cont_mb_png,btn_bg_png",
 			"name": "preload"
 		},
 		{
@@ -231,11 +231,6 @@
 			"url": "assets/cont_mp.png?1548148579"
 		},
 		{
-			"name": "cont_inp2_png",
-			"type": "image",
-			"url": "assets/cont_inp.png?1548148579"
-		},
-		{
 			"name": "cont_qrcode2_png",
 			"type": "image",
 			"url": "assets/cont_qrcode.png?1543633911"
@@ -459,6 +454,31 @@
 			"name": "star_png",
 			"type": "image",
 			"url": "assets/star.png"
+		},
+		{
+			"name": "btn_x_png",
+			"type": "image",
+			"url": "assets/btn_x.png"
+		},
+		{
+			"name": "btn_createme_png",
+			"type": "image",
+			"url": "assets/btn_createme.png"
+		},
+		{
+			"name": "cont_zdy_png",
+			"type": "image",
+			"url": "assets/cont_zdy.png"
+		},
+		{
+			"name": "cont_mb_png",
+			"type": "image",
+			"url": "assets/cont_mb.png"
+		},
+		{
+			"name": "btn_bg_png",
+			"type": "image",
+			"url": "assets/btn_bg.png"
 		}
 	]
 }

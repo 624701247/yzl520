@@ -14,7 +14,7 @@ export class GameLayer extends Scene {
     private curX:number
     private minX
     private gameMap:GameMap
-    private guideImg: eui.Image
+    private guideGp: eui.Group
 
     private onBegin(ev:egret.TouchEvent) {
         this.curX = ev.stageX
@@ -30,7 +30,7 @@ export class GameLayer extends Scene {
         }
         this.gameMap.x = nx
         this.curX = ev.stageX
-        this.guideImg.visible = false
+        this.guideGp.visible = false
     }
 
     public onCome() {

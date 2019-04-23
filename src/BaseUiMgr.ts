@@ -22,6 +22,13 @@ namespace pgame {
         private dlgCont:eui.Group
         private curDlgGp:eui.Group
 
+
+        public updatePoster() {
+            if(this.curScene.name == 'poster') {
+                // this.curScene.update()
+            }
+        }
+
         // 
         private wait_turnAni: boolean = false //等待切换场景动画播放完
         public initScene() {

@@ -2,8 +2,12 @@
 <e:Skin class="GameMapSkin" width="3001" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image left="0" right="0" top="0" bottom="0" source="bg_g_jpg"/>
 	<e:Group id="starGp" left="0" right="0" top="0" bottom="0">
-		<e:Image x="264" y="112" source="btn_start_png" scaleX="1" scaleY="1"/>
-		<e:Image x="638" y="484" source="btn_start_png" scaleX="1" scaleY="1"/>
-		<e:Button label="Button" x="1144" y="860"/>
+		<e:Image x="209.45" y="488.73" scaleX="1" scaleY="1" source="star_png" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="650.66" y="306.73" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="955.81" y="872" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="1356.72" y="1136.55" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="1635.45" y="340.49" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="2345.45" y="1054" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
+		<e:Image x="2743.33" y="824.61" source="star_png" scaleX="1" scaleY="1" anchorOffsetX="93" anchorOffsetY="91"/>
 	</e:Group>
 </e:Skin>

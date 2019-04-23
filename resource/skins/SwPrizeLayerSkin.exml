@@ -3,7 +3,7 @@
 
 	<e:Group id="contGp" left="0" right="0" top="0" bottom="0">
 
-		<e:Group id="formGp" x="0" y="0" scaleX="1" scaleY="1" width="750" height="1336" visible="false">
+		<e:Group id="formGp" x="0" y="0" scaleX="1" scaleY="1" width="750" height="1336">
 			<e:Image source="cont_lr_png" horizontalCenter="0" verticalCenter="0"/>
 			<e:Image id="prizeImg" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
 
@@ -19,7 +19,7 @@
 			</e:Group>
 			<e:Button id="submitBtn" label="" bottom="271" anchorOffsetX="0" width="295.45" anchorOffsetY="0" height="74.24" horizontalCenter="0" alpha="0.33"/>
 		</e:Group>
-		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1" visible="false">
 			<e:Image horizontalCenter="0" verticalCenter="0" x="86" y="211.00000000000003" scaleX="1" scaleY="1" source="cont_info_png"/>
 			<e:Image id="prizeImg2" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
 			<e:Group width="511.28" height="312.06" horizontalCenter="11.5" verticalCenter="125" anchorOffsetY="0" anchorOffsetX="0">

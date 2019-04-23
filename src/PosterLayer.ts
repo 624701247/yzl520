@@ -4,8 +4,8 @@ namespace pgame {
 interface PosterParm {
     isMe:boolean;  //是自己的海报，还是查看好友分享的海报
     oldUrl:string; //自己或好友分享的海报链接
-    obj: string; //想对谁说的话
-    txt: string; //说话内容
+    // obj: string; //想对谁说的话
+    // txt: string; //说话内容
 }
 export function goPoster(parm:PosterParm) {
     uiMgr.go(SceneId.poster, parm)
@@ -66,21 +66,31 @@ export class PosterLayer extends Scene {
 
     constructor(parm:PosterParm) {
         super(PosterLayerSkin)
+        this.name = 'poster'
         this.isMe = parm.isMe
         this.oldUrl = parm.oldUrl
-        if(parm.obj) {
-            // var size = this.titleLb.size
-            this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
-                { text: "想对", style:{'bold': false} },
-                { text: parm.obj, style:{'bold': true} },
-                { text:"说的话", style:{'bold': false} }
-            ];
+        if(!this.oldUrl && this.isMe) {
+            if(curPosterInfo.obj) {
+                this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
+                    { text: "想对", style:{'bold': false} },
+                    { text: curPosterInfo.obj, style:{'bold': true} },
+                    { text:"说的话", style:{'bold': false} }
+                ];
+            }
+            if(curPosterInfo.txt) {
+                this.txtLb.text = curPosterInfo.txt
+            }
+            else {
+                txtArr
+            }
 
+            this.ghwzBtn.visible = true
+            this.zdyBtn.visible = true
             jinx.addTapEvent(this.ghwzBtn, this.ontapGHWZ, this)
             jinx.addTapEvent(this.zdyBtn, this.ontapZDY, this)
-        }
-        if(parm.txt) {
-            this.txtLb.text = parm.txt
+        } else {
+            this.ghwzBtn.visible = false
+            this.zdyBtn.visible = false
         }
 
 
@@ -197,6 +207,14 @@ export class PosterLayer extends Scene {
     public onCloseDlg() {
         console.log('所有对话框都光比了')
         posterDom && posterDom.show()
+
+        if(curPosterInfo.txt && this.txtLb.text != curPosterInfo.txt) { // 重新合成海报
+            setTimeout(function() {
+                this.createPoster()
+            }.bind(this), 20);
+            this.txtLb.text = curPosterInfo.txt
+            
+        }
     }
 
     private ontapCreateMy() {

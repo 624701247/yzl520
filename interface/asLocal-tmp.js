@@ -98,6 +98,27 @@ var as;
             name:'jinx',
             phone:'15626476235',
             address:'北京山顶尾'
+        },
+        {
+            prizeName:'实物',
+            prizeId:'p01',
+            name:'jinx',
+            phone:'15626476235',
+            address:'北京山顶尾'
+        },
+        {
+            prizeName:'实物',
+            prizeId:'p01',
+            name:'jinx',
+            phone:'15626476235',
+            address:'北京山顶尾'
+        },
+        {
+            prizeName:'实物',
+            prizeId:'p01',
+            name:'jinx',
+            phone:'15626476235',
+            address:'北京山顶尾'
         }
         // {
         //     prizeName:'卡券',
