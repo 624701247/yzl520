@@ -21,14 +21,17 @@ export class HomeLayer extends Scene {
 
     // 
     private ontapLove(ev:egret.Event) {
-        if(as.myShare.posterUrl) { //自己的海报
-            uiMgr.go(SceneId.poster, {
-                isMe:true,
-                oldUrl: as.myShare.posterUrl
-            })
-        } else {
-            uiMgr.go(SceneId.selobj)
-        }
+        // if(as.myShare.posterUrl) { //
+        //     uiMgr.go(SceneId.poster, {
+        //         isMe:true,
+        //         oldUrl: as.myShare.posterUrl
+        //     })
+        // } else {
+        //     uiMgr.go(SceneId.selobj)
+        // }
+
+        // 不显示以前的海报
+        uiMgr.go(SceneId.selobj)
 
     }
     private ontapFind520() {

@@ -1,26 +1,33 @@
 
 namespace pgame {
-export class ProdLayer extends Dlg {
-    private findBtn:eui.Button
-    private sharedBtn:eui.Button
+export class Win52Layer extends Dlg {
+    private closeBtn:eui.Button
+    private winNoImg:eui.Image
 
     private wordImg5:eui.Image
     private wordImg2:eui.Image
     private wordImg0:eui.Image
     private boxBtn:eui.Button
+    private descImg:eui.Image
 
-    constructor(prodId) {
-        super(ProdLayerSkin)
+    private findBtn:eui.Button
+    private sharedBtn:eui.Button
+
+    constructor(winNo) {
+        super(Win52LayerSkin)
+
+        this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
 
         jinx.addTapEvent(this.findBtn, this.ontapFind, this)
         jinx.addTapEvent(this.sharedBtn, this.ontapLove, this)
 
-        console.log('sss', prodId)
-        prodId = prodId + 1
-        for(var idx = 1; idx <= 7; idx++) {
-            this['prodImg' + idx].visible = (prodId == idx)
-        }
+        this.winNoImg.texture = RES.getRes('m' + winNo + '_png')  
 
+        if(winNo == 5) {
+            this.descImg.texture = RES.getRes('txt_lack2_png')
+        } else {
+            this.descImg.texture = RES.getRes('txt_lack5_png')
+        }
 
         var inf = as.getMMCount()
         this.wordImg5.visible = (inf.remain5 > 0)
@@ -40,15 +47,10 @@ export class ProdLayer extends Dlg {
         uiMgr.open(DlgId.box520)
     }
 
-    // private ontapFind() {
-    //     uiMgr.back()
-    // }
-
     private ontapFind() {
         // uiMgr.go(SceneId.game)
         uiMgr.close()
     }
-
     private ontapLove() {
         uiMgr.closeAll()
         uiMgr.go(SceneId.selobj)

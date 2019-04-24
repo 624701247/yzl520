@@ -88,8 +88,6 @@ export class WheelLayer extends Scene {
         jinx.recoverTapEvent(this.pointBtn)
         this.mpId = ev.data
         if(this.mpId != -1) {
-            //kone todo : 设置奖品对应的角度  值区间必须位于 [-180, 180]
-            // this.loRot = xx
         }
         this.setFailRot()
     }
@@ -98,7 +96,6 @@ export class WheelLayer extends Scene {
         this.setFailRot()
     }
     private setFailRot() {
-        // kone todo : 设置不中奖的角度值
         if(this.loRot == null) {
             if(Math.random() < 0.5) {
                 this.loRot = 90

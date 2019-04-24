@@ -67,6 +67,9 @@ declare namespace as {
     interface ShareInfo { // 协作信息
         shareId:string; //协作id
         posterUrl:string; //生成的海报链接
+        count5:number;    //反复集齐， 反复抽
+        count2:number; 
+        count0:number;
     }
     export const myShare:ShareInfo; //我的协作信息
     export const otherShare:ShareInfo;  //点开好友的协作信息
@@ -117,6 +120,16 @@ declare namespace as {
     export function uploadBase64(dataurl:string):void;// 提交海报base64字符串
     /* end of */
 
-
+    // 领取卡券跳转
     export function getCoupon():void;
+
+
+    export function getRemainLot():number;
+    export function getMMCount():{remain5:number; remain2:number; remain0: number;}
+
+
+    export namespace action {
+        export const winMM:string;
+    }
+    export function winMM():void;
 }

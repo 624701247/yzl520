@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="544" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="shopLb" text="Label" textColor="0xec6aa3" fontFamily="Microsoft YaHei" left="0" bold="true" top="4" textAlign="left"/>
+	<e:Label id="addrLb" text="Lab" textColor="0x043582" fontFamily="Microsoft YaHei" size="28" textAlign="left" multiline="true" y="47" left="0" right="0"/>
+</e:Skin>

@@ -78,9 +78,13 @@ declare class SelObjLayerSkin extends eui.Skin{
 }
 declare class ShopDescLayerSkin extends eui.Skin{
 }
+declare class ShopItemSkin extends eui.Skin{
+}
 declare class SwPrizeLayerSkin extends eui.Skin{
 }
 declare class WheelLayerSkin extends eui.Skin{
+}
+declare class Win52LayerSkin extends eui.Skin{
 }
 declare class WinPrizeSkin extends eui.Skin{
 }

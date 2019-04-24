@@ -79,6 +79,27 @@ var as;
         window.location.href = 'http://www.baidu.com'
     }
 
+    as.getRemainLot = function() {
+        return 1
+    }
+
+    as.getMMCount = function() {
+        return {
+             remain5: 1,
+            remain2: 0,
+            remain0: 0
+        }
+    }
+
+    as.action.winMM = 'win_MM'
+    as.winMM = function(no) {
+        if(no == 5 || no == 2) {
+            var tag = 'count' + no
+            as.myShare[tag]++
+            carry.dispEvent(as.action.winMM, 'SSS')
+        }
+    }
+
 
     /* 上传照片 ****************************************************************************/
     as.uploadBase64 = 'uploadBase64',

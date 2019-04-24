@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ShopDescLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui">
-	<e:Image anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="cont_shop_png"/>
-	<e:Button id="closeBtn" label="Button" width="100" height="100" alpha="0.33" verticalCenter="437" horizontalCenter="0"/>
+<e:Skin class="ShopDescLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-103.5" source="cont_shop_png"/>
+	<e:Button id="closeBtn" label="" width="100" height="100" alpha="1" verticalCenter="437" horizontalCenter="0" visible="false" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_x_png" source.down="btn_x_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
 	<e:Button id="knowBtn" label="Button" width="278" height="86" alpha="0.33" verticalCenter="310" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	<e:Scroller id="scroll" width="544" height="550.12" y="354.92" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group id="scrollGp" anchorOffsetX="0" width="594"/>
+	</e:Scroller>
+	<e:EditableText id="quInp" width="118" height="48" text="区" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" textAlign="center" verticalCenter="-362" horizontalCenter="164" visible="false" locked="true"/>
+	<e:Group width="466" height="43" verticalCenter="-379" horizontalCenter="0">
+		<e:Group width="220" anchorOffsetX="0" top="0" bottom="0" left="0">
+			<e:Image source="pink_png" left="0" right="0" top="0" bottom="0" scale9Grid="50,22,8,0"/>
+			<e:EditableText id="shenInp" width="118" height="48" text="省" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" textAlign="center" verticalCenter="0" y="-2" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="220" anchorOffsetX="0" top="0" bottom="0" right="0">
+			<e:Image source="pink_png" left="0" right="0" top="0" bottom="0" scale9Grid="50,22,8,0"/>
+			<e:EditableText id="shiInp" width="118" height="48" text="市" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" textAlign="center" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Button id="areaBtn" label="Button" anchorOffsetX="0" anchorOffsetY="0" alpha="0.33" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
 </e:Skin>

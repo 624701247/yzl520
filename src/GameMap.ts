@@ -8,6 +8,7 @@ export class GameMap extends eui.Component {
         
 
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onadd, this)
+        this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
 
     private onadd() {
@@ -18,6 +19,11 @@ export class GameMap extends eui.Component {
                 this.ontapStar(idx)
             }, this)
         }
+
+        carry.addListener(as.action.winMM, this.onWinMM, this)
+    }
+    private onremove() {
+        carry.removeListener(as.action.winMM)
     }
 
     private aniStar(star)  {
@@ -29,12 +35,30 @@ export class GameMap extends eui.Component {
         .to({scaleX: 1, scaleY: 1}, 400)
     }
 
+    private curId:number
     private ontapStar(idx) {
         console.log('ss', idx)
+        this.curId = idx
+
+        var rd = Math.random()
+
+        if(rd < 0.5) {
+            uiMgr.open(DlgId.prod, this.curId)
+        } else {
+            carry.spinner.show()
+            as.winMM()
+        }
+        // uiMgr.open(DlgId.boxjx) //kone todo 惊喜
 
         // 产品展示页 或者  惊喜宝箱页
-        // uiMgr.go(SceneId.prod, idx)
-        uiMgr.go(SceneId.box)
+    }
+    private onWinMM(ev) {
+        carry.spinner.hide()
+        if(ev.data) {
+            uiMgr.open(DlgId.win52, ev.data)
+        } else {
+            uiMgr.open(DlgId.prod, this.curId)
+        }
     }
 
     private starGp:eui.Group

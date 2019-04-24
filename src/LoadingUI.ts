@@ -127,23 +127,5 @@ class LoadingUI extends egret.Sprite {
         this.el_page.remove()
     }
 
-    //kone todo： egret的机制无法预加载的东西,比如gif，在这里预加载
-    /*
-    private onOtherLoad(isSucc, src) {
-        if(isSucc) {
-            this.otherCount++
-        }
-        else {
-            console.error('加载资源失败', src)
-        }
-    }
-    private loadOther() {
-        var count = 0
-        var gas = ['qi_dai', 'shuai', 'shuo_de_dui', 'wen_wo', 'xiang', 'yong_xing_gan_shou', 'zai_ma']
-        this.otherTotalCount = gas.length
-        for(var idx = 0; idx < this.otherTotalCount; idx++) {
-            carry.loadImg('resource/gif/' + gas[idx] + '.gif?' + BIN_VER, this.onOtherLoad, this)
-        }
-    }
-    */
+  
 }

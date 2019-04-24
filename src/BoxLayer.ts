@@ -1,20 +1,29 @@
 
 namespace pgame {
-export class BoxLayer extends Scene {
+export class BoxLayer extends Dlg {
     private openBtn:eui.Button
-    constructor() {
+
+    private fxImg:eui.Image
+    private jqImg:eui.Image
+
+    constructor(is520:boolean) {
         super(BoxLayerSkin)
+
+        this.fxImg.visible = !is520
+        this.fxImg.visible = is520
 
         jinx.addTapEvent(this.openBtn, this.ontapOpen, this)
         carry.addListener(as.action.gameLottery, this.onLottery, this)
         carry.addListener('net_time_out', this.onTimeout, this)
+
+        this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
     private onTimeout(ev) {
         carry.weakHint('网络超时！')
         jinx.recoverTapEvent(this.openBtn)
     }
 
-    public onBack() {
+    public onremove() {
         carry.removeListener(as.action.gameLottery)
         carry.removeListener('net_time_out')
     }

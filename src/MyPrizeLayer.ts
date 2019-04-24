@@ -46,6 +46,8 @@ export class MyPrizeLayer extends Dlg {
 
     private shopBtn:eui.Button
 
+    private npLb:eui.Label
+
     private ontapShop() {
         uiMgr.open(DlgId.shopdesc)
     }
@@ -68,6 +70,8 @@ export class MyPrizeLayer extends Dlg {
             this.scrollGp.addChild(item)
             curY += item.height + 10 
         }
+
+        this.npLb.visible = (len == 0)
 
         // 如果只有一个奖品，垂直居中显示
         if(len == 1) {

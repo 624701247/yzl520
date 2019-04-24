@@ -106,5 +106,5 @@ base.copyFolder(dirPath, gitPath)
 if htmlHasDiff:
     print('index.html与git上的有不同的地方，请手动确认然后提交')
 else:
-    # base.gitPusher(gitPath, 'ver:' + gitLog)    
-    print('目前注释了自动提交，请手动提交git')
+    base.gitPusher(gitPath, 'ver:' + gitLog)    
+    # print('目前注释了自动提交，请手动提交git')

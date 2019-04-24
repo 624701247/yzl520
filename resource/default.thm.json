@@ -49,8 +49,10 @@
 		"resource/skins/RuleLayerSkin.exml",
 		"resource/skins/SelObjLayerSkin.exml",
 		"resource/skins/ShopDescLayerSkin.exml",
+		"resource/skins/ShopItemSkin.exml",
 		"resource/skins/SwPrizeLayerSkin.exml",
 		"resource/skins/WheelLayerSkin.exml",
+		"resource/skins/Win52LayerSkin.exml",
 		"resource/skins/WinPrizeSkin.exml",
 		"resource/skins/ZdyLayerSkin.exml"
 	],

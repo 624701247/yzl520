@@ -93,6 +93,8 @@ export class PosterLayer extends Scene {
             this.zdyBtn.visible = false
         }
 
+        this.nameLb.text = as.wxUserInfo.nickname
+
 
         this.myGp.visible = this.isMe
         this.otherGp.visible = !this.isMe
