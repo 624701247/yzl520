@@ -4,7 +4,6 @@ namespace pgame {
 export const enum SceneId { 
     poster,
     selobj,
-    wheel,
     home,    //首页
     game
 } 
@@ -36,9 +35,6 @@ class UiMgr extends BaseUiMgr {
                 break
             case SceneId.selobj:
                 ui = new SelObjLayer()
-                break
-            case SceneId.wheel:
-                ui = new WheelLayer()
                 break
             case SceneId.game:
                 ui = new GameLayer()

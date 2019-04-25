@@ -12,7 +12,7 @@ export class BoxLayer extends Dlg {
         super(BoxLayerSkin)
 
         this.fxImg.visible = !is520
-        this.fxImg.visible = is520
+        this.jqImg.visible = is520
 
         jinx.addTapEvent(this.openBtn, this.ontapOpen, this)
         carry.addListener(as.action.gameLottery, this.onLottery, this)
@@ -41,6 +41,7 @@ export class BoxLayer extends Dlg {
     private onLottery(ev) {
         jinx.recoverTapEvent(this.openBtn)
         var mpid = ev.data
+        uiMgr.close()
         if(mpid == -1) {
             uiMgr.open(DlgId.lose)
         }

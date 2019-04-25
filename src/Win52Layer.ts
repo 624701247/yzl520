@@ -4,16 +4,14 @@ export class Win52Layer extends Dlg {
     private closeBtn:eui.Button
     private winNoImg:eui.Image
 
-    private wordImg5:eui.Image
-    private wordImg2:eui.Image
-    private wordImg0:eui.Image
-    private boxBtn:eui.Button
     private descImg:eui.Image
 
     private findBtn:eui.Button
     private sharedBtn:eui.Button
 
     private backBtn:eui.Button
+
+    private boxStatus:BoxStatus
 
     constructor(winNo) {
         super(Win52LayerSkin)
@@ -33,22 +31,7 @@ export class Win52Layer extends Dlg {
             this.descImg.texture = RES.getRes('txt_lack5_png')
         }
 
-        var inf = as.getMMCount()
-        this.wordImg5.visible = (inf.remain5 > 0)
-        this.wordImg2.visible = (inf.remain2 > 0)
-        this.wordImg0.visible = (inf.remain0 > 0)
-
-        if(this.wordImg5.visible && this.wordImg2.visible &&　this.wordImg0.visible) {
-            egret.Tween.get(this.boxBtn, {loop: true})
-            .to({scaleX: 1.2, scaleY: 1.2}, 400)
-            .to({scaleX: 1.2, scaleY: 1}, 400)
-            .to({scaleX: 1.2, scaleY: 1.2}, 400)
-            jinx.addTapEvent(this.boxBtn, this.ontapBox, this)
-        }
-    }
-    private ontapBox() {
-        uiMgr.close()
-        uiMgr.open(DlgId.box520)
+       this.boxStatus.init()
     }
 
     private ontapFind() {
