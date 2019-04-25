@@ -12,11 +12,32 @@ export class HomeLayer extends Scene {
     private myPrizeBtn:eui.Button
     private ruleBtn:eui.Button
 
+
+    private titleImg:eui.Image
+    private xin1Img:eui.Image
+    private qq1Img:eui.Image
+
     public fitUi() {
         super.fitUi()
     }
     constructor() {
         super(HomeLayerSkin)
+
+        egret.Tween.get(this.titleImg, {loop: true})
+        .to({scaleX:1.1, scaleY:1.1}, 600)
+        .to({scaleX:1, scaleY:1}, 600)
+
+        egret.Tween.get(this.xin1Img, {loop: true})
+        .to({scaleX:1.2, scaleY:1.2, rotation: 30}, 600)
+        .to({scaleX:1, scaleY:1, rotation:0}, 600)
+
+        var oldTop = this.qq1Img.top
+        if(oldTop) {
+            egret.Tween.get(this.qq1Img, {loop: true})
+            .to({top: oldTop - 30}, 800)
+            .to({top: oldTop}, 800)
+        }
+
 
         // 
         jinx.addTapEvent(this.loveBtn, this.ontapLove, this)
