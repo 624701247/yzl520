@@ -51,26 +51,23 @@ var isAniWhirligig = true  //是否需要播放状态按钮旋转动画
         jinx.addTapEvent(this, this.ontapBtn, this)        
 
         // 
-        if(!BgmBtn.initReady) {
-            carry.bgm.onGetIsPlay(BgmBtn.onChange)
-            BgmBtn.initReady = true
-        }
+        // if(!BgmBtn.initReady) {
+            // carry.bgm.onGetIsPlay(BgmBtn.onChange)
+            // BgmBtn.initReady = true
+        // }
         // 
-        carry.bgm.getIsPlay()
+        // carry.bgm.getIsPlay()
+
+        this.switchState(pgame.soundEff.curIsPlay)
     }
 
-    private static onChange(isOpen:boolean) {
+    public static onChange(isOpen:boolean) {
         for(let btn of BgmBtn.btnAry) {
             btn.switchState(isOpen)
         }
     }
 
     private createImg(resName) {
-        // let img = new eui.Image(RES.getRes(resName))
-        // img.width = NaN
-        // img.height = NaN
-        // img.horizontalCenter = 0
-        // img.verticalCenter = 0
         let img = new egret.Bitmap(RES.getRes(resName))
         img.anchorOffsetX = img.width / 2
         img.anchorOffsetY = img.height / 2
@@ -108,7 +105,8 @@ var isAniWhirligig = true  //是否需要播放状态按钮旋转动画
 
     // 
     private ontapBtn() {
-        carry.bgm.ctrl()
+        // carry.bgm.ctrl()
+        var isp = pgame.soundEff.ctrlBgm()
     }
 }
 

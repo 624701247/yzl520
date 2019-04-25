@@ -10,6 +10,9 @@ export function goPrize(pinfo:as.PrizeInfo) {
         case as.PrizeType.coupon:
             uiMgr.open(DlgId.couponprize, pinfo)
             break
+        case as.PrizeType.hx:
+            uiMgr.open(DlgId.couponprize, pinfo)
+            break
         default:
             carry.weakHint('奖品类型错误：' + resinfo.prizeType)
             break
@@ -21,18 +24,24 @@ export class PrizeItem extends eui.Component {
     // private iconImg:eui.Image
     // private nameLb:eui.Label
     private detailBtn:eui.Button
+    private prizeImg:eui.Image
     constructor() {
         super()
         this.skinName = PrizeItemSkin
     }
 
     public init(pInfo:as.PrizeInfo) {
-        // var resinfo = as.getPrizeResInfo(pInfo)
-        // this.iconImg.texture =  RES.getRes(resinfo.resName) 
+        var resinfo = as.getPrizeResInfo(pInfo)
+        this.prizeImg.texture =  RES.getRes(resinfo.resName) 
         // this.nameLb.text = pInfo.prizeName + ''
 
         jinx.addTapEvent(this.detailBtn, function() {
-            goPrize(pInfo)
+            if(resinfo.prizeType == as.PrizeType.hx) {
+                as.getCoupon(pInfo)
+            }
+            else {
+                goPrize(pInfo)
+            }
         }, this)
     }
 }   //end of class

@@ -36,11 +36,15 @@ export class HomeLayer extends Scene {
         //     uiMgr.go(SceneId.selobj)
         // }
 
+        soundEff.playBgm('love')
+
         // 不显示以前的海报
         uiMgr.go(SceneId.selobj)
-
     }
     private ontapFind520() {
+        var rd = carry.randomInt(1, 2)
+        soundEff.playBgm('xunbao' + rd)
+
         uiMgr.go(SceneId.game)
     }
     // 

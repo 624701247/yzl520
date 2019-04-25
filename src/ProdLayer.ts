@@ -31,12 +31,13 @@ export class ProdLayer extends Dlg {
     // }
 
     private ontapFind() {
-        // uiMgr.go(SceneId.game)
         uiMgr.close()
     }
 
     private ontapLove() {
         uiMgr.closeAll()
+
+        soundEff.playBgm('love')
         uiMgr.go(SceneId.selobj)
     }
 }   //end of class

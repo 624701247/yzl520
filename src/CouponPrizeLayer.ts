@@ -44,6 +44,9 @@ export class CouponPrizeLayer extends Dlg {
     }
 
     private onFind() {
+        var rd = carry.randomInt(1, 2)
+        soundEff.playBgm('xunbao' + rd)
+
         uiMgr.go(SceneId.game)
         uiMgr.close()
     }
@@ -51,7 +54,7 @@ export class CouponPrizeLayer extends Dlg {
     private ontapGet() {
         var type = this.resinfo.prizeType
         if(type == as.PrizeType.coupon) {
-            as.getCoupon()
+            as.getCoupon(this.pinfo)
         }
         else if(type == as.PrizeType.sw) {
             uiMgr.open(DlgId.swprize, this.pinfo)

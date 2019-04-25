@@ -75,8 +75,9 @@ var as;
     /* end of */ 
 
 
-    as.getCoupon = function() {
-        window.location.href = 'http://www.baidu.com'
+    as.getCoupon = function(pinfo) {
+        var resinfo = as.getPrizeResInfo(pinfo)
+        window.location.href = resinfo.link
     }
 
     as.getRemainLot = function() {
@@ -111,40 +112,19 @@ var as;
     /* 抽奖相关 *****************************************************************************/ 
     as.myPrizes = [
         {
-            prizeName:'实物',
+            prizeName:'88元现金券',
             prizeId:'p01',
             name:'jinx',
             phone:'15626476235',
             address:'北京山顶尾'
         },
         {
-            prizeName:'实物',
-            prizeId:'p01',
-            name:'jinx',
-            phone:'15626476235',
-            address:'北京山顶尾'
-        },
-        {
-            prizeName:'实物',
-            prizeId:'p01',
-            name:'jinx',
-            phone:'15626476235',
-            address:'北京山顶尾'
-        },
-        {
-            prizeName:'实物',
+            prizeName:'20元面膜券',
             prizeId:'p01',
             name:'jinx',
             phone:'15626476235',
             address:'北京山顶尾'
         }
-        // {
-        //     prizeName:'卡券',
-        //     prizeId:'p01',
-        //     name:'jinx',
-        //     phone:'15626476235',
-        //     address:'北京山顶尾'
-        // }
     ]
     as.action.gameLottery = 'game_Lottery'
     as.action.saveLotteryInfo = 'save_Lottery_Info'
@@ -162,42 +142,60 @@ var as;
         info.address = address
         carry.dispEvent(as.action.saveLotteryInfo, true)
     }
-    as.PrizeType = {
-        sw : 'sw',
-        coupon: 'coupon'
-    }    
-    var pResInfo = []
-    as.getPrizeResInfo = function(pinfo) {
-        pinfo = pinfo || {}
-        var prizeName = pinfo.prizeName
-        if(!pResInfo[prizeName]) {
-            var name = ''
-            var typ = ''
-            switch(prizeName) {
-                case '名字1':
-                    name = 'prize_1_png'
-                    break
-                case '卡券':
-                    name = 'prize_2_png'
-                    typ = as.PrizeType.coupon
-                    break
-                case '实物':
-                    name = 'prize_3_png'
-                    typ = as.PrizeType.sw
-                    break
-                default:
-                    name = ''
-                    typ = ''
-                    break
-            }
-            pResInfo[prizeName] = {
-                resName: name,
-                prizeType: typ
-            }
-        }
-        return pResInfo[prizeName]
-    }
+  
+
     /* end of */
+
+
+    as.PrizeType = {
+        sw: 'sw',
+        coupon:'coupon',
+        hx: 'hx'
+    }
+    //根据奖品名获取：奖品类型\奖品图
+    var prizeInfos = {
+        '包你一年护肤': {
+            resName: 'prize_hf1_png',
+            prizeType: as.PrizeType.sw
+        },
+        '包你一年彩妆': {
+            resName: 'prize_cj1_png',
+            prizeType: as.PrizeType.sw
+        },
+        '包你一年面膜': {
+            resName: 'prize_mm1_png',
+            prizeType: as.PrizeType.sw
+        },
+        '包你一年洗护': {
+            resName: 'prize_xh1_png',
+            prizeType: as.PrizeType.sw
+        },
+        '1000元购物基金': {
+            resName: 'prize_jj1000_png',
+            prizeType: as.PrizeType.coupon
+        },
+        '500元购物基金': {
+            resName: 'prize_jj500_png',
+            prizeType: as.PrizeType.coupon
+        },
+        '200元购物基金': {
+            resName: 'prize_jj200_png',
+            prizeType: as.PrizeType.coupon
+        },
+        '88元现金券': {
+            resName: 'prize_xx88_png',
+            prizeType: as.PrizeType.hx,
+            link: 'https://o2o-m.proya.com/coupon/CheckCouponPosTicket.do?couponId=1121308332980965376&storeid=11179&pushId=&from=&salesid='
+        },
+        '20元面膜券': {
+            resName: 'prize_mm20_png',
+            prizeType: as.PrizeType.hx,
+            link: 'https://o2o-m.proya.com/coupon/CheckCouponPosTicket.do?couponId=1121308332980965376&storeid=11179&pushId=&from=&salesid='
+        }
+    }
+    as.getPrizeResInfo = function(pinfo) {
+        return prizeInfos[pinfo.prizeName] || {}
+    }
 
 
     /* 登录注册 ********************************************************************************/

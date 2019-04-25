@@ -38,9 +38,17 @@ export class GameMap extends eui.Component {
     private curId:number
     private ontapStar(idx) {
         console.log('ss', idx)
+
+        soundEff.initBoxJump()
+
         this.curId = idx
 
         var rd = Math.random()
+
+        // ktest
+        if( (carry.isLocal || carry.isDemo) && carry.urlParam.krd ) {
+            rd = carry.urlParam.krd
+        }
 
         if(rd < 0.5) {
             uiMgr.open(DlgId.prod, this.curId)
@@ -50,8 +58,6 @@ export class GameMap extends eui.Component {
         } else {
             uiMgr.open(DlgId.boxjx)
         }
-
-        // 产品展示页 或者  惊喜宝箱页
     }
     private onWinMM(ev) {
         carry.spinner.hide()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="GameMapSkin" width="3001" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image left="0" right="0" top="0" bottom="0" source="bg_g_jpg"/>
-	<e:Group id="bubbleGp" left="0" right="0" top="0" bottom="0">
+	<e:Group id="bubbleGp" left="0" right="0" top="0" bottom="0" visible="false">
 		<e:Image y="12" scaleX="1" scaleY="1" source="bubble1_png" x="1236.72"/>
 		<e:Image y="574.61" scaleX="1" scaleY="1" x="2539.33" source="bubble2_png"/>
 		<e:Image y="6" scaleX="1" scaleY="1" x="601" source="bubble3_png"/>

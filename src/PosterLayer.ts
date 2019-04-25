@@ -224,6 +224,9 @@ export class PosterLayer extends Scene {
     }
     private ontapFind520() {
         // alert('跳转到我的奖品')
+        var rd = carry.randomInt(1, 2)
+        soundEff.playBgm('xunbao' + rd)
+        
         uiMgr.go(SceneId.game)
     }
     private ontapShare() {

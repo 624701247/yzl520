@@ -38,10 +38,13 @@ export class BoxLayer extends Dlg {
 
     private ontapOpen() {
         as.gameLottery(this.is520)
+        soundEff.initLottery()
         return true
     }
 
     private onLottery(ev) {
+        soundEff.playLottery()
+
         jinx.recoverTapEvent(this.openBtn)
         var mpid = ev.data
         uiMgr.close()

@@ -122,7 +122,7 @@ declare namespace as {
     /* end of */
 
     // 领取卡券跳转
-    export function getCoupon():void;
+    export function getCoupon(pinfo:PrizeInfo):void;
 
 
     export function getRemainLot():number;

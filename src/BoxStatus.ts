@@ -28,8 +28,21 @@ export class BoxStatus extends eui.Component {
             .to({scaleX: 0.62, scaleY: 0.62}, 400)
             .to({scaleX: 0.5, scaleY: 0.5}, 400)
             jinx.addTapEvent(this.boxBtn, this.ontapBox, this)
+
+
+            this.timer = setInterval(function() {
+                soundEff.playBoxJump()    
+            }, 400 * 3) 
+            
+
         }
+
+        this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
+    private onremove() {
+        clearInterval(this.timer)
+    }
+    private timer = null
 
     private ontapBox() {
         if(this.is520) {
