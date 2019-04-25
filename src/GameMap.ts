@@ -48,7 +48,10 @@ export class GameMap extends eui.Component {
             carry.spinner.show()
             as.winMM()
         }
-        // uiMgr.open(DlgId.boxjx) //kone todo 惊喜
+        // uiMgr.open(DlgId.boxjx)
+         //kone todo 惊喜
+
+        //  kone todo 地图上对话还没有加上
 
         // 产品展示页 或者  惊喜宝箱页
     }
