@@ -33,6 +33,16 @@ export class SwPrizeLayer extends Dlg {
     private findBtn:eui.Button
     private getBtn:eui.Button
 
+    private descImg:eui.Image
+    private qrGp:eui.Group
+    private imgDom:jinx.Dom
+
+
+    public fitUi() {
+        super.fitUi()
+        this.imgDom && this.imgDom.fitUi()
+    }
+
 
     constructor(pinfo:as.PrizeInfo) {
         super(SwPrizeLayerSkin)
@@ -45,13 +55,14 @@ export class SwPrizeLayer extends Dlg {
         }
         else {
             this.initForm()
-
         }
 
-        
         var resinfo = as.getPrizeResInfo(this.pinfo)
         this.prizeImg.texture = RES.getRes(resinfo.resName)
         this.prizeImg2.texture = RES.getRes(resinfo.resName)
+
+        var descName = resinfo.resName.replace('prize', 'desc')
+        this.descImg.texture = RES.getRes(descName)
         
         
         this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onRemove, this)
@@ -139,6 +150,12 @@ export class SwPrizeLayer extends Dlg {
         // this.nameLb.text = '姓名：' + this.pinfo.name
         // this.telLb.text = '手机：' + this.pinfo.phone
         // this.addrLb.text = '地址：' + this.pinfo.addr
+
+
+        let imgDom = new jinx.Dom(this.qrGp)
+        let str = '<img src="resource/qr.png?' + BIN_VER + '" style="width:100%; height:100%; opacity: 1;" />'
+        imgDom.setInnerHTML(str)
+        this.imgDom = imgDom
     }
 
     private ontapSubmit() {

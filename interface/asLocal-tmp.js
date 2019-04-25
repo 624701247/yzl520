@@ -111,20 +111,27 @@ var as;
 
     /* 抽奖相关 *****************************************************************************/ 
     as.myPrizes = [
-        {
-            prizeName:'88元现金券',
-            prizeId:'p01',
-            name:'jinx',
-            phone:'15626476235',
-            address:'北京山顶尾'
-        },
-        {
-            prizeName:'20元面膜券',
-            prizeId:'p01',
-            name:'jinx',
-            phone:'15626476235',
-            address:'北京山顶尾'
-        }
+        // {
+        //     prizeName:'88元现金券',
+        //     prizeId:'p01',
+        //     name:'jinx',
+        //     phone:'15626476235',
+        //     address:'北京山顶尾'
+        // },
+        // {
+        //     prizeName:'20元面膜券',
+        //     prizeId:'p01',
+        //     name:'jinx',
+        //     phone:'15626476235',
+        //     address:'北京山顶尾'
+        // }
+        {prizeName:'包你一年护肤'},
+        {prizeName:'包你一年彩妆'},
+        {prizeName:'包你一年面膜'},
+        {prizeName:'包你一年洗护'},
+        {prizeName:'1000元购物基金'},
+        {prizeName:'500元购物基金'},
+        {prizeName:'200元购物基金'},
     ]
     as.action.gameLottery = 'game_Lottery'
     as.action.saveLotteryInfo = 'save_Lottery_Info'
@@ -176,11 +183,11 @@ var as;
         },
         '500元购物基金': {
             resName: 'prize_jj500_png',
-            prizeType: as.PrizeType.coupon
+            prizeType: as.PrizeType.sw
         },
         '200元购物基金': {
             resName: 'prize_jj200_png',
-            prizeType: as.PrizeType.coupon
+            prizeType: as.PrizeType.sw
         },
         '88元现金券': {
             resName: 'prize_xx88_png',

@@ -3,7 +3,7 @@
 
 	<e:Group id="contGp" left="0" right="0" top="0" bottom="0">
 
-		<e:Group id="formGp" x="0" y="0" scaleX="1" scaleY="1" width="750" height="1336">
+		<e:Group id="formGp" x="0" y="0" scaleX="1" scaleY="1" width="750" height="1336" visible="false">
 			<e:Image source="cont_lr_png" horizontalCenter="0" verticalCenter="0"/>
 			<e:Image id="prizeImg" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
 
@@ -19,15 +19,19 @@
 			</e:Group>
 			<e:Button id="submitBtn" label="" bottom="271" anchorOffsetX="0" width="295.45" anchorOffsetY="0" height="74.24" horizontalCenter="0" alpha="0.33"/>
 		</e:Group>
-		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+		<e:Group id="infoGp" left="0" right="0" top="0" bottom="0" x="0" y="0" scaleX="1" scaleY="1">
 			<e:Image horizontalCenter="0" verticalCenter="0" x="86" y="211.00000000000003" scaleX="1" scaleY="1" source="cont_info_png"/>
 			<e:Image id="prizeImg2" y="394.3" horizontalCenter="0.5" source="prize_mm1_png" scaleX="0.9" scaleY="0.9"/>
-			<e:Group width="511.28" height="312.06" horizontalCenter="11.5" verticalCenter="125" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group width="537.04" height="177.21" horizontalCenter="-1.5" verticalCenter="49.5" anchorOffsetY="0" anchorOffsetX="0">
 
-			<e:Label id="nameLb" text="jinx" y="25.85" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="13.64"/>
-			<e:Label id="telLb" text="13123132" y="76.85" anchorOffsetY="0" height="-108" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" x="13.64"/>
-			<e:Label id="addrLb" text="撒旦发生大师傅·" x="13.64" y="127.85" anchorOffsetY="0" height="123" size="33" fontFamily="Microsoft YaHei" textColor="0x000000" anchorOffsetX="0" width="480" lineSpacing="12"/>
+			<e:Label id="nameLb" text="jinx" y="10.67" anchorOffsetY="0" height="-108" size="28" fontFamily="Microsoft YaHei" textColor="0x000000" left="0"/>
+			<e:Label id="telLb" text="13123132" y="49.07" anchorOffsetY="0" height="-108" size="28" fontFamily="Microsoft YaHei" textColor="0x000000" left="0"/>
+			<e:Label id="addrLb" text="撒旦发生大师傅·" y="88.07" anchorOffsetY="0" height="123" size="28" fontFamily="Microsoft YaHei" textColor="0x000000" anchorOffsetX="0" width="480" lineSpacing="12" left="0"/>
 			</e:Group>
+			<e:Group width="397.34" height="144.01" y="817.33" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+			</e:Group>
+			<e:Group id="qrGp" width="132" height="132" horizontalCenter="124" verticalCenter="222"/>
+			<e:Image id="descImg" verticalCenter="221.5" horizontalCenter="0.5" source="desc_jj1000_png"/>
 			<e:Button id="okBtn" label="" width="226" height="90" alpha="0.33" verticalCenter="346" horizontalCenter="124">
 
 			</e:Button>
