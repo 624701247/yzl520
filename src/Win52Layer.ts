@@ -13,6 +13,8 @@ export class Win52Layer extends Dlg {
     private findBtn:eui.Button
     private sharedBtn:eui.Button
 
+    private backBtn:eui.Button
+
     constructor(winNo) {
         super(Win52LayerSkin)
 
@@ -20,6 +22,8 @@ export class Win52Layer extends Dlg {
 
         jinx.addTapEvent(this.findBtn, this.ontapFind, this)
         jinx.addTapEvent(this.sharedBtn, this.ontapLove, this)
+
+        jinx.addTapEvent(this.backBtn, backHome, this)
 
         this.winNoImg.texture = RES.getRes('m' + winNo + '_png')  
 

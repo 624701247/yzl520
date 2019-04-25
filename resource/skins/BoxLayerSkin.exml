@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="BoxLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Group width="697" height="697" horizontalCenter="0.5" verticalCenter="-47.5">
+	<e:Group width="697" height="697" horizontalCenter="0.5" verticalCenter="-72.5">
 		<e:Image left="0" right="0" top="0" bottom="0" source="huang_png"/>
 		<e:Image id="logoImg" source="logo_png" horizontalCenter="1" y="143.09"/>
 		<e:Image id="fxImg" y="201.46" horizontalCenter="1" source="txt_fxbb_png" visible="false"/>
@@ -15,4 +15,12 @@
 			</e:skinName>
 		</e:Button>
 	</e:Group>
+	<e:Button id="backBtn" label="" horizontalCenter="0" verticalCenter="462.5">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_backhome_png" source.down="btn_backhome_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
 </e:Skin>

@@ -2,11 +2,11 @@
 namespace pgame {
 export class LoseLayer extends Dlg {
     private findBtn:eui.Button
-    private closeBtn:eui.Button
+    private backBtn:eui.Button
     constructor() {
         super(LoseLayerSkin)
 
-        this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
+        jinx.addTapEvent(this.backBtn, backHome, this)
 
         jinx.addTapEvent(this.findBtn, this.onFind, this)
     }

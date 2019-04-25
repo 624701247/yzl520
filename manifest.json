@@ -10,9 +10,9 @@
 	],
 	"game": [
 		"bin-debug/Dlg.js",
-		"bin-debug/Scene.js",
 		"bin-debug/BaseUiMgr.js",
 		"bin-debug/jinx/Dom.js",
+		"bin-debug/Scene.js",
 		"bin-debug/ShareLayer.js",
 		"bin-debug/GameLayer.js",
 		"bin-debug/GameMap.js",
@@ -27,7 +27,7 @@
 		"bin-debug/RuleLayer.js",
 		"bin-debug/BoxLayer.js",
 		"bin-debug/SelObjLayer.js",
-		"bin-debug/CouponPrizeLayer.js",
+		"bin-debug/jinx/video.js",
 		"bin-debug/ShopDescLayer.js",
 		"bin-debug/SoundEff.js",
 		"bin-debug/SwPrizeLayer.js",
@@ -44,6 +44,6 @@
 		"bin-debug/jinx/jutils.js",
 		"bin-debug/jinx/SlideBanner.js",
 		"bin-debug/jinx/TelCode.js",
-		"bin-debug/jinx/video.js"
+		"bin-debug/CouponPrizeLayer.js"
 	]
 }

@@ -1,7 +1,7 @@
 
 namespace pgame {
 
-export const objArr = ['长辈', '朋友', '孩子', '自己', '爱人']
+export const objArr = ['长辈', '朋友', '孩子', '爱人', '自己']
 export const txtArr = {
 '长辈': [
 `知道我为什么
@@ -30,15 +30,6 @@ best friend前三位是谁！
 你笑了，
 就是晴天！`
 ],
-'自己': [
-`你猜我现在在干嘛？
-没错，
-在跟全世界最棒的自己表白！`,
-
-`发现了吗？
-这些日子你变了……
-变得越来越喜欢自己啦！`
-],
 '爱人': [
 `掐指一算，你命里缺我
 不好意思咯，
@@ -47,7 +38,28 @@ best friend前三位是谁！
 `请坐稳扶好，
 因为接下来
 你就要被我宠上天！`
+],
+'自己': [
+`你猜我现在在干嘛？
+没错，
+在跟全世界最棒的自己表白！`,
+
+`发现了吗？
+这些日子你变了……
+变得越来越喜欢自己啦！`
 ]
+}
+
+var allTxtArr = []
+export var getAllTxtArr = function() {
+    if(allTxtArr.length == 0) {
+        for(var k1 in txtArr) {
+            for(var k2 in txtArr[k1]) {
+                allTxtArr.push( txtArr[k1][k2] )
+            }
+        }
+    }
+    return allTxtArr
 }
 
 

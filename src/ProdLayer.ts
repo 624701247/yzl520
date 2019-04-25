@@ -9,11 +9,15 @@ export class ProdLayer extends Dlg {
     private wordImg0:eui.Image
     private boxBtn:eui.Button
 
+    private backBtn:eui.Button
+
     constructor(prodId) {
         super(ProdLayerSkin)
 
         jinx.addTapEvent(this.findBtn, this.ontapFind, this)
         jinx.addTapEvent(this.sharedBtn, this.ontapLove, this)
+
+        jinx.addTapEvent(this.backBtn, backHome, this)
 
         console.log('sss', prodId)
         prodId = prodId + 1

@@ -18,8 +18,8 @@ export function goPrize(pinfo:as.PrizeInfo) {
 
 // 
 export class PrizeItem extends eui.Component {
-    private iconImg:eui.Image
-    private nameLb:eui.Label
+    // private iconImg:eui.Image
+    // private nameLb:eui.Label
     private detailBtn:eui.Button
     constructor() {
         super()
@@ -27,9 +27,9 @@ export class PrizeItem extends eui.Component {
     }
 
     public init(pInfo:as.PrizeInfo) {
-        var resinfo = as.getPrizeResInfo(pInfo)
-        this.iconImg.texture =  RES.getRes(resinfo.resName) 
-        this.nameLb.text = pInfo.prizeName + ''
+        // var resinfo = as.getPrizeResInfo(pInfo)
+        // this.iconImg.texture =  RES.getRes(resinfo.resName) 
+        // this.nameLb.text = pInfo.prizeName + ''
 
         jinx.addTapEvent(this.detailBtn, function() {
             goPrize(pInfo)

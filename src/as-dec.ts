@@ -92,6 +92,7 @@ declare namespace as {
     export namespace PrizeType {
         export const sw:string;
         export const coupon:string;
+        export const hx:string;
     }
     export interface PrizeInfo {
         prizeName:string;

@@ -1,5 +1,11 @@
 // TypeScript file
 namespace pgame {
+
+export function backHome() {
+    uiMgr.go(SceneId.home)
+    uiMgr.closeAll()
+}
+
 export class HomeLayer extends Scene {
     private loveBtn:eui.Button
     private find520Btn:eui.Button

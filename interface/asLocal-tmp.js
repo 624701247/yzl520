@@ -92,12 +92,9 @@ var as;
     }
 
     as.action.winMM = 'win_MM'
-    as.winMM = function(no) {
-        if(no == 5 || no == 2) {
-            var tag = 'count' + no
-            as.myShare[tag]++
-            carry.dispEvent(as.action.winMM, 'SSS')
-        }
+    as.winMM = function() {
+        
+        carry.dispEvent(as.action.winMM, 5)
     }
 
 

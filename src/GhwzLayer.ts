@@ -5,12 +5,23 @@ export class GhwzLayer extends Dlg {
 
     private len:number
     private curId:number = 0
+    private txtList: any[]
     constructor() {
         super(GhwzLayerSkin)
 
         this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
 
-        this.len = txtArr[ curPosterInfo.obj ].length
+        this.txtLb.text = curPosterInfo.txt
+
+        this.txtList = getAllTxtArr()
+        // this.len = txtArr[ curPosterInfo.obj ].length
+        this.len = this.txtList.length
+        for(var idx = 0; idx < this.txtList.length; idx++) {
+            if(this.txtLb.text == this.txtList[idx]) {
+                this.curId = idx
+                break
+            }
+        }
 
         if(curPosterInfo.obj) {
             this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
@@ -19,9 +30,7 @@ export class GhwzLayer extends Dlg {
                 { text:"说的话", style:{'bold': false} }
             ];
         }
-        if(curPosterInfo.txt) {
-            this.txtLb.text = curPosterInfo.txt
-        }
+        
 
         jinx.addTapEvent(this.lastBtn, this.ontapLast, this)
         jinx.addTapEvent(this.nextBtn, this.ontapNext, this)
@@ -30,23 +39,30 @@ export class GhwzLayer extends Dlg {
 
     private ontapLast() {
         if(this.curId == 0) {
-            return
+            // return
+            this.curId = this.len - 1
         }
-        this.curId--
+        else {
+            this.curId--
+        }
         this.updateStatus()
     }
     private ontapNext() {
         if(this.curId == this.len - 1) {
-            return 
+            // return 
+            this.curId = 0
+        }  
+        else {
+            this.curId++
         }
-        this.curId++
         this.updateStatus()
     }
     private updateStatus() {
-        this.txtLb.text = txtArr[ curPosterInfo.obj ][ this.curId ]
+        // this.txtLb.text = txtArr[ curPosterInfo.obj ][ this.curId ]
+        this.txtLb.text = this.txtList[this.curId]
 
-        this.lastBtn.visible = !(this.curId == 0)
-        this.nextBtn.visible = !(this.curId == this.len - 1)
+        // this.lastBtn.visible = !(this.curId == 0)
+        // this.nextBtn.visible = !(this.curId == this.len - 1)
     }
     private ontapOk() {
         curPosterInfo.txt = this.txtLb.text
