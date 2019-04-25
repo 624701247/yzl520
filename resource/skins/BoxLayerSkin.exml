@@ -3,8 +3,8 @@
 	<e:Group width="697" height="697" horizontalCenter="0.5" verticalCenter="-72.5">
 		<e:Image left="0" right="0" top="0" bottom="0" source="huang_png"/>
 		<e:Image id="logoImg" source="logo_png" horizontalCenter="1" y="143.09"/>
-		<e:Image id="fxImg" y="201.46" horizontalCenter="1" source="txt_fxbb_png" visible="false"/>
-		<e:Image id="jqImg" y="201.46" horizontalCenter="1" source="txt_jq_png"/>
+		<e:Image id="fxImg" y="201.46" horizontalCenter="1" source="txt_fxbb_png"/>
+		<e:Image id="jqImg" y="201.46" horizontalCenter="1" source="txt_jq_png" visible="false"/>
 		<e:Image source="box_png" horizontalCenter="0.5" verticalCenter="62"/>
 		<e:Button id="openBtn" label="" verticalCenter="253" horizontalCenter="0">
 			<e:skinName>

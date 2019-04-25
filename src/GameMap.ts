@@ -44,14 +44,12 @@ export class GameMap extends eui.Component {
 
         if(rd < 0.5) {
             uiMgr.open(DlgId.prod, this.curId)
-        } else {
+        } else if(rd < 0.8) {
             carry.spinner.show()
             as.winMM()
+        } else {
+            uiMgr.open(DlgId.boxjx)
         }
-        // uiMgr.open(DlgId.boxjx)
-         //kone todo 惊喜
-
-        //  kone todo 地图上对话还没有加上
 
         // 产品展示页 或者  惊喜宝箱页
     }

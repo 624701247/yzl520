@@ -105,7 +105,7 @@ declare namespace as {
         address:string;
     }
     export const myPrizes:PrizeInfo[] //我的奖品列表
-    export function gameLottery():void; //抽奖
+    export function gameLottery(is520:boolean):void; //抽奖
     //提交领奖表单信息
     export function saveLotteryInfo(pinfo:PrizeInfo, name:string, phone:string, area:string, addr:string):void; 
     

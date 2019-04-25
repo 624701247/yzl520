@@ -10,7 +10,7 @@
 <meta name="x5-fullscreen" content="true" />
 <meta name="360-fullscreen" content="true" />
 <link rel="stylesheet" type="text/css" href="css/sarea.css">
-<link rel="stylesheet" type="text/css" href="css/index.css?1556161469" />
+<link rel="stylesheet" type="text/css" href="css/index.css?1556171904" />
 <!--kone todo :以后不默认加派加统计了-->
 </head>
 <body>
@@ -37,7 +37,7 @@
 
 <!---->
 <script>
-    var BIN_VER = 1556161469
+    var BIN_VER = 1556171904
     var carry;
     !function(carry) {
         carry.loadImgByAry = function(imgAry, func) {
@@ -108,7 +108,7 @@
 
         //init carry & HDP平台        
         var cryjs = 'public/carry.min.js?' + BIN_VER
-        var asUrl = 'interface/as-520.js?1556161469'
+        var asUrl = 'interface/as-520.js?1556171904'
         if(carry.isLocal) {
             cryjs = 'public/carry.js'
             asUrl = 'interface/asLocal-tmp.js'
@@ -117,7 +117,8 @@
             carry.bgm.init()
             carry.loadScript([  
                 '//res.wx.qq.com/open/js/jweixin-1.1.0.js',
-                '//cdn.aiwanpai.com/s/hdp-4.3.0.min.js',
+                // '//cdn.aiwanpai.com/s/hdp-4.3.0.min.js',
+                'interface/hdp-4.3.0.min.js',
                 'public/sarea.js',
                 'public/areaData.js',
                 'public/qrcode.min.js',

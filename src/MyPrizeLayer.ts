@@ -74,9 +74,9 @@ export class MyPrizeLayer extends Dlg {
         this.npLb.visible = (len == 0)
 
         // 如果只有一个奖品，垂直居中显示
-        if(len == 1) {
-            item.verticalCenter = 0
-        }
+        // if(len == 1) {
+        //     item.verticalCenter = 0
+        // }
     }
 }   //end of class
 }   //end of module

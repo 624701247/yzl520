@@ -50,7 +50,6 @@ class UiMgr extends BaseUiMgr {
         return ui
     }
     public createDlg(dlgId:DlgId, parm):Dlg {
-        parm = parm || {}
         let ui:Dlg;
         switch(dlgId) {
             case DlgId.prod:

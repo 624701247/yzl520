@@ -10,9 +10,9 @@
 	],
 	"game": [
 		"bin-debug/Dlg.js",
+		"bin-debug/Scene.js",
 		"bin-debug/BaseUiMgr.js",
 		"bin-debug/jinx/Dom.js",
-		"bin-debug/Scene.js",
 		"bin-debug/SelObjLayer.js",
 		"bin-debug/as-dec.js",
 		"bin-debug/GameLayer.js",
@@ -33,7 +33,6 @@
 		"bin-debug/SoundEff.js",
 		"bin-debug/SwPrizeLayer.js",
 		"bin-debug/UiMgr.js",
-		"bin-debug/WheelLayer.js",
 		"bin-debug/Win52Layer.js",
 		"bin-debug/ZdyLayer.js",
 		"bin-debug/jinx/BgmBtn.js",

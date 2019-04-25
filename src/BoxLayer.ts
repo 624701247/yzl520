@@ -8,11 +8,14 @@ export class BoxLayer extends Dlg {
 
     private backBtn:eui.Button
 
+    private is520:boolean
+
     constructor(is520:boolean) {
         super(BoxLayerSkin)
 
         this.fxImg.visible = !is520
         this.jqImg.visible = is520
+        this.is520 = is520
 
         jinx.addTapEvent(this.openBtn, this.ontapOpen, this)
         carry.addListener(as.action.gameLottery, this.onLottery, this)
@@ -34,7 +37,7 @@ export class BoxLayer extends Dlg {
     }
 
     private ontapOpen() {
-        as.gameLottery()
+        as.gameLottery(this.is520)
         return true
     }
 
