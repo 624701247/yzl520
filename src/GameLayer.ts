@@ -18,6 +18,7 @@ export class GameLayer extends Scene {
 
     private onBegin(ev:egret.TouchEvent) {
         this.curX = ev.stageX
+        this.guideGp.visible = false
     }
     private onMove(ev:egret.TouchEvent) {
         let nx = this.gameMap.x + (ev.stageX - this.curX)
@@ -30,7 +31,6 @@ export class GameLayer extends Scene {
         }
         this.gameMap.x = nx
         this.curX = ev.stageX
-        this.guideGp.visible = false
     }
 
     public onCome() {

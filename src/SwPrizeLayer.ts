@@ -39,8 +39,9 @@ export class SwPrizeLayer extends Dlg {
 
 
     public fitUi() {
-        super.fitUi()
-        this.imgDom && this.imgDom.fitUi()
+        // super.fitUi()
+        // this.imgDom && this.imgDom.fitUi()
+        // kone todo
     }
 
 
@@ -156,6 +157,9 @@ export class SwPrizeLayer extends Dlg {
         let str = '<img src="resource/qr.png?' + BIN_VER + '" style="width:100%; height:100%; opacity: 1;" />'
         imgDom.setInnerHTML(str)
         this.imgDom = imgDom
+
+
+        // this.imgDom && this.imgDom.fitUi()  15626476235
     }
 
     private ontapSubmit() {

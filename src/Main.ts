@@ -128,6 +128,7 @@ export class Main extends eui.UILayer {
         else {
             uiMgr.go(SceneId.home)
         }
+        // soundEff.playBgm('love')
         this.loadingUi.close()        
         jinx.resetRem()
     }

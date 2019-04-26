@@ -54,12 +54,38 @@ export class GameMap extends eui.Component {
             uiMgr.open(DlgId.prod, this.curId)
         } else if(rd < 0.8) {
             carry.spinner.show()
+            this.isTimeout = false
             as.winMM()
+            setTimeout(function() {
+                this.isTimeout = true
+                carry.spinner.hide()
+                console.log('win mm 超时')
+            }.bind(this), 4000);
         } else {
-            uiMgr.open(DlgId.boxjx)
+            var has80 = false
+            var has20 = false
+            for(var ii = 0; ii < as.myPrizes.length; ii++) {
+                var pinfo = as.myPrizes[idx]
+                if(pinfo.prizeName == '88元现金券') {
+                    has80 = true
+                }
+                if(pinfo.prizeName == '20元面膜券') {
+                    has20 = true
+                }
+            }
+            if(has80 && has20) {
+                console.log('两个券都有，只出广告')
+                uiMgr.open(DlgId.prod, this.curId)
+            } else {
+                uiMgr.open(DlgId.boxjx)
+            }
         }
     }
+    private isTimeout:boolean = false
     private onWinMM(ev) {
+        if(this.isTimeout) {
+            return
+        }
         carry.spinner.hide()
         if(ev.data) {
             uiMgr.open(DlgId.win52, ev.data)
