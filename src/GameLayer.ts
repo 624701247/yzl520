@@ -11,7 +11,7 @@ export class GameLayer extends Scene {
         jinx.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMove, this)
 
 
-        this.boxStatus.init()
+        // this.boxStatus.init()
 
         if(isAgain) {
             this.guideGp.visible = false
@@ -23,9 +23,9 @@ export class GameLayer extends Scene {
     private gameMap:GameMap
     private guideGp: eui.Group
 
-    private boxStatus:BoxStatus
+    // private boxStatus:BoxStatus
     public onCloseDlg() {   
-        this.boxStatus.init()
+        // this.boxStatus.init()
     }
 
     private onBegin(ev:egret.TouchEvent) {
@@ -43,9 +43,6 @@ export class GameLayer extends Scene {
         }
         this.gameMap.x = nx
         this.curX = ev.stageX
-    }
-
-    public onCome() {
     }
 
     public onBack() {

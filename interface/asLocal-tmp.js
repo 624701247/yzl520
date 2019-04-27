@@ -175,7 +175,7 @@ var as;
         },
         '1000元购物基金': {
             resName: 'prize_jj1000_png',
-            prizeType: as.PrizeType.coupon
+            prizeType: as.PrizeType.sw
         },
         '500元购物基金': {
             resName: 'prize_jj500_png',

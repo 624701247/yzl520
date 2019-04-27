@@ -67,4 +67,54 @@ export class BoxStatus extends eui.Component {
         }
     }
 }   //end of class
+
+
+
+
+
+export class BoxStatus1 extends eui.Component {
+    private wordImg5:eui.Image
+    private wordImg2:eui.Image
+    private wordImg0:eui.Image
+
+    private is520:boolean
+
+
+    constructor() {
+        super()
+        this.skinName = BoxStatus1Skin
+    }
+
+    public init() {
+         var inf = as.getMMCount()
+        // this.wordImg5.visible = (inf.remain5 > 0)
+        // this.wordImg2.visible = (inf.remain2 > 0)
+        // this.wordImg0.visible = (inf.remain0 > 0)
+        if(inf.remain5 == 0) {
+            this.wordImg5.texture = RES.getRes('txt_que_png')
+        } else {
+            this.wordImg5.texture = RES.getRes('w5_png')
+        }
+
+        if(inf.remain2 == 0) {
+            this.wordImg2.texture = RES.getRes('txt_que_png')
+        } else {
+            this.wordImg2.texture = RES.getRes('w2_png')
+        }
+
+        if(inf.remain0 == 0) {
+            this.wordImg0.texture = RES.getRes('txt_que_png')
+        } else {
+            this.wordImg0.texture = RES.getRes('w0_png')
+        }
+    }
+}   //end of class
+
+
+export var getIs520 = function() {
+    var inf = as.getMMCount()
+    var iss = (inf.remain5 > 0) && (inf.remain2 > 0) && (inf.remain0 > 0)
+    return iss
+}
+
 }   //end of module

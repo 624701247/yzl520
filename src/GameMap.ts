@@ -50,7 +50,9 @@ export class GameMap extends eui.Component {
             rd = carry.urlParam.krd
         }
 
-        if(rd < 0.5) {
+        if( getIs520() ) {
+            carry.dispEvent('full_520')
+        } else if(rd < 0.5) {
             uiMgr.open(DlgId.prod, this.curId)
         } else if(rd < 0.8) {
             carry.spinner.show()

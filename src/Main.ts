@@ -64,6 +64,10 @@ export class Main extends eui.UILayer {
 
         carry.addListener('share_back', this.onShareBack, this)
         carry.addListener('enter_game', this.startCreateScene, this)
+
+        carry.addListener('full_520', this.onFull520, this)
+        
+
         this.loadingUi = new LoadingUI()
         this.addChild(this.loadingUi)
         
@@ -131,7 +135,12 @@ export class Main extends eui.UILayer {
         }
         else {
             uiMgr.go(SceneId.home)
+            if( getIs520() ) {
+                carry.dispEvent('full_520')
+            }
         }
+
+
         // soundEff.playBgm('love')
         this.loadingUi.close()        
         jinx.resetRem()
@@ -165,10 +174,22 @@ export class Main extends eui.UILayer {
         var data = ev.data
         carry.spinner.hide()
         if(data.no != -1) {
-            uiMgr.open(DlgId.win52, data.no)            
+            if( getIs520() ) {
+                carry.dispEvent('full_520')
+            } else {
+                uiMgr.open(DlgId.win52, data.no)
+            }
+
+
         } else if(data.prodId != null) {
             uiMgr.open(DlgId.prod, data.prodId)
         }
+    }
+
+
+    private onFull520() {
+        uiMgr.closeAll()
+        uiMgr.open(DlgId.box520)
     }
 }
 

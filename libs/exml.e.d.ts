@@ -52,6 +52,8 @@ declare module skins{
 }
 declare class BoxLayerSkin extends eui.Skin{
 }
+declare class BoxStatus1Skin extends eui.Skin{
+}
 declare class BoxStatusSkin extends eui.Skin{
 }
 declare class CouponPrizeLayerSkin extends eui.Skin{

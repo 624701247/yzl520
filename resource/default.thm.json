@@ -36,6 +36,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/skins/BoxLayerSkin.exml",
+		"resource/skins/BoxStatus1Skin.exml",
 		"resource/skins/BoxStatusSkin.exml",
 		"resource/skins/CouponPrizeLayerSkin.exml",
 		"resource/skins/GameMapSkin.exml",

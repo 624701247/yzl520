@@ -157,11 +157,12 @@ export class SwPrizeLayer extends Dlg {
         // this.telLb.text = '手机：' + this.pinfo.phone
         // this.addrLb.text = '地址：' + this.pinfo.addr
 
-
-        let imgDom = new jinx.Dom(this.qrGp)
-        let str = '<img src="resource/qr.png?' + BIN_VER + '" style="width:100%; height:100%; opacity: 1;" />'
-        imgDom.setInnerHTML(str)
-        this.imgDom = imgDom
+        if(this.pinfo.prizeName.indexOf('购物基金') != -1) {
+            let imgDom = new jinx.Dom(this.qrGp)
+            let str = '<img src="resource/qr.png?' + BIN_VER + '" style="width:100%; height:100%; opacity: 1;" />'
+            imgDom.setInnerHTML(str)
+            this.imgDom = imgDom
+        }
 
 
         // this.imgDom && this.imgDom.fitUi()  15626476235

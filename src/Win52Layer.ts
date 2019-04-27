@@ -4,18 +4,26 @@ export class Win52Layer extends Dlg {
     private closeBtn:eui.Button
     private winNoImg:eui.Image
 
-    private descImg:eui.Image
-    private descImg0:eui.Image
-    private descImg1:eui.Image
+    // private descImg:eui.Image
+    // private descImg0:eui.Image
+    // private descImg1:eui.Image
 
-    private findBtn:eui.Button
-    private sharedBtn:eui.Button
-    private sharedBtn0:eui.Button
 
     private backBtn:eui.Button
 
-    // private boxStatus:BoxStatus
+    private boxStatus1:BoxStatus
 
+
+    // 
+    private lack5or2Gp:eui.Group
+    private findBtn:eui.Button
+    
+    private lack52Gp:eui.Group
+    private sharedBtn0:eui.Button
+
+    private lack0Gp:eui.Group
+    private sharedBtn:eui.Button
+    private findBtn0:eui.Button
 
     private ontapgname() {
         uiMgr.closeAll()
@@ -28,6 +36,7 @@ export class Win52Layer extends Dlg {
         this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
 
         jinx.addTapEvent(this.findBtn, this.ontapFind, this)
+        jinx.addTapEvent(this.findBtn0, this.ontapFind, this)
         jinx.addTapEvent(this.sharedBtn, this.ontapLove, this)
         jinx.addTapEvent(this.sharedBtn0, this.ontapgname, this)
         
@@ -36,6 +45,10 @@ export class Win52Layer extends Dlg {
 
         this.winNoImg.texture = RES.getRes('m' + winNo + '_png')  
 
+
+
+        var inf = as.getMMCount()
+
         // if(winNo == 5) {
         //     this.descImg.texture = RES.getRes('txt_lack2_png')
         // } else if(winNo) {
@@ -43,29 +56,16 @@ export class Win52Layer extends Dlg {
         // }
 
 
-        if(winNo == 0) {
-            this.sharedBtn0.visible = true
-            this.findBtn.visible = false
-            this.sharedBtn.visible = false
-        }
-        else {
-            this.sharedBtn0.visible = false
-            this.findBtn.visible = true
-            this.sharedBtn.visible = true            
-        }
-        
-
-
-        if(winNo == 5) {
-            this.descImg0.texture = RES.getRes('txt_l2_png')
-            this.descImg1.texture = RES.getRes('txt_l0_png')
-        } else if(winNo == 2) {
-            this.descImg0.texture = RES.getRes('txt_l5_png')
-            this.descImg1.texture = RES.getRes('txt_l0_png')
-        } else {
-            this.descImg0.texture = RES.getRes('txt_l5_png')
-            this.descImg1.texture = RES.getRes('txt_l2_png')
-        }
+        // if(winNo == 5) {
+        //     this.descImg0.texture = RES.getRes('txt_l2_png')
+        //     this.descImg1.texture = RES.getRes('txt_l0_png')
+        // } else if(winNo == 2) {
+        //     this.descImg0.texture = RES.getRes('txt_l5_png')
+        //     this.descImg1.texture = RES.getRes('txt_l0_png')
+        // } else {
+        //     this.descImg0.texture = RES.getRes('txt_l5_png')
+        //     this.descImg1.texture = RES.getRes('txt_l2_png')
+        // }
 
 
         // var inf = as.getMMCount()
@@ -95,7 +95,7 @@ export class Win52Layer extends Dlg {
 
 
 
-    //    this.boxStatus.init()
+       this.boxStatus1.init()
     }
 
     private ontapFind() {

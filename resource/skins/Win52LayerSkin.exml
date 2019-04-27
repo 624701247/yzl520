@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="Win52LayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:pgame="pgame.*">
 	<e:Image source="cont_mm_png" horizontalCenter="0" verticalCenter="0"/>
-	<e:Image id="winNoImg" source="m5_png" horizontalCenter="0.5" verticalCenter="-10"/>
+	<e:Image id="winNoImg" source="m5_png" horizontalCenter="0.5" verticalCenter="-48"/>
 	<e:Image source="logo_gr_png" horizontalCenter="-167" verticalCenter="-478"/>
-	<e:Image id="descImg" verticalCenter="229.5" horizontalCenter="0.5" source="txt_hbo_png"/>
-	<e:Image id="descImg0" verticalCenter="272" horizontalCenter="0.5" source="txt_l5_png"/>
-	<e:Image id="descImg1" verticalCenter="313.5" horizontalCenter="0.5" source="txt_l0_png"/>
-	<e:Button id="findBtn" label="" horizontalCenter="141.5" verticalCenter="435">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="btn_zzz_png" source.down="btn_zzz_png"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:Button>
-	<e:Button id="sharedBtn" label="" verticalCenter="435" horizontalCenter="-141.5">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="btn_winc_png" source.down="btn_winc_png"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:Button>
-	<e:Button id="sharedBtn0" label="" verticalCenter="435" horizontalCenter="0">
-		<e:skinName>
-			<e:Skin states="up,down,disabled">
-			<e:Image width="100%" height="100%" source="btn_xbymm_png" source.down="btn_xbymm_png"/>
-			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-			</e:Skin>
-		</e:skinName>
-	</e:Button>
-	<pgame:BoxStatus id="boxStatus" skinName="BoxStatusSkin" horizontalCenter="36" verticalCenter="-440" visible="false" locked="true"/>
-	<e:Button id="backBtn" label="" horizontalCenter="-236.5" verticalCenter="-595">
+	<pgame:BoxStatus1 id="boxStatus1" skinName="BoxStatus1Skin" horizontalCenter="0.5" verticalCenter="267.5"/>
+	<e:Image id="descImg" verticalCenter="229.5" horizontalCenter="0.5" source="txt_hbo_png" visible="false" locked="true"/>
+	<e:Image id="descImg0" verticalCenter="272" horizontalCenter="0.5" source="txt_l5_png" visible="false" locked="true"/>
+	<e:Image id="descImg1" verticalCenter="313.5" horizontalCenter="0.5" source="txt_l0_png" visible="false" locked="true"/>
+	<pgame:BoxStatus id="boxStatus" skinName="BoxStatusSkin" horizontalCenter="42" verticalCenter="270" visible="false" locked="true"/>
+	<e:Button id="backBtn" label="" horizontalCenter="-236.5" verticalCenter="-595" visible="false">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="btn_backhome_png" source.down="btn_backhome_png"/>
@@ -39,4 +16,42 @@
 		</e:Skin>
 		</e:skinName>
 	</e:Button>
+	<e:Group id="lack5or2Gp" height="90" width="750" verticalCenter="424" horizontalCenter="0" anchorOffsetY="0" visible="false">
+		<e:Button id="findBtn" label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_zzz_png" source.down="btn_zzz_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="lack52Gp" height="90" width="750" verticalCenter="424" horizontalCenter="0" anchorOffsetY="0" visible="false">
+		<e:Button id="sharedBtn0" label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_xbymm_png" source.down="btn_xbymm_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="lack0Gp" height="90" width="568" verticalCenter="424" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+		<e:Button id="sharedBtn" label="" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_winc_png" source.down="btn_winc_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="findBtn0" label="" scaleX="1" scaleY="1" verticalCenter="0" right="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_zzz_png" source.down="btn_zzz_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
 </e:Skin>

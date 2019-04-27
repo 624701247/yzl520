@@ -5,4 +5,12 @@
 	<e:EditableText id="txtInp" height="351" verticalAlign="top" anchorOffsetX="0" prompt="输入我想表白的文字" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" promptColor="0x656565" anchorOffsetY="0" textAlign="left" width="528" verticalCenter="-25.5" horizontalCenter="-10" text="" multiline="true" lineSpacing="14"/>
 	<e:Button id="resetBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="-160" verticalCenter="263"/>
 	<e:Button id="okBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="151" verticalCenter="263"/>
+	<e:Button id="closeBtn" label="" width="100" height="100" alpha="1" verticalCenter="437" horizontalCenter="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_x_png" source.down="btn_x_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
 </e:Skin>
