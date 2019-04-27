@@ -6,12 +6,19 @@ export class GhwzLayer extends Dlg {
     private len:number
     private curId:number = 0
     private txtList: any[]
+
+    private oldTxt:string
+    private oldObj:string
+
     constructor() {
         super(GhwzLayerSkin)
 
-        this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
+        this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapCancel, this)
 
         this.txtLb.text = curPosterInfo.txt
+
+        this.oldObj = curPosterInfo.obj
+        this.oldTxt = curPosterInfo.txt
 
         this.txtList = getAllTxtArr()
         // this.len = txtArr[ curPosterInfo.obj ].length
@@ -37,9 +44,14 @@ export class GhwzLayer extends Dlg {
         jinx.addTapEvent(this.okBtn, this.ontapOk, this)
     }
 
+    private ontapCancel() {
+        curPosterInfo.obj = this.oldObj
+        curPosterInfo.txt = this.oldTxt
+        uiMgr.close()
+    }
+
     private ontapLast() {
         if(this.curId == 0) {
-            // return
             this.curId = this.len - 1
         }
         else {
@@ -49,7 +61,6 @@ export class GhwzLayer extends Dlg {
     }
     private ontapNext() {
         if(this.curId == this.len - 1) {
-            // return 
             this.curId = 0
         }  
         else {
@@ -78,6 +89,8 @@ export class GhwzLayer extends Dlg {
         curPosterInfo.txt = this.txtLb.text
         uiMgr.close()
     }
+
+
 
     private titleLb:eui.Label
     private txtLb:eui.Label

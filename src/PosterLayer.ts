@@ -191,7 +191,7 @@ export class PosterLayer extends Scene {
 
     private onUpload(ev) {
         if(ev.data) {
-            carry.weakHint('上传海报成功！')
+            // carry.weakHint('上传海报成功！')
         }
         carry.spinner.hide()
     }
