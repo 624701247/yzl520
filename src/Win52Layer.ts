@@ -48,6 +48,24 @@ export class Win52Layer extends Dlg {
 
 
         var inf = as.getMMCount()
+        if(winNo == 0) { // 有 0 了
+            this.lack52Gp.visible = true
+
+            this.lack5or2Gp.visible = false
+            this.lack0Gp.visible = false
+        }
+        else if(inf.remain2 > 0 && inf.remain5 > 0) { //就差 0
+            this.lack0Gp.visible = true
+
+            this.lack5or2Gp.visible = false
+            this.lack52Gp.visible = false
+        }
+        else {
+            this.lack5or2Gp.visible = true
+
+            this.lack52Gp.visible = false
+            this.lack0Gp.visible = false
+        }
 
         // if(winNo == 5) {
         //     this.descImg.texture = RES.getRes('txt_lack2_png')
