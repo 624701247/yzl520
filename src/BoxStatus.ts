@@ -12,6 +12,8 @@ export class BoxStatus extends eui.Component {
     constructor() {
         super()
         this.skinName = BoxStatusSkin
+
+        this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
 
     public init() {
@@ -36,8 +38,6 @@ export class BoxStatus extends eui.Component {
             
 
         }
-
-        this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
     private onremove() {
         clearInterval(this.timer)

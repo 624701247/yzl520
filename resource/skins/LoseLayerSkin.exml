@@ -2,7 +2,7 @@
 <e:Skin class="LoseLayerSkin" width="750" height="1206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="cont_lose_png" horizontalCenter="0.5" verticalCenter="-17.5"/>
 	<e:Button id="findBtn" label="findBtn" alpha="0.33" anchorOffsetX="0" width="333.33" anchorOffsetY="0" height="89.39" horizontalCenter="-0.5" verticalCenter="104.5"/>
-	<e:Button id="backBtn" label="" horizontalCenter="0" verticalCenter="462.5">
+	<e:Button id="backBtn" label="" horizontalCenter="0" verticalCenter="462.5" visible="false" locked="true">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="btn_backhome_png" source.down="btn_backhome_png"/>

@@ -4,7 +4,7 @@ export class ProdLayer extends Dlg {
     private findBtn:eui.Button
     private sharedBtn:eui.Button
 
-    private boxStatus:BoxStatus
+    // private boxStatus:BoxStatus
 
     private backBtn:eui.Button
 
@@ -22,8 +22,8 @@ export class ProdLayer extends Dlg {
             this['prodImg' + idx].visible = (prodId == idx)
         }
 
-        this.boxStatus.init()
-       
+        // this.boxStatus.init()
+
     }
 
     // private ontapFind() {

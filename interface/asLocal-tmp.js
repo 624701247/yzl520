@@ -86,17 +86,13 @@ var as;
 
     as.getMMCount = function() {
         return {
-             remain5: 1,
+             remain5: 0,
             remain2: 1,
-            remain0: 1
+            remain0: 0
         }
     }
 
-    as.action.winMM = 'win_MM'
-    as.winMM = function() {
-        
-        carry.dispEvent(as.action.winMM, 5)
-    }
+    
 
 
     /* 上传照片 ****************************************************************************/
@@ -205,20 +201,42 @@ var as;
     }
 
 
-    /* 登录注册 ********************************************************************************/
-    as.action.getCode = 'get_Code'
-    as.action.login = 'login'
-    as.getCode = function() {
+    as.action.winMM = 'win_MM'
+    as.winMM = function(no, prodId) {
+        var rd = Math.random()
+        var dat = {}
+        var result = {
+            no: -1,
+            prodId: prodId
+        }
+
+        if(no == 0) {
+            dat.count0 = as.myShare.count0 + 1
+        } else {
+            if(rd < 0.5) {
+                no = 2
+                dat.count2 = as.myShare.count2 + 1
+            } else {
+                no = 5
+                dat.count5 = as.myShare.count5 + 1
+            }
+        }
+
+        result.no = no
         setTimeout(function() {
-            carry.dispEvent(as.action.getCode, true)   
-        }, 1000)
+            carry.dispEvent(as.action.winMM, result)    
+        }, 100);
+        
+
+        // 
+        // saveCoInfo(as.myShare.shareId, dat, function(res) {
+        //     if(!res) {
+        //         as.myShare['count' + no]++
+        //         result.no = no
+        //     }
+            
+        // })
     }
-    as.login = function() {
-        setTimeout(function() {
-            carry.dispEvent(as.action.login, true)      
-        }, 10000)
-    }
-    /* end of */
 
 
     /******************************************************************************************/ 

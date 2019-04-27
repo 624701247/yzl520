@@ -31,7 +31,7 @@ export class PosterLayer extends Scene {
     private createMyBtn:eui.Button
     // 
     private myGp:eui.Group
-    private find520Btn:eui.Group
+    // private find520Btn:eui.Group
     private shareBtn:eui.Group
 
     
@@ -99,7 +99,7 @@ export class PosterLayer extends Scene {
         this.myGp.visible = this.isMe
         this.otherGp.visible = !this.isMe
         if(this.isMe) {
-            jinx.addTapEvent(this.find520Btn, this.ontapFind520, this)
+            // jinx.addTapEvent(this.find520Btn, this.ontapFind520, this)
             jinx.addTapEvent(this.shareBtn, this.ontapShare, this)
         }
         else  {

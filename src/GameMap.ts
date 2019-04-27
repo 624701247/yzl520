@@ -20,10 +20,10 @@ export class GameMap extends eui.Component {
             }, this)
         }
 
-        carry.addListener(as.action.winMM, this.onWinMM, this)
+        // carry.addListener(as.action.winMM, this.onWinMM, this)
     }
     private onremove() {
-        carry.removeListener(as.action.winMM)
+        // carry.removeListener(as.action.winMM)
     }
 
     private aniStar(star)  {
@@ -54,8 +54,9 @@ export class GameMap extends eui.Component {
             uiMgr.open(DlgId.prod, this.curId)
         } else if(rd < 0.8) {
             carry.spinner.show()
-            this.isTimeout = false
-            as.winMM()
+            // this.isTimeout = false
+            is520Timeout = false
+            as.winMM(-1, this.curId)
             setTimeout(function() {
                 this.isTimeout = true
                 carry.spinner.hide()
@@ -81,18 +82,18 @@ export class GameMap extends eui.Component {
             }
         }
     }
-    private isTimeout:boolean = false
-    private onWinMM(ev) {
-        if(this.isTimeout) {
-            return
-        }
-        carry.spinner.hide()
-        if(ev.data) {
-            uiMgr.open(DlgId.win52, ev.data)
-        } else {
-            uiMgr.open(DlgId.prod, this.curId)
-        }
-    }
+    // private isTimeout:boolean = false
+    // private onWinMM(ev) {
+    //     if(this.isTimeout) {
+    //         return
+    //     }
+    //     carry.spinner.hide()
+    //     if(ev.data != -1) {
+    //         uiMgr.open(DlgId.win52, ev.data)
+    //     } else {
+    //         uiMgr.open(DlgId.prod, this.curId)
+    //     }
+    // }
 
     private starGp:eui.Group
 

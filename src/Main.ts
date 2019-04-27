@@ -118,6 +118,10 @@ export class Main extends eui.UILayer {
             return
         }
 
+
+
+        carry.addListener(as.action.winMM, this.onWinMM, this)
+
         // 
         if(as.otherShare.posterUrl && as.myShare.shareId != as.otherShare.shareId) { //别人海报
             uiMgr.go(SceneId.poster, {
@@ -131,6 +135,8 @@ export class Main extends eui.UILayer {
         // soundEff.playBgm('love')
         this.loadingUi.close()        
         jinx.resetRem()
+
+        
     }
 
     private resize() {
@@ -139,6 +145,35 @@ export class Main extends eui.UILayer {
 
     private onShareBack(ev) {
         uiMgr.closeById(DlgId.share)
+
+        carry.spinner.show()
+        is520Timeout = false
+        as.winMM(0, null)
+        setTimeout(function() {
+            is520Timeout = true
+            carry.spinner.hide()
+            console.log('win mm 超时')
+        }.bind(this), 4000);
+    }
+
+    private isTimeout:boolean = false
+    private onWinMM(ev) {
+        if(is520Timeout) {
+            return
+        }
+
+        var data = ev.data
+        carry.spinner.hide()
+        if(data.no != -1) {
+            uiMgr.open(DlgId.win52, data.no)
+
+
+            
+        } else if(data.prodId != null) {
+            uiMgr.open(DlgId.prod, data.prodId)
+        }
     }
 }
+
+export var is520Timeout = false
 }

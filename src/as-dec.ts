@@ -132,5 +132,5 @@ declare namespace as {
     export namespace action {
         export const winMM:string;
     }
-    export function winMM():void;
+    export function winMM(no:number, prodId:number):void;
 }

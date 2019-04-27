@@ -9,12 +9,20 @@ export class GameLayer extends Scene {
         
         jinx.stage.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onBegin, this)
         jinx.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMove, this)
+
+
+        this.boxStatus.init()
     }
 
     private curX:number
     private minX
     private gameMap:GameMap
     private guideGp: eui.Group
+
+    private boxStatus:BoxStatus
+    public onCloseDlg() {   
+        this.boxStatus.init()
+    }
 
     private onBegin(ev:egret.TouchEvent) {
         this.curX = ev.stageX
