@@ -55,7 +55,10 @@ export var getAllTxtArr = function() {
     if(allTxtArr.length == 0) {
         for(var k1 in txtArr) {
             for(var k2 in txtArr[k1]) {
-                allTxtArr.push( txtArr[k1][k2] )
+                allTxtArr.push( {
+                    txt: txtArr[k1][k2],
+                    obj: k1
+                })
             }
         }
     }

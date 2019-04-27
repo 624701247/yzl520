@@ -70,7 +70,7 @@ export class SwPrizeLayer extends Dlg {
         carry.addListener(as.action.saveLotteryInfo, this.onSave, this)
         // 
         jinx.addTapEvent(this.submitBtn, this.ontapSubmit, this)
-        jinx.addTapEvent(this.okBtn, this.ontapClose, this)
+        jinx.addTapEvent(this.okBtn, this.ontapOk, this)
         jinx.addTapEvent(this.changeBtn, this.ontapChange, this)
 
         // // 
@@ -79,6 +79,11 @@ export class SwPrizeLayer extends Dlg {
         //     sarea.init(areaData, null, 'area')
         //     jinx.addTapEvent(this.areaBtn, this.ontapArea, this)
         // }
+    }
+
+    private ontapOk() {
+        uiMgr.closeAll()
+        uiMgr.go(SceneId.home)
     }
     // private onArea(data, tag) {
     //     console.log(tag + ' ：sel ', data)

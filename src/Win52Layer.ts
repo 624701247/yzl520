@@ -53,28 +53,45 @@ export class Win52Layer extends Dlg {
             this.findBtn.visible = true
             this.sharedBtn.visible = true            
         }
+        
 
-        var inf = as.getMMCount()
-        var curdid = 0
-        this.descImg0.visible = false
-        this.descImg1.visible = false
-        if(inf.remain5 <= 0) {
-            this['descImg' + curdid].texture = RES.getRes('txt_l5_png')
-            this['descImg' + curdid].visible = true
-            curdid++
+
+        if(winNo == 5) {
+            this.descImg0.texture = RES.getRes('txt_l2_png')
+            this.descImg1.texture = RES.getRes('txt_l0_png')
+        } else if(winNo == 2) {
+            this.descImg0.texture = RES.getRes('txt_l5_png')
+            this.descImg1.texture = RES.getRes('txt_l0_png')
+        } else {
+            this.descImg0.texture = RES.getRes('txt_l5_png')
+            this.descImg1.texture = RES.getRes('txt_l2_png')
         }
-        if(inf.remain2 <= 0) {
-            this['descImg' + curdid].texture = RES.getRes('txt_l2_png')
-            this['descImg' + curdid].visible = true
-            curdid++
-        }
-        if(inf.remain0 <= 0) {
-            if( this['descImg' + curdid] ) {
-                this['descImg' + curdid].texture = RES.getRes('txt_l0_png')
-                this['descImg' + curdid].visible = true
-            }
-            curdid++
-        }
+
+
+        // var inf = as.getMMCount()
+        // var curdid = 0
+        // this.descImg0.visible = false
+        // this.descImg1.visible = false
+        // if(inf.remain5 <= 0) {
+        //     this['descImg' + curdid].texture = RES.getRes('txt_l5_png')
+        //     this['descImg' + curdid].visible = true
+        //     curdid++
+        // }
+        // if(inf.remain2 <= 0) {
+        //     this['descImg' + curdid].texture = RES.getRes('txt_l2_png')
+        //     this['descImg' + curdid].visible = true
+        //     curdid++
+        // }
+        // if(inf.remain0 <= 0) {
+        //     if( this['descImg' + curdid] ) {
+        //         this['descImg' + curdid].texture = RES.getRes('txt_l0_png')
+        //         this['descImg' + curdid].visible = true
+        //     }
+        //     curdid++
+        // }
+
+
+
 
 
 

@@ -143,7 +143,7 @@
 		{
 			"name": "logo_png",
 			"type": "image",
-			"url": "logo.png?1556339734"
+			"url": "logo.png?1556345885"
 		},
 		{
 			"name": "share_png",
@@ -153,7 +153,7 @@
 		{
 			"name": "bg_l_jpg",
 			"type": "image",
-			"url": "bg_l.jpg?1556339734"
+			"url": "bg_l.jpg?1556345885"
 		},
 		{
 			"name": "cont_mp_png",
@@ -173,12 +173,12 @@
 		{
 			"name": "by_png",
 			"type": "image",
-			"url": "by.png?1556339734"
+			"url": "by.png?1556345885"
 		},
 		{
 			"name": "yh_png",
 			"type": "image",
-			"url": "yh.png?1556339734"
+			"url": "yh.png?1556345885"
 		},
 		{
 			"name": "btn_love_png",
@@ -268,7 +268,7 @@
 		{
 			"name": "btn_bbfs_png",
 			"type": "image",
-			"url": "assets/btn_bbfs.png?1556338644"
+			"url": "assets/btn_bbfs.png?1556342692"
 		},
 		{
 			"name": "btn_wyxb_png",
@@ -293,7 +293,7 @@
 		{
 			"name": "cont_lose_png",
 			"type": "image",
-			"url": "assets/cont_lose.png?1556338365"
+			"url": "assets/cont_lose.png?1556345713"
 		},
 		{
 			"name": "txt_gxn_png",
@@ -548,27 +548,27 @@
 		{
 			"name": "box_jump_mp3",
 			"type": "sound",
-			"url": "box_jump.mp3?1556339734"
+			"url": "box_jump.mp3?1556345885"
 		},
 		{
 			"name": "lot_mp3",
 			"type": "sound",
-			"url": "lot.mp3?1556339734"
+			"url": "lot.mp3?1556345885"
 		},
 		{
 			"name": "love_mp3",
 			"type": "sound",
-			"url": "love.mp3?1556339734"
+			"url": "love.mp3?1556345885"
 		},
 		{
 			"name": "xunbao1_mp3",
 			"type": "sound",
-			"url": "xunbao1.mp3?1556339734"
+			"url": "xunbao1.mp3?1556345885"
 		},
 		{
 			"name": "xunbao2_mp3",
 			"type": "sound",
-			"url": "xunbao2.mp3?1556339734"
+			"url": "xunbao2.mp3?1556345885"
 		},
 		{
 			"name": "desc_jj1000_png",
@@ -608,7 +608,7 @@
 		{
 			"name": "qr_png",
 			"type": "image",
-			"url": "qr.png?1556339734"
+			"url": "qr.png?1556345885"
 		},
 		{
 			"name": "txt_home_png",

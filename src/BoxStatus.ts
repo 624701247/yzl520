@@ -1,5 +1,8 @@
 
 namespace pgame {
+
+
+
 export class BoxStatus extends eui.Component {
     private wordImg5:eui.Image
     private wordImg2:eui.Image
@@ -14,6 +17,13 @@ export class BoxStatus extends eui.Component {
         this.skinName = BoxStatusSkin
 
         this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
+
+        // this.timer = new egret.Timer(400 * 3)
+        // this.timer.addEventListener(egret.TimerEvent.TIMER, this.onTimer, this)
+    }
+    private onTimer() {
+        soundEff.playBoxJump()
+        console.log('sss')
     }
 
     public init() {
@@ -32,19 +42,25 @@ export class BoxStatus extends eui.Component {
             jinx.addTapEvent(this.boxBtn, this.ontapBox, this)
 
 
-            this.timer = setInterval(function() {
-                soundEff.playBoxJump()    
-            }, 400 * 3) 
+            // this.timer = setInterval(function() {
+            //     soundEff.playBoxJump()    
+            // }, 400 * 3) 
+            // this.timer.start()
+            // console.log('star')
             
-
         }
     }
     private onremove() {
-        clearInterval(this.timer)
+        // clearInterval(this.timer)
+        // console.log('rrrrr')
+        // this.timer.stop()
     }
-    private timer = null
+    // private timer:egret.Timer = null
 
     private ontapBox() {
+        // clearInterval(this.timer)
+        console.log('ttttt')
+        // this.timer.stop()
         if(this.is520) {
             uiMgr.close()   
             uiMgr.open(DlgId.box520)

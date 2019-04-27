@@ -165,10 +165,7 @@ export class Main extends eui.UILayer {
         var data = ev.data
         carry.spinner.hide()
         if(data.no != -1) {
-            uiMgr.open(DlgId.win52, data.no)
-
-
-            
+            uiMgr.open(DlgId.win52, data.no)            
         } else if(data.prodId != null) {
             uiMgr.open(DlgId.prod, data.prodId)
         }

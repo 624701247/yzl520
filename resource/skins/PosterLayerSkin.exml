@@ -2,7 +2,7 @@
 <e:Skin class="PosterLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image id="bgImg" source="bg_so_jpg" horizontalCenter="0" verticalCenter="0" width="750" height="1336"/>
 	<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
-	<e:Group id="posterGp" width="622" height="948" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-79">
+	<e:Group id="posterGp" width="622" height="948" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-15" verticalCenter="-64">
 		<e:Image width="649" height="981" source="poster_png" left="0" top="-10"/>
 
 		<e:Image id="dkImg" left="0" right="0" top="0" bottom="0"/>
@@ -27,7 +27,7 @@
 			<e:Image id="headImg" left="0" right="0" top="0" bottom="0"/>
 		</e:Group>
 		<e:Label id="titleLb" text="想和自己说的话" y="243" textColor="0x000000" size="50" horizontalCenter="0"/>
-		<e:Label id="txtLb" text="112是对方公司的风格是对方噶啥东风公司的风格的" textColor="0x000000" size="40" lineSpacing="17" left="56" y="387.64" anchorOffsetX="0" width="514" anchorOffsetY="0" height="352" multiline="true"/>
+		<e:Label id="txtLb" text="112是对方公司的风格是对方噶啥东风公司的风格的" textColor="0x000000" size="40" lineSpacing="17" left="59" y="387.64" anchorOffsetX="0" width="510" anchorOffsetY="0" height="352" multiline="true"/>
 		<e:Image id="qrImg" width="180" height="180" right="10" bottom="10" visible="false"/>
 
 		<e:Image id="oldPosterImg" right="-2" bottom="0" left="2" top="0"/>

@@ -23,7 +23,7 @@
 		</e:Button>
 		<e:Image id="ylqImg" source="txt_ylq_png" horizontalCenter="0.5" verticalCenter="166"/>
 	</e:Group>
-	<e:Button id="backBtn" label="" horizontalCenter="0.5" verticalCenter="555">
+	<e:Button id="backBtn" label="" horizontalCenter="0.5" verticalCenter="555" visible="false" locked="true">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="btn_backhome_png" source.down="btn_backhome_png"/>

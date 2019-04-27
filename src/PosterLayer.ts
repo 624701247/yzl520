@@ -217,6 +217,14 @@ export class PosterLayer extends Scene {
             this.txtLb.text = curPosterInfo.txt
             
         }
+
+        if(curPosterInfo.obj && this.titleLb.text != curPosterInfo.obj) {
+            this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
+                    { text: "想对", style:{'bold': false} },
+                    { text: curPosterInfo.obj, style:{'bold': true} },
+                    { text:"说的话", style:{'bold': false} }
+                ];            
+        }
     }
 
     private ontapCreateMy() {

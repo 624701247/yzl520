@@ -17,7 +17,7 @@ export class GhwzLayer extends Dlg {
         // this.len = txtArr[ curPosterInfo.obj ].length
         this.len = this.txtList.length
         for(var idx = 0; idx < this.txtList.length; idx++) {
-            if(this.txtLb.text == this.txtList[idx]) {
+            if(this.txtLb.text == this.txtList[idx].txt) {
                 this.curId = idx
                 break
             }
@@ -59,7 +59,17 @@ export class GhwzLayer extends Dlg {
     }
     private updateStatus() {
         // this.txtLb.text = txtArr[ curPosterInfo.obj ][ this.curId ]
-        this.txtLb.text = this.txtList[this.curId]
+        this.txtLb.text = this.txtList[this.curId].txt
+
+
+        curPosterInfo.obj = this.txtList[this.curId].obj
+        if(curPosterInfo.obj) {
+            this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
+                { text: "想对", style:{'bold': false} },
+                { text: curPosterInfo.obj, style:{'bold': true} },
+                { text:"说的话", style:{'bold': false} }
+            ];
+        }
 
         // this.lastBtn.visible = !(this.curId == 0)
         // this.nextBtn.visible = !(this.curId == this.len - 1)
