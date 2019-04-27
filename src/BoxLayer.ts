@@ -6,7 +6,7 @@ export class BoxLayer extends Dlg {
     private fxImg:eui.Image
     private jqImg:eui.Image
 
-    private backBtn:eui.Button
+    // private backBtn:eui.Button
 
     private is520:boolean
 
@@ -22,7 +22,7 @@ export class BoxLayer extends Dlg {
         carry.addListener('net_time_out', this.onTimeout, this)
 
 
-        jinx.addTapEvent(this.backBtn, backHome, this)
+        // jinx.addTapEvent(this.backBtn, backHome, this)
 
         this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
