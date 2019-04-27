@@ -15,7 +15,7 @@ export class LoseLayer extends Dlg {
         var rd = carry.randomInt(1, 2)
         soundEff.playBgm('xunbao' + rd)
         
-        uiMgr.go(SceneId.game)
+        uiMgr.go(SceneId.game, true)
         uiMgr.close()
     }
 }   //end of class

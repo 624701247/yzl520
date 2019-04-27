@@ -37,7 +37,7 @@ class UiMgr extends BaseUiMgr {
                 ui = new SelObjLayer()
                 break
             case SceneId.game:
-                ui = new GameLayer()
+                ui = new GameLayer(parm)
                 break
 
             case SceneId.home:

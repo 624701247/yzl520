@@ -2,7 +2,7 @@
 namespace pgame {
 export class GameLayer extends Scene {
   
-    constructor() {
+    constructor(isAgain:boolean = false) {
         super(GameLayerSkin)
 
         this.minX = jinx.scwid -this.gameMap.width
@@ -12,6 +12,10 @@ export class GameLayer extends Scene {
 
 
         this.boxStatus.init()
+
+        if(isAgain) {
+            this.guideGp.visible = false
+        }
     }
 
     private curX:number

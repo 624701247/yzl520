@@ -66,7 +66,7 @@ export class GameMap extends eui.Component {
             var has80 = false
             var has20 = false
             for(var ii = 0; ii < as.myPrizes.length; ii++) {
-                var pinfo = as.myPrizes[idx]
+                var pinfo = as.myPrizes[ii]
                 if(pinfo.prizeName == '88元现金券') {
                     has80 = true
                 }

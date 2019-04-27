@@ -143,7 +143,7 @@
 		{
 			"name": "logo_png",
 			"type": "image",
-			"url": "logo.png?1556347430"
+			"url": "logo.png?1556348742"
 		},
 		{
 			"name": "share_png",
@@ -153,7 +153,7 @@
 		{
 			"name": "bg_l_jpg",
 			"type": "image",
-			"url": "bg_l.jpg?1556347430"
+			"url": "bg_l.jpg?1556348742"
 		},
 		{
 			"name": "cont_mp_png",
@@ -173,12 +173,12 @@
 		{
 			"name": "by_png",
 			"type": "image",
-			"url": "by.png?1556347430"
+			"url": "by.png?1556348742"
 		},
 		{
 			"name": "yh_png",
 			"type": "image",
-			"url": "yh.png?1556347430"
+			"url": "yh.png?1556348742"
 		},
 		{
 			"name": "btn_love_png",
@@ -548,27 +548,27 @@
 		{
 			"name": "box_jump_mp3",
 			"type": "sound",
-			"url": "box_jump.mp3?1556347430"
+			"url": "box_jump.mp3?1556348742"
 		},
 		{
 			"name": "lot_mp3",
 			"type": "sound",
-			"url": "lot.mp3?1556347430"
+			"url": "lot.mp3?1556348742"
 		},
 		{
 			"name": "love_mp3",
 			"type": "sound",
-			"url": "love.mp3?1556347430"
+			"url": "love.mp3?1556348742"
 		},
 		{
 			"name": "xunbao1_mp3",
 			"type": "sound",
-			"url": "xunbao1.mp3?1556347430"
+			"url": "xunbao1.mp3?1556348742"
 		},
 		{
 			"name": "xunbao2_mp3",
 			"type": "sound",
-			"url": "xunbao2.mp3?1556347430"
+			"url": "xunbao2.mp3?1556348742"
 		},
 		{
 			"name": "desc_jj1000_png",
@@ -608,7 +608,7 @@
 		{
 			"name": "qr_png",
 			"type": "image",
-			"url": "qr.png?1556347430"
+			"url": "qr.png?1556348742"
 		},
 		{
 			"name": "txt_home_png",
