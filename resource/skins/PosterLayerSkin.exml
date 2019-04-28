@@ -32,7 +32,7 @@
 
 		<e:Image id="oldPosterImg" right="-2" bottom="0" left="2" top="0"/>
 	</e:Group>
-	<e:Group id="otherGp" height="200" left="73" right="94" bottom="0" anchorOffsetX="0" visible="false">
+	<e:Group id="otherGp" height="200" left="73" right="94" bottom="0" anchorOffsetX="0">
 		<e:Button id="createMyBtn" label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
 			<e:skinName>
 				<e:Skin states="up,down,disabled">
@@ -42,7 +42,7 @@
 			</e:skinName>
 		</e:Button>
 	</e:Group>
-	<e:Group id="myGp" height="200" bottom="0" width="550" anchorOffsetX="0" horizontalCenter="0">
+	<e:Group id="myGp" height="200" bottom="0" width="550" anchorOffsetX="0" horizontalCenter="0" visible="false">
 		<e:Button id="find520Btn" label="" scaleX="1" scaleY="1" left="0" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" visible="false" locked="true">
 			<e:skinName>
 				<e:Skin states="up,down,disabled">

@@ -16,7 +16,7 @@ namespace pgame {
         // 
         private sceneCont:eui.Group
         private lastScene:Scene
-        private curScene:Scene
+        public curScene:Scene
 
         // 
         private dlgCont:eui.Group

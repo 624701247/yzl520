@@ -155,6 +155,12 @@ export class Main extends eui.UILayer {
     private onShareBack(ev) {
         uiMgr.closeById(DlgId.share)
 
+        if(uiMgr.curScene.name != 'poster') {
+            console.log('海报页上才能分享加0')
+            return 
+        }
+
+
         carry.spinner.show()
         is520Timeout = false
         as.winMM(0, null)

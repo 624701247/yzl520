@@ -17,11 +17,23 @@ export class HomeLayer extends Scene {
     private xin1Img:eui.Image
     private qq1Img:eui.Image
 
+    private hand1Img:eui.Image
+    private hand2Img:eui.Image
+
     public fitUi() {
         super.fitUi()
     }
     constructor() {
         super(HomeLayerSkin)
+
+        egret.Tween.get(this.hand1Img, {loop:true})
+        .to({scaleX:1.14, scaleY:1.14}, 500)
+        .to({scaleX:1, scaleY:1}, 500)
+
+        egret.Tween.get(this.hand2Img, {loop:true})
+        .to({scaleX:1.14, scaleY:1.14}, 500)
+        .to({scaleX:1, scaleY:1}, 500)
+
 
         egret.Tween.get(this.titleImg, {loop: true})
         .to({scaleX:1.1, scaleY:1.1}, 600)

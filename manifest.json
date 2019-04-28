@@ -27,7 +27,7 @@
 		"bin-debug/ProdLayer.js",
 		"bin-debug/RuleLayer.js",
 		"bin-debug/BoxLayer.js",
-		"bin-debug/jinx/video.js",
+		"bin-debug/BoxStatus.js",
 		"bin-debug/ShareLayer.js",
 		"bin-debug/ShopDescLayer.js",
 		"bin-debug/SoundEff.js",
@@ -44,6 +44,6 @@
 		"bin-debug/jinx/jutils.js",
 		"bin-debug/jinx/SlideBanner.js",
 		"bin-debug/jinx/TelCode.js",
-		"bin-debug/BoxStatus.js"
+		"bin-debug/jinx/video.js"
 	]
 }
