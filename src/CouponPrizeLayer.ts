@@ -40,8 +40,7 @@ export class CouponPrizeLayer extends Dlg {
             this.ylqImg.visible = false
             jinx.addTapEvent(this.getBtn, this.ontapGet, this)
         }
-        
-    }
+    }   
 
     private onFind() {
         var rd = carry.randomInt(1, 2)
@@ -57,7 +56,7 @@ export class CouponPrizeLayer extends Dlg {
             as.getCoupon(this.pinfo)
         }
         else if(type == as.PrizeType.sw) {
-            uiMgr.open(DlgId.swprize, this.pinfo)
+            uiMgr.open(DlgId.swprize, this.pinfo, UiAni.nil)
         }
     }   
 }   //end of class

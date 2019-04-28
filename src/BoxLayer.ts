@@ -17,6 +17,19 @@ export class BoxLayer extends Dlg {
         this.jqImg.visible = is520
         this.is520 = is520
 
+
+        egret.Tween.get(this.openBtn, {loop: true})
+        .to({scaleX: 1.15, scaleY: 1.15}, 600)
+        .to({rotation: 10}, 50)
+        .to({rotation: -10}, 50)
+        .to({rotation: 10}, 50)
+        .to({rotation: -10}, 50)
+        .to({rotation: 10}, 50)
+        .to({rotation: -10}, 50)
+        .to({rotation: 0}, 25)
+        .to({scaleX: 1, scaleY: 1}, 600)
+
+
         jinx.addTapEvent(this.openBtn, this.ontapOpen, this)
         carry.addListener(as.action.gameLottery, this.onLottery, this)
         carry.addListener('net_time_out', this.onTimeout, this)

@@ -77,6 +77,8 @@ export var curPosterInfo: {obj:string; txt:string;} = {
 export class SelObjLayer extends Scene {
     private objGp:eui.Group
 
+    private backBtn:eui.Button
+
     constructor() {
         super(SelObjLayerSkin)
 
@@ -86,6 +88,11 @@ export class SelObjLayer extends Scene {
                 this.ontapObj(idx)
             }, this)
         }
+
+        jinx.addTapEvent(this.backBtn, this.onBackHome, this)
+    }
+    private onBackHome() {
+        uiMgr.back()
     }
 
     private ontapObj(id) {

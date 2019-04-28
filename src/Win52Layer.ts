@@ -27,6 +27,10 @@ export class Win52Layer extends Dlg {
 
     private ontapgname() {
         uiMgr.closeAll()
+
+        var rd = carry.randomInt(1, 2)
+        soundEff.playBgm('xunbao' + rd)
+        
         uiMgr.go(SceneId.game)
     }
 

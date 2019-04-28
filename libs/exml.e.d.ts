@@ -1,3 +1,45 @@
+declare class BoxLayerSkin extends eui.Skin{
+}
+declare class BoxStatus1Skin extends eui.Skin{
+}
+declare class BoxStatusSkin extends eui.Skin{
+}
+declare class CouponPrizeLayerSkin extends eui.Skin{
+}
+declare class GameLayerSkin extends eui.Skin{
+}
+declare class GameMapSkin extends eui.Skin{
+}
+declare class GhwzLayerSkin extends eui.Skin{
+}
+declare class HomeLayerSkin extends eui.Skin{
+}
+declare class LoseLayerSkin extends eui.Skin{
+}
+declare class MyPrizeLayerSkin extends eui.Skin{
+}
+declare class PosterLayerSkin extends eui.Skin{
+}
+declare class PrizeItemSkin extends eui.Skin{
+}
+declare class ProdLayerSkin extends eui.Skin{
+}
+declare class RuleLayerSkin extends eui.Skin{
+}
+declare class SelObjLayerSkin extends eui.Skin{
+}
+declare class ShopDescLayerSkin extends eui.Skin{
+}
+declare class ShopItemSkin extends eui.Skin{
+}
+declare class SwPrizeLayerSkin extends eui.Skin{
+}
+declare class Win52LayerSkin extends eui.Skin{
+}
+declare class WinPrizeSkin extends eui.Skin{
+}
+declare class ZdyLayerSkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}
@@ -49,46 +91,4 @@ declare module skins{
 declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
-}
-declare class BoxLayerSkin extends eui.Skin{
-}
-declare class BoxStatus1Skin extends eui.Skin{
-}
-declare class BoxStatusSkin extends eui.Skin{
-}
-declare class CouponPrizeLayerSkin extends eui.Skin{
-}
-declare class GameLayerSkin extends eui.Skin{
-}
-declare class GameMapSkin extends eui.Skin{
-}
-declare class GhwzLayerSkin extends eui.Skin{
-}
-declare class HomeLayerSkin extends eui.Skin{
-}
-declare class LoseLayerSkin extends eui.Skin{
-}
-declare class MyPrizeLayerSkin extends eui.Skin{
-}
-declare class PosterLayerSkin extends eui.Skin{
-}
-declare class PrizeItemSkin extends eui.Skin{
-}
-declare class ProdLayerSkin extends eui.Skin{
-}
-declare class RuleLayerSkin extends eui.Skin{
-}
-declare class SelObjLayerSkin extends eui.Skin{
-}
-declare class ShopDescLayerSkin extends eui.Skin{
-}
-declare class ShopItemSkin extends eui.Skin{
-}
-declare class SwPrizeLayerSkin extends eui.Skin{
-}
-declare class Win52LayerSkin extends eui.Skin{
-}
-declare class WinPrizeSkin extends eui.Skin{
-}
-declare class ZdyLayerSkin extends eui.Skin{
 }

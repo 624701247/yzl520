@@ -180,7 +180,7 @@ namespace pgame {
         }
 
         // 打开对话框
-        public open(did:DlgId,parm?:any, ani:UiAni = UiAni.nil) {    
+        public open(did:DlgId,parm?:any, ani:UiAni = UiAni.pop) {    
             let gp = new eui.Group()
             gp.width = jinx.scwid, gp.height = jinx.schei
             gp.x = 0, gp.y = 0

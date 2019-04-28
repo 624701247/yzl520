@@ -100,6 +100,9 @@ export class PosterLayer extends Scene {
         this.otherGp.visible = !this.isMe
         if(this.isMe) {
             // jinx.addTapEvent(this.find520Btn, this.ontapFind520, this)
+            egret.Tween.get(this.shareBtn, {loop: true})
+            .to({scaleX: 1.12, scaleY: 1.12}, 400)
+            .to({scaleX: 1, scaleY: 1}, 400)
             jinx.addTapEvent(this.shareBtn, this.ontapShare, this)
         }
         else  {
@@ -270,3 +273,4 @@ export class PosterLayer extends Scene {
     }
 }   //end of class
 }   //end of module
+

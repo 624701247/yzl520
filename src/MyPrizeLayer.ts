@@ -5,7 +5,7 @@ export function goPrize(pinfo:as.PrizeInfo) {
     var resinfo = as.getPrizeResInfo(pinfo)
     switch(resinfo.prizeType) {
         case as.PrizeType.sw:
-            uiMgr.open(DlgId.swprize, pinfo)
+            uiMgr.open(DlgId.swprize, pinfo, UiAni.nil)
             break
         case as.PrizeType.coupon:
             uiMgr.open(DlgId.couponprize, pinfo)
