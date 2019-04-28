@@ -112,6 +112,8 @@ export class GameMap extends eui.Component {
     //     }
     // }
 
+    
+
     private starGp:eui.Group
 
 
