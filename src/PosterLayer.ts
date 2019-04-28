@@ -254,6 +254,9 @@ export class PosterLayer extends Scene {
         console.log('ready', this.oriPosterSc)
     }
     private aniPoster(cbFunc, that) {
+
+        soundEff.playPoster()
+
         carry.spinner.hide()
         console.log('ani go')
         var ss  = this.oriPosterSc + 0.1

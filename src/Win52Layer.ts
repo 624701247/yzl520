@@ -37,6 +37,9 @@ export class Win52Layer extends Dlg {
     constructor(winNo) {
         super(Win52LayerSkin)
 
+
+        soundEff.playMM()
+
         this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapClose, this)
 
         jinx.addTapEvent(this.findBtn, this.ontapFind, this)

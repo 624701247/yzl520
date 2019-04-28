@@ -17,6 +17,8 @@ export class BoxLayer extends Dlg {
         this.jqImg.visible = is520
         this.is520 = is520
 
+        soundEff.playBoxJump()
+
 
         egret.Tween.get(this.openBtn, {loop: true})
         .to({scaleX: 1.15, scaleY: 1.15}, 600)
@@ -50,13 +52,13 @@ export class BoxLayer extends Dlg {
     }
 
     private ontapOpen() {
+        soundEff.initDrawPrize()
         as.gameLottery(this.is520)
-        soundEff.initLottery()
         return true
     }
 
     private onLottery(ev) {
-        soundEff.playLottery()
+        soundEff.playDrawPrize()
 
         jinx.recoverTapEvent(this.openBtn)
         var mpid = ev.data

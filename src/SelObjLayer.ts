@@ -101,6 +101,8 @@ export class SelObjLayer extends Scene {
             return 
         }
 
+        soundEff.initPoster()
+
         var cid = id - 1
         curPosterInfo.obj = objArr[ cid ]
         curPosterInfo.txt = txtArr[ curPosterInfo.obj ][0]

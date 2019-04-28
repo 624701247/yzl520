@@ -13,21 +13,58 @@ class SoundEff {
     }
     public initBoxJump() {
         if(!this.bjSound) {
-            this.bjSound = RES.getRes("box_jump_mp3"); 
+            this.bjSound = RES.getRes("box_out_mp3"); 
+        }
+    }
+
+
+     // 中 520 
+    private mmSound: egret.Sound
+    public playMM() {
+        this.initMM()
+        this.mmSound.play(0, 1) 
+    }
+    public initMM() {
+        if(!this.mmSound) {
+            this.mmSound = RES.getRes("box_jump_mp3"); 
+        }
+    }
+
+    // 生成海报
+    private poSound: egret.Sound
+    public playPoster() {
+        this.initPoster()
+        this.poSound.play(0, 1) 
+    }
+    public initPoster() {
+        if(!this.poSound) {
+            this.poSound = RES.getRes("poster_mp3"); 
+        }
+    }
+
+    // 开奖
+    private dpSound: egret.Sound
+    public playDrawPrize() {
+        this.initDrawPrize()
+        this.dpSound.play(0, 1) 
+    }
+    public initDrawPrize() {
+        if(!this.dpSound) {
+            this.dpSound = RES.getRes("draw_prize_mp3"); 
         }
     }
 
     // 抽奖
-    private lSound: egret.Sound
-    public playLottery() {
-        this.initLottery()
-        this.lSound.play(0, 1) 
-    }
-    public initLottery() {
-        if(!this.lSound) {
-            this.lSound = RES.getRes("lot_mp3"); 
-        }
-    }
+    // private lSound: egret.Sound
+    // public playLottery() {
+    //     this.initLottery()
+    //     this.lSound.play(0, 1) 
+    // }
+    // public initLottery() {
+    //     if(!this.lSound) {
+    //         this.lSound = RES.getRes("lot_mp3"); 
+    //     }
+    // }
 
 
     // 

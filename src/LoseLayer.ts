@@ -12,11 +12,12 @@ export class LoseLayer extends Dlg {
     }
 
     private onFind() {
-        var rd = carry.randomInt(1, 2)
-        soundEff.playBgm('xunbao' + rd)
+        // var rd = carry.randomInt(1, 2)
+        // soundEff.playBgm('xunbao' + rd)
         
-        uiMgr.go(SceneId.game, true)
-        uiMgr.close()
+        // uiMgr.go(SceneId.game, true)
+        uiMgr.closeAll()
+        uiMgr.go(SceneId.home)
     }
 }   //end of class
 }   //end of module

@@ -63,6 +63,9 @@ export class HomeLayer extends Scene {
         uiMgr.go(SceneId.selobj)
     }
     private ontapFind520() {
+        soundEff.initBoxJump()
+        soundEff.initMM()
+
         var rd = carry.randomInt(1, 2)
         soundEff.playBgm('xunbao' + rd)
 
@@ -70,10 +73,14 @@ export class HomeLayer extends Scene {
     }
     // 
     private ontapMyprize(ev:egret.Event) {
+        soundEff.initBoxJump()
+
         uiMgr.open(DlgId.myprize)
     }
     // 
     private ontapRule(ev:egret.Event) {
+        soundEff.initBoxJump()
+
         uiMgr.open(DlgId.rule)
     }
 }

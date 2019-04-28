@@ -86,9 +86,9 @@ var as;
 
     as.getMMCount = function() {
         return {
-             remain5: 1,
+             remain5: 0,
             remain2: 0,
-            remain0: 1
+            remain0: 0
         }
     }
 

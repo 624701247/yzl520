@@ -21,10 +21,10 @@ export class BoxStatus extends eui.Component {
         // this.timer = new egret.Timer(400 * 3)
         // this.timer.addEventListener(egret.TimerEvent.TIMER, this.onTimer, this)
     }
-    private onTimer() {
-        soundEff.playBoxJump()
-        console.log('sss')
-    }
+    // private onTimer() {
+    //     soundEff.playBoxJump()
+    //     console.log('sss')
+    // }
 
     public init() {
          var inf = as.getMMCount()
@@ -61,6 +61,9 @@ export class BoxStatus extends eui.Component {
         // clearInterval(this.timer)
         console.log('ttttt')
         // this.timer.stop()
+
+        soundEff.initBoxJump()
+
         if(this.is520) {
             uiMgr.close()   
             uiMgr.open(DlgId.box520)

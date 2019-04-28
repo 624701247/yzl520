@@ -13,6 +13,8 @@ export class ZdyLayer extends Dlg {
 
         jinx.addTapEvent(this.resetBtn, this.ontapReset, this)
         jinx.addTapEvent(this.okBtn, this.ontapOk, this)
+
+        this.txtInp.maxChars = 50
     }
 
     private ontapReset() {
