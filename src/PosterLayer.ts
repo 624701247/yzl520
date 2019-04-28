@@ -241,7 +241,7 @@ export class PosterLayer extends Scene {
         uiMgr.go(SceneId.game)
     }
     private ontapShare() {
-        uiMgr.open(DlgId.share)
+        uiMgr.open(DlgId.share, null, UiAni.nil)
     }
 
     // 海报弹出动画

@@ -4,6 +4,7 @@
 	<pgame:BoxStatus id="boxStatus" skinName="BoxStatusSkin" horizontalCenter="0" top="-30" visible="false" locked="true"/>
 	<e:Group id="guideGp" left="0" right="0" top="0" bottom="0">
 		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+		<e:Image id="guideTxtImg" scaleX="1" scaleY="1" horizontalCenter="-72.5" source="txt_hd_png" width="371" height="187" anchorOffsetY="0" bottom="521"/>
 		<e:Image id="guideImg" source="guide_png" bottom="0" y="643" scaleX="1" scaleY="1" horizontalCenter="0"/>
 	</e:Group>
 

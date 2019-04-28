@@ -2,23 +2,67 @@
 namespace pgame {
 export class ShareLayer extends Dlg {
     private closeBtn:eui.Button
+
+    private qq1Img:eui.Image
+    private qq2Img:eui.Image
+    private qq3Img:eui.Image
+    private qq4Img:eui.Image
+    
+    private aniQQ(id) {
+        if(id == 1) {
+            var oldTop = this.qq1Img.top
+            if(oldTop) {
+                egret.Tween.get(this.qq1Img, {loop: true})
+                .to({top: oldTop - 40}, 1000)
+                .to({top: oldTop}, 1000)
+            }
+        }
+         else if(id == 4) {
+            var oldTop = this.qq4Img.top
+            if(oldTop) {
+                egret.Tween.get(this.qq4Img, {loop: true})
+                .wait(200)
+                .to({top: oldTop - 30}, 800)
+                .to({top: oldTop}, 800)
+            }
+        }
+    }
+
     constructor() {
-        super(null)
-        this.top = this.bottom = this.left = this.right = 0
+        super(ShareLayerSkin)
+        // this.top = this.bottom = this.left = this.right = 0
+
+        for(let idx = 1; idx <= 4; idx++) {
+            let qq = this['qq' + idx + 'Img']
+            let oldTop = qq.top
+            qq.top -= 600
+            egret.Tween.get(qq)
+            .wait( (idx - 1) * 200)
+            .to({top: oldTop}, 800)
+            .call(function() {
+                this.aniQQ(idx)
+            }, this)
+        }
+
+        
+        
+
 
         // mask
+        /*
         let rect = new eui.Rect()
         rect.fillColor = 0x000000
         rect.alpha = 0.6
         rect.top = rect.bottom = rect.left = rect.right = 0
         this.addChild(rect)
+        */
 
         let contGp = new eui.Group()
         contGp.top = contGp.bottom = contGp.left = contGp.right = 0
         this.addChild(contGp)
         
         // 静态分享图
-        /**/ 
+        /*
         let img = new egret.Bitmap(RES.getRes('share_png'))
         img.anchorOffsetX = img.width, img.anchorOffsetY = 0
         img.x = jinx.scwid, img.y = 0  //设置坐标
@@ -27,7 +71,7 @@ export class ShareLayer extends Dlg {
         if(rr < 1) {
             img.scaleX = img.scaleY = rr
         }
-        this.addChild(img)
+        this.addChild(img)*/ 
         // end of 静态分享图
 
 

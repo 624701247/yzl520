@@ -16,6 +16,23 @@ export class GameLayer extends Scene {
         if(isAgain) {
             this.guideGp.visible = false
         }
+
+    }
+
+    private guideTxtImg:eui.Image
+    private aniGuide() {
+        this.guideTxtImg.scaleY = 0
+
+        setTimeout(function() {
+            egret.Tween.get(this.guideTxtImg) 
+            .to({scaleY: 1.2}, 200)
+            .to({scaleY: 1}, 200)
+            console.log('sdfsdf')
+        }.bind(this), 200);
+    }
+
+    public onCome() {
+        this.aniGuide()
     }
 
     private curX:number

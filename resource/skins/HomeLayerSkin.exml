@@ -11,10 +11,10 @@
 		<e:Image id="xin1Img" horizontalCenter="183.5" verticalCenter="-246.5" source="xin1_png"/>
 		<e:Image id="xin2Img" horizontalCenter="-117.5" verticalCenter="-281.5" source="xin2_png"/>
 		<e:Image id="xin3Img" horizontalCenter="190" verticalCenter="-189.5" source="xin3_png"/>
-		<e:Image id="qq1Img" source="qq1_png" right="26" top="122"/>
-		<e:Image id="qq2Img" right="64" top="384" source="qq2_png"/>
-		<e:Image id="qq3Img" top="364" source="qq3_png" left="0"/>
-		<e:Image id="qq4Img" source="qq3_png" scaleX="0.8" scaleY="0.8" right="106" top="-58"/>
+		<e:Image id="qq1Img" source="qq1_png" right="26" top="122" scaleX="0.6" scaleY="0.6"/>
+		<e:Image id="qq2Img" right="64" top="384" source="qq2_png" scaleX="0.55" scaleY="0.55"/>
+		<e:Image id="qq3Img" top="412" source="qq3_png" left="18"/>
+		<e:Image id="qq4Img" source="qq3_png" scaleX="0.8" scaleY="0.8" right="106" top="-9"/>
 		<e:Image id="nameImg" scaleX="0.8" scaleY="0.8" top="340" source="txt_name_png" horizontalCenter="142"/>
 		<e:Image horizontalCenter="0" x="0" source="gy_png" bottom="0" y="904" scaleX="1" scaleY="1"/>
 	</e:Group>

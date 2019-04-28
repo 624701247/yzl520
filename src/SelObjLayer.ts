@@ -97,6 +97,9 @@ export class SelObjLayer extends Scene {
 
     private ontapObj(id) {
         console.log(id, 'ss')
+        if(id <= 0) {
+            return 
+        }
 
         var cid = id - 1
         curPosterInfo.obj = objArr[ cid ]

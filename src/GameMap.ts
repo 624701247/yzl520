@@ -11,6 +11,10 @@ export class GameMap extends eui.Component {
         this.addEventListener(egret.Event.REMOVED_FROM_STAGE, this.onremove, this)
     }
 
+    
+
+    
+
     private onadd() {
         for(let idx = 0; idx < this.starGp.numChildren; idx++) {
             let star = this.starGp.getChildAt(idx)
