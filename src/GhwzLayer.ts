@@ -15,8 +15,6 @@ export class GhwzLayer extends Dlg {
 
         this.closeBtn && jinx.addTapEvent(this.closeBtn, this.ontapCancel, this)
 
-        this.txtLb.text = curPosterInfo.txt
-
         this.oldObj = curPosterInfo.obj
         this.oldTxt = curPosterInfo.txt
 
@@ -29,6 +27,8 @@ export class GhwzLayer extends Dlg {
                 break
             }
         }
+
+        this.txtLb.text = this.txtList[this.curId].txt //curPosterInfo.txt
 
         if(curPosterInfo.obj) {
             this.titleLb.textFlow = <Array<egret.ITextElement>>[ 

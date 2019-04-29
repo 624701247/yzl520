@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ZdyLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image id="logoImg" source="logo_png" horizontalCenter="0.5" top="34"/>
-	<e:Image source="cont_zdy_png" horizontalCenter="0.5" verticalCenter="-40"/>
-	<e:EditableText id="txtInp" height="351" verticalAlign="top" anchorOffsetX="0" prompt="输入我想表白的文字" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" promptColor="0x656565" anchorOffsetY="0" textAlign="left" width="528" verticalCenter="-25.5" horizontalCenter="-10" text="" multiline="true" lineSpacing="14"/>
-	<e:Button id="resetBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="-160" verticalCenter="263"/>
-	<e:Button id="okBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="151" verticalCenter="263"/>
+	<e:Image source="cont_zdy_png" verticalCenter="-82" horizontalCenter="0.5"/>
+	<e:EditableText id="txtInp" height="351" verticalAlign="top" anchorOffsetX="0" prompt="输入我想表白的文字" fontFamily="Microsoft YaHei" size="30" textColor="0x000000" promptColor="0x656565" anchorOffsetY="0" textAlign="left" width="528" verticalCenter="-73.5" horizontalCenter="-10" text="" multiline="true" lineSpacing="14"/>
+	<e:Button id="resetBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="-160" verticalCenter="221"/>
+	<e:Button id="okBtn" label="Button" anchorOffsetX="0" width="270" anchorOffsetY="0" height="110" alpha="0.33" horizontalCenter="151" verticalCenter="221"/>
 	<e:Button id="closeBtn" label="" width="100" height="100" alpha="1" verticalCenter="437" horizontalCenter="0">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">

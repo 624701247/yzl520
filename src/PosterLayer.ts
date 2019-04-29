@@ -75,7 +75,7 @@ export class PosterLayer extends Scene {
             if(curPosterInfo.obj) {
                 this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
                     { text: "想对", style:{'bold': false} },
-                    { text: curPosterInfo.obj, style:{'bold': true} },
+                    { text: '你', style:{'bold': true} }, //curPosterInfo.obj
                     { text:"说的话", style:{'bold': false} }
                 ];
             }
@@ -228,11 +228,11 @@ export class PosterLayer extends Scene {
         }
 
         if(curPosterInfo.obj && this.titleLb.text != curPosterInfo.obj) {
-            this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
-                    { text: "想对", style:{'bold': false} },
-                    { text: curPosterInfo.obj, style:{'bold': true} },
-                    { text:"说的话", style:{'bold': false} }
-                ];            
+            // this.titleLb.textFlow = <Array<egret.ITextElement>>[ 
+            //         { text: "想对", style:{'bold': false} },
+            //         { text: curPosterInfo.obj, style:{'bold': true} },
+            //         { text:"说的话", style:{'bold': false} }
+            //     ];            
         }
     }
 
