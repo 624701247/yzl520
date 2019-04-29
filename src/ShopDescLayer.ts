@@ -42,18 +42,22 @@ export class ShopDescLayer extends Dlg {
 
         sarea.addSelEventListener(this.onArea.bind(this))
         sarea.init(areaData, 2, 'area')
-        this.shenInp.text = '上海'
-        this.shiInp.text = '上海'
+        // this.shenInp.text = '上海'
+        // this.shiInp.text = '上海'
+        this.shenInp.text = '点击选择省'
+        this.shiInp.text = '点击选择市/区'
         // this.quInp.text = '松江区'
-        this.getCurSinfo()
+        this.getCurSinfo('上海', '上海')
         jinx.addTapEvent(this.areaBtn, this.ontapArea, this)
 
         this.scroll.scrollPolicyH = eui.ScrollPolicy.OFF //水平方向不给滑动
     }
 
-    private getCurSinfo() {
+    private getCurSinfo(shen?:string, shi?:string) {
         // [this.quInp.text]['items']
-        var olist = areaData[this.shenInp.text]['items'][this.shiInp.text]['items'] || []
+        shen = shen || this.shenInp.text
+        shi = shi || this.shiInp.text
+        var olist = areaData[shen]['items'][shi]['items'] || []
 
         this.scrollGp.removeChildren()
         

@@ -42,6 +42,7 @@
 		"resource/skins/GameMapSkin.exml",
 		"resource/skins/GameLayerSkin.exml",
 		"resource/skins/GhwzLayerSkin.exml",
+		"resource/skins/HomeDescLayerSkin.exml",
 		"resource/skins/HomeLayerSkin.exml",
 		"resource/skins/LoseLayerSkin.exml",
 		"resource/skins/MyPrizeLayerSkin.exml",

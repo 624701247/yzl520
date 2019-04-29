@@ -56,6 +56,8 @@ export class PosterLayer extends Scene {
 
     private ghwzBtn:eui.Button
     private zdyBtn:eui.Button
+    private backBtn:eui.Button
+
 
     private ontapGHWZ() {
         uiMgr.open(DlgId.ghwz)
@@ -86,11 +88,15 @@ export class PosterLayer extends Scene {
 
             this.ghwzBtn.visible = true
             this.zdyBtn.visible = true
+            this.backBtn.visible = true
             jinx.addTapEvent(this.ghwzBtn, this.ontapGHWZ, this)
             jinx.addTapEvent(this.zdyBtn, this.ontapZDY, this)
+            jinx.addTapEvent(this.backBtn, backHome, this)
+
         } else {
             this.ghwzBtn.visible = false
             this.zdyBtn.visible = false
+            this.backBtn.visible = false
         }
 
         this.nameLb.text = as.wxUserInfo.nickname

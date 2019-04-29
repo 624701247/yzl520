@@ -8,6 +8,7 @@ export const enum SceneId {
     game
 } 
 export const enum DlgId {
+    homedesc,
     prod,
     win52,
     box520,
@@ -52,6 +53,9 @@ class UiMgr extends BaseUiMgr {
     public createDlg(dlgId:DlgId, parm):Dlg {
         let ui:Dlg;
         switch(dlgId) {
+            case DlgId.homedesc:
+                ui = new HomeDescLayer()
+                break
             case DlgId.prod:
                 ui = new ProdLayer(parm)
                 break

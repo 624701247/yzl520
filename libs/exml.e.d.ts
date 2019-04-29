@@ -64,6 +64,8 @@ declare class GameMapSkin extends eui.Skin{
 }
 declare class GhwzLayerSkin extends eui.Skin{
 }
+declare class HomeDescLayerSkin extends eui.Skin{
+}
 declare class HomeLayerSkin extends eui.Skin{
 }
 declare class LoseLayerSkin extends eui.Skin{

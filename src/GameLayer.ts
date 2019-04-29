@@ -17,16 +17,33 @@ export class GameLayer extends Scene {
             this.guideGp.visible = false
         }
 
+
+        jinx.addTapEvent(this.backBtn, backHome, this)
     }
 
-    private guideTxtImg:eui.Image
+    private backBtn:eui.Button
+
+    private guideTxGp:eui.Group
+    private aniGuideStar() {
+        for(let idx = 1; idx < this.guideTxGp.numChildren; idx++) {
+            let star = this.guideTxGp.getChildAt(idx)
+            let oldy = star.y
+            setTimeout(function() {
+                egret.Tween.get(star, {loop: true})
+                .to({y: oldy - 20}, 400)
+                .to({y: oldy}, 400)
+                .wait(100)
+            }, idx * 150);
+        }
+    }
     private aniGuide() {
-        this.guideTxtImg.scaleY = 0
+        this.guideTxGp.scaleY = 0
 
         setTimeout(function() {
-            egret.Tween.get(this.guideTxtImg) 
+            egret.Tween.get(this.guideTxGp) 
             .to({scaleY: 1.2}, 200)
             .to({scaleY: 1}, 200)
+            .call(this.aniGuideStar, this)
             console.log('sdfsdf')
         }.bind(this), 200);
     }

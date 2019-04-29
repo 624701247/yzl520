@@ -6,6 +6,8 @@ export function backHome() {
     uiMgr.closeAll()
 }
 
+var isFirstHome:boolean = true
+
 export class HomeLayer extends Scene {
     private loveBtn:eui.Button
     private find520Btn:eui.Button
@@ -56,6 +58,11 @@ export class HomeLayer extends Scene {
         jinx.addTapEvent(this.find520Btn, this.ontapFind520, this)
         jinx.addTapEvent(this.myPrizeBtn, this.ontapMyprize, this)
         jinx.addTapEvent(this.ruleBtn, this.ontapRule, this)
+
+        if(isFirstHome) {
+            isFirstHome = false
+            uiMgr.open(DlgId.homedesc, null, UiAni.nil)
+        }
     }
 
     // 
