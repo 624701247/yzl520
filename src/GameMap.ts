@@ -47,11 +47,11 @@ export class GameMap extends eui.Component {
         .to({scaleX: 1, scaleY: 1, rotation: 0}, 400)
         .to({scaleX: gap, scaleY: gap, rotation: rot}, 400)
         .to({scaleX: 1, scaleY: 1, rotation: 0}, 400)
-        .wait(waitBLBL)
-        .to({alpha: blblAlp}, 50)
-        .to({alpha: 1}, 50) 
-        .to({alpha: blblAlp}, 50) 
-        .to({alpha: 1}, 50) 
+        // .wait(waitBLBL)
+        // .to({alpha: blblAlp}, 50)
+        // .to({alpha: 1}, 50) 
+        // .to({alpha: blblAlp}, 50) 
+        // .to({alpha: 1}, 50) 
     }
 
     private curId:number
