@@ -44,7 +44,7 @@ export class CouponPrizeLayer extends Dlg {
 
     private onFind() {
         var rd = carry.randomInt(1, 2)
-        soundEff.playBgm('xunbao' + rd)
+        soundEff.playBgm('xunbao' + 1)
 
         uiMgr.go(SceneId.game, true)
         uiMgr.close()

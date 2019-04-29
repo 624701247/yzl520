@@ -29,7 +29,7 @@ export class Win52Layer extends Dlg {
         uiMgr.closeAll()
 
         var rd = carry.randomInt(1, 2)
-        soundEff.playBgm('xunbao' + rd)
+        soundEff.playBgm('xunbao' + 1)
         
         uiMgr.go(SceneId.game)
     }

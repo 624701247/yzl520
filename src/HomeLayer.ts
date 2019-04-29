@@ -86,7 +86,7 @@ export class HomeLayer extends Scene {
         soundEff.initMM()
 
         var rd = carry.randomInt(1, 2)
-        soundEff.playBgm('xunbao' + rd)
+        soundEff.playBgm('xunbao' + 1)
 
         uiMgr.go(SceneId.game)
     }
