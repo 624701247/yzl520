@@ -86,8 +86,8 @@ var as;
 
     as.getMMCount = function() {
         return {
-             remain5: 0,
-            remain2: 0,
+             remain5: 1,
+            remain2: 1,
             remain0: 0
         }
     }
@@ -128,12 +128,13 @@ var as;
         {prizeName:'1000元购物基金'},
         {prizeName:'500元购物基金'},
         {prizeName:'200元购物基金'},
+        {prizeName: '88元现金券'}
     ]
     as.action.gameLottery = 'game_Lottery'
     as.action.saveLotteryInfo = 'save_Lottery_Info'
     as.gameLottery = function() {
         setTimeout(function() {
-            carry.dispEvent(as.action.gameLottery, -1)
+            carry.dispEvent(as.action.gameLottery, as.myPrizes.length - 1)
         }, 50);
     }
     as.saveLotteryInfo = function(pinfo, name, phone, area, address) {    

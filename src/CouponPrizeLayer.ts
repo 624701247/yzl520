@@ -12,7 +12,7 @@ export class CouponPrizeLayer extends Dlg {
     private resinfo: any
     private pinfo: as.PrizeInfo
 
-    // private backBtn:eui.Button
+    private backBtn:eui.Button
 
     constructor(pinfo:as.PrizeInfo) {
         // super(CouponPrizeLayerSkin)
@@ -26,7 +26,7 @@ export class CouponPrizeLayer extends Dlg {
 
         
 
-        // jinx.addTapEvent(this.backBtn, backHome, this)  
+        jinx.addTapEvent(this.backBtn, backHome, this)  
 
         this.resinfo = as.getPrizeResInfo(pinfo)
         this.pinfo = pinfo
