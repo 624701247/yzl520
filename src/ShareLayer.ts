@@ -7,6 +7,8 @@ export class ShareLayer extends Dlg {
     private qq2Img:eui.Image
     private qq3Img:eui.Image
     private qq4Img:eui.Image
+
+    // private 
     
     private aniQQ(id) {
         if(id == 1) {
@@ -17,7 +19,23 @@ export class ShareLayer extends Dlg {
                 .to({top: oldTop}, 1000)
             }
         }
-         else if(id == 4) {
+        // if(id == 1) {
+        //     let pp = this['p' + id + 'Img']
+        //     if(pp) {
+        //         let oldTop1 = pp.top
+        //         let oldRight1 = pp.right 
+        //         egret.Tween.get(pp, {loop: true})
+        //         .to({
+        //             top: oldTop1 - 30,
+        //             right: oldRight1 - 30 
+        //         }, 700)
+        //         .to({
+        //             top: oldTop1,
+        //             right: oldRight1 
+        //         }, 700)
+        //     }
+        // }
+        if(id == 4) {
             var oldTop = this.qq4Img.top
             if(oldTop) {
                 egret.Tween.get(this.qq4Img, {loop: true})
@@ -42,7 +60,17 @@ export class ShareLayer extends Dlg {
             .call(function() {
                 this.aniQQ(idx)
             }, this)
+
+            let pp = this['p' + idx + 'Img']
+            if(pp) {
+                let oldTop1 = pp.top
+                pp.top -= 600
+                egret.Tween.get(pp)
+                .wait( (idx - 1) * 200)
+                .to({top: oldTop1}, 800)
+            }
         }
+
 
         
         

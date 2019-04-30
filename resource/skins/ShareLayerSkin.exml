@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ShareLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="share_png" right="0" top="0"/>
+	<e:Image source="share_png" right="8" top="0"/>
 	<e:Image id="qq1Img" source="qq1_png" right="173" top="254" scaleX="1" scaleY="1"/>
 	<e:Image id="qq2Img" scaleX="1" scaleY="1" right="64" top="254" x="10" y="10" source="qq4_png"/>
-	<e:Image id="qq3Img" right="118" top="99" source="qq2_png" scaleX="1" scaleY="1"/>
-	<e:Image id="qq4Img" top="53" source="qq3_png" right="36"/>
+	<e:Image id="qq3Img" right="116" top="103" source="qq2_png" scaleX="1" scaleY="1"/>
+	<e:Image id="qq4Img" top="52" source="qq3_png" right="18"/>
+	<e:Image id="p1Img" top="392" source="point_png" right="352" scaleX="0.8" scaleY="0.8"/>
+	<e:Image id="p2Img" top="145" right="57" source="point_png"/>
+	<e:Image id="p3Img" top="57" source="point_png" right="97" scaleX="0.7" scaleY="0.7"/>
 </e:Skin>
