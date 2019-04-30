@@ -47,7 +47,7 @@ export class ShopDescLayer extends Dlg {
         this.shenInp.text = '点击选择省'
         this.shiInp.text = '点击选择市/区'
         // this.quInp.text = '松江区'
-        this.getCurSinfo('上海', '上海')
+        this.getCurSinfo()
         jinx.addTapEvent(this.areaBtn, this.ontapArea, this)
 
         this.scroll.scrollPolicyH = eui.ScrollPolicy.OFF //水平方向不给滑动
@@ -57,8 +57,13 @@ export class ShopDescLayer extends Dlg {
         // [this.quInp.text]['items']
         shen = shen || this.shenInp.text
         shi = shi || this.shiInp.text
-        var olist = areaData[shen]['items'][shi]['items'] || []
 
+        var olist = []
+        if(shen != '点击选择省') {
+            olist = areaData[shen]['items'][shi]['items'] || []
+        }
+
+        // 
         this.scrollGp.removeChildren()
         
          // 
