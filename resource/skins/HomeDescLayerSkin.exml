@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="HomeDescLayerSkin" width="750" height="1336" xmlns:e="http://ns.egret.com/eui">
-	<e:Image source="homedesc_png" horizontalCenter="0.5" bottom="527"/>
+	<e:Image source="homedesc_png" horizontalCenter="0.5" bottom="467"/>
 	<e:Group id="loveBtn" width="187" height="234" left="132" bottom="223">
 		<e:Button label="" anchorOffsetX="0" anchorOffsetY="0" width="187" height="243" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
 		<e:skinName>
