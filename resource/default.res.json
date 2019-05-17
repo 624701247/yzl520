@@ -138,12 +138,12 @@
 		{
 			"name": "cont_rule_png",
 			"type": "image",
-			"url": "assets/cont_rule.png?1556430781"
+			"url": "assets/cont_rule.png?1558061397"
 		},
 		{
 			"name": "logo_png",
 			"type": "image",
-			"url": "logo.png?1556615892"
+			"url": "logo.png?1558061463"
 		},
 		{
 			"name": "share_png",
@@ -153,7 +153,7 @@
 		{
 			"name": "bg_l_jpg",
 			"type": "image",
-			"url": "bg_l.jpg?1556615892"
+			"url": "bg_l.jpg?1558061463"
 		},
 		{
 			"name": "cont_mp_png",
@@ -173,12 +173,12 @@
 		{
 			"name": "by_png",
 			"type": "image",
-			"url": "by.png?1556615892"
+			"url": "by.png?1558061463"
 		},
 		{
 			"name": "yh_png",
 			"type": "image",
-			"url": "yh.png?1556615892"
+			"url": "yh.png?1558061463"
 		},
 		{
 			"name": "btn_love_png",
@@ -548,22 +548,22 @@
 		{
 			"name": "box_jump_mp3",
 			"type": "sound",
-			"url": "box_jump.mp3?1556615892"
+			"url": "box_jump.mp3?1558061463"
 		},
 		{
 			"name": "love_mp3",
 			"type": "sound",
-			"url": "love.mp3?1556615892"
+			"url": "love.mp3?1558061463"
 		},
 		{
 			"name": "xunbao1_mp3",
 			"type": "sound",
-			"url": "xunbao1.mp3?1556615892"
+			"url": "xunbao1.mp3?1558061463"
 		},
 		{
 			"name": "xunbao2_mp3",
 			"type": "sound",
-			"url": "xunbao2.mp3?1556615892"
+			"url": "xunbao2.mp3?1558061463"
 		},
 		{
 			"name": "desc_jj1000_png",
@@ -603,7 +603,7 @@
 		{
 			"name": "qr_png",
 			"type": "image",
-			"url": "qr.png?1556615892"
+			"url": "qr.png?1558061463"
 		},
 		{
 			"name": "txt_home_png",
@@ -693,17 +693,17 @@
 		{
 			"name": "draw_prize_mp3",
 			"type": "sound",
-			"url": "draw_prize.mp3?1556615892"
+			"url": "draw_prize.mp3?1558061463"
 		},
 		{
 			"name": "poster_mp3",
 			"type": "sound",
-			"url": "poster.mp3?1556615892"
+			"url": "poster.mp3?1558061463"
 		},
 		{
 			"name": "box_out_mp3",
 			"type": "sound",
-			"url": "box_out.mp3?1556615892"
+			"url": "box_out.mp3?1558061463"
 		},
 		{
 			"name": "homedesc_png",

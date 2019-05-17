@@ -62,7 +62,7 @@ body {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-image: url('../resource/bg_l.jpg?1556615892');
+  background-image: url('../resource/bg_l.jpg?1558061463');
   background-size: cover;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ body {
 .scene-loading .yh {
   width: 4.42rem;
   height: 4.42rem;
-  background: url('../resource/yh.png?1556615892') no-repeat;
+  background: url('../resource/yh.png?1558061463') no-repeat;
   background-size: 100% 100%;
   position: relative;
   top: 20%;
@@ -89,7 +89,7 @@ body {
 .scene-loading .by {
   width: 4.42rem;
   height: 4.42rem;
-  background: url('../resource/by.png?1556615892') no-repeat;
+  background: url('../resource/by.png?1558061463') no-repeat;
   background-size: 100% 100%;
   position: absolute;
   margin: auto;
@@ -110,7 +110,7 @@ body {
 }
 .scene-loading .logo {
   margin: auto;
-  background: url('../resource/logo.png?1556615892') no-repeat;
+  background: url('../resource/logo.png?1558061463') no-repeat;
   background-size: 100% 100%;
   width: 3.01rem;
   height: 0.42rem;
